@@ -5,6 +5,8 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body">
+    <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p> -->
+
     <header class="main-header">
       <a href="" class="main-header__logo">
         <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип: Седона">
@@ -16,24 +18,123 @@
         <div class="main-nav__container">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="#">Главная</a>
+              <a class="site-list__link site-list__link-active" href="#">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Фото и видео</a>
+              <a class="site-list__link" href="#">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Форма Отзыва</a>
+              <a class="site-list__link" href="#">Форма Отзыва</a>
             </li>
             <li class="site-list__item">
-              <a href="#">HTML ACADEMY</a>
+              <a class="site-list__link" href="#">HTML ACADEMY</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <!--* header -->
+    <!--* /.main-header -->
 
+    <main class="main-container">
 
-    <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p> -->
+      <!--TODO Доделать интро  -->
+      <div class="intro"></div>
+
+      <section class="description">
+        <div class="description__wrapper">
+          <h1 class="description__title">
+            Cедона — небольшой городок в аризоне, заслуживающий большего!
+          </h1>
+          <p class="description__subtitle">
+            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          </p>
+        </div>
+      </section>
+      <!--* /.description -->
+
+      <section class="features">
+
+          <div class="feature">
+            <div class="feature__inner">
+              <div class="feature__desc feature__desc--picture">
+                <h2 class="feature__title">Настоящий городок</h2>
+                <span class="feature__subject">№1</span>
+                <p class="feature__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              </div>
+              <div class="feature__image">
+                <img src="#" alt="Фото: город Седона">
+              </div>
+            </div>
+          </div>
+
+          <aside class="feature feature-aside">
+            <ul class="feature-aside__list">
+              <li class="feature-aside__item">
+                <img class="feature-aside__icon" src="#" alt="Иконка: Дом">
+                <h3 class="feature-aside__title">Жилье</h3>
+                <p class="feature-aside__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="feature-aside__item">
+                <img class="feature-aside__icon" src="#" alt="Иконка: Бургер">
+                <h3 class="feature-aside__title">Еда</h3>
+                <p class="feature-aside__desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="feature-aside__item">
+                <img class="feature-aside__icon" src="#" alt="Иконка: Подарок">
+                <h3 class="feature-aside__title">Сувениры</h3>
+                <p class="feature-aside__desc">Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
+          </aside>
+
+          <div class="feature">
+            <div class="feature__inner">
+              <div class="feature__desc feature__desc--picture">
+                <h2 class="feature__title">Там есть мост дьявола</h2>
+                <span class="feature__subject">№2</span>
+                <p class="feature__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              </div>
+              <div class="feature__image">
+                <img src="#" alt="Фото: Мост «Дьявола»">
+              </div>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature__inner">
+              <div class="feature__desc">
+                <h2 class="feature__title">Небольшая площадь</h2>
+                <span class="feature__subject">№3</span>
+                <p class="feature__text">Все интересные места находятся очень близко</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature__inner">
+              <div class="feature__desc">
+                <h2 class="feature__title">Красивая дорога</h2>
+                <span class="feature__subject">№4</span>
+                <p class="feature__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature__inner">
+              <div class="feature__desc">
+                <h2 class="feature__title">Мало туристов</h2>
+                <span class="feature__subject">№5</span>
+                <p class="feature__text">Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
+            </div>
+          </div>
+
+      </section>
+      <!--* /.features -->
+
+    </main>
+    <!--* /.main-container -->
+
   </body>
 </html>

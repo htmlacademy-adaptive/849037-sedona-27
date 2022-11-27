@@ -7,24 +7,26 @@
   <body class="page__body">
     <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p> -->
 
-    <header class="main-header">
-      <a href="" class="main-header__logo">
-        <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип: Седона">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+    <header class="main-header" style="background: tomato;">
+      <div class="main-header__container">
+        <a href="index.html" class="main-header__logo">
+          <img src="img/logo-sedona.svg" width="185" height="96" alt="Logo: Седона">
+        </a>
+        <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Open menu</span>
         </button>
+      </div>
+      <nav class="main-nav">
         <div class="main-nav__container">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link site-list__link-active" href="#">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Фото и видео</a>
+              <a class="site-list__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Форма Отзыва</a>
+              <a class="site-list__link" href="form.html">Форма Отзыва</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="#">HTML ACADEMY</a>
@@ -32,13 +34,23 @@
           </ul>
         </div>
       </nav>
+
+      <div class="intro">
+        <div class="intro__greet">
+          <img src="img/welcome.svg" width="115" alt="icon: welcome">
+          <img src="img/gorgeous.svg" width="106" alt="icon: gorgeous">
+        </div>
+        <div class="intro__legend">
+          <img src="img/sedona.svg" width="282" alt="icon: text Sedona">
+          <img src="img/legend.svg" width="173" alt="icon: legend text">
+        </div>
+      </div>
+      <!--* /.intro -->
+
     </header>
     <!--* /.main-header -->
 
     <main class="main-container">
-
-      <!--TODO Доделать интро  -->
-      <div class="intro"></div>
 
       <section class="description">
         <div class="description__wrapper">
@@ -53,16 +65,17 @@
       <!--* /.description -->
 
       <section class="features">
+          <h2 class="visually-hidden">Наши преимущества</h2>
 
           <div class="feature">
             <div class="feature__inner">
-              <div class="feature__desc feature__desc--picture">
-                <h2 class="feature__title">Настоящий городок</h2>
+              <div class="feature__desc feature__desc--accent">
+                <h3 class="feature__title">Настоящий городок</h3>
                 <span class="feature__subject">№1</span>
                 <p class="feature__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <div class="feature__image">
-                <img src="#" alt="Фото: город Седона">
+                <img src="img/photo-city@1x.png" width="320" height="260" alt="photo: город Седона">
               </div>
             </div>
           </div>
@@ -70,17 +83,17 @@
           <aside class="feature feature-aside">
             <ul class="feature-aside__list">
               <li class="feature-aside__item">
-                <img class="feature-aside__icon" src="#" alt="Иконка: Дом">
+                <img class="feature-aside__icon" src="img/icon-house.svg" alt="icon: Дом">
                 <h3 class="feature-aside__title">Жилье</h3>
                 <p class="feature-aside__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li class="feature-aside__item">
-                <img class="feature-aside__icon" src="#" alt="Иконка: Бургер">
+                <img class="feature-aside__icon" src="img/icon-burger.svg" alt="icon: Бургер">
                 <h3 class="feature-aside__title">Еда</h3>
                 <p class="feature-aside__desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="feature-aside__item">
-                <img class="feature-aside__icon" src="#" alt="Иконка: Подарок">
+                <img class="feature-aside__icon" src="img/icon-gift.svg" alt="icon: Подарок">
                 <h3 class="feature-aside__title">Сувениры</h3>
                 <p class="feature-aside__desc">Не только китайского, но и местного производства!</p>
               </li>
@@ -89,13 +102,13 @@
 
           <div class="feature">
             <div class="feature__inner">
-              <div class="feature__desc feature__desc--picture">
-                <h2 class="feature__title">Там есть мост дьявола</h2>
+              <div class="feature__desc feature__desc--accent">
+                <h3 class="feature__title">Там есть мост дьявола</h3>
                 <span class="feature__subject">№2</span>
                 <p class="feature__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="feature__image">
-                <img src="#" alt="Фото: Мост «Дьявола»">
+                <img src="img/photo-city@1x.png" width="320" height="260" alt="photo: Мост «Дьявола»">
               </div>
             </div>
           </div>
@@ -103,7 +116,7 @@
           <div class="feature">
             <div class="feature__inner">
               <div class="feature__desc">
-                <h2 class="feature__title">Небольшая площадь</h2>
+                <h3 class="feature__title">Небольшая площадь</h3>
                 <span class="feature__subject">№3</span>
                 <p class="feature__text">Все интересные места находятся очень близко</p>
               </div>
@@ -113,7 +126,7 @@
           <div class="feature">
             <div class="feature__inner">
               <div class="feature__desc">
-                <h2 class="feature__title">Красивая дорога</h2>
+                <h3 class="feature__title">Красивая дорога</h3>
                 <span class="feature__subject">№4</span>
                 <p class="feature__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
@@ -123,7 +136,7 @@
           <div class="feature">
             <div class="feature__inner">
               <div class="feature__desc">
-                <h2 class="feature__title">Мало туристов</h2>
+                <h3 class="feature__title">Мало туристов</h3>
                 <span class="feature__subject">№5</span>
                 <p class="feature__text">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
@@ -133,8 +146,55 @@
       </section>
       <!--* /.features -->
 
+      <section class="search">
+        <h2 class="visually-hidden">Поиск Гостиницы</h2>
+        <h3 class="search__title">Заинтересовались?</h3>
+        <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне.</p>
+        <button class="button search__button">Найти гостиницу</button>
+      </section>
+      <!--* /.search -->
+
+      <section class="main-map">
+        <h2 class="visually-hidden">Карта поиска города Седона</h2>
+        <img class="main-map__img" width="320" height="350" src="./img/map-mobile.jpg" alt="photo: Карта города Седона">
+      </section>
+      <!--* /.main-map -->
+
     </main>
     <!--* /.main-container -->
+
+    <footer class="main-footer">
+      <div class="main-footer__contacts contacts">
+        <b class="contacts__title">#visitSEDONA</b>
+      </div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk">
+              Vcontakte
+              <img src="#" alt="" class="social__icon">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--telegram">
+              Telegram
+              <img src="#" alt="" class="social__icon">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--youtube">
+              Youtube
+              <img src="#" alt="" class="social__icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="#">HTML Academy</a>
+      </div>
+    </footer>
+    <!--* /.main-footer -->
 
   </body>
 </html>

@@ -7,6 +7,150 @@
   <title>HTML Academy: Седона</title>
 </head>
 <body>
+  <header class="main-header" style="background: tomato;">
+    <div class="main-header__container">
+      <a href="index.html" class="main-header__logo">
+        <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип: Седона">
+      </a>
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Open menu</span>
+      </button>
+    </div>
+    <nav class="main-nav">
+      <div class="main-nav__container">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link-active" href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Форма Отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
+    <div class="intro">
+      <div class="intro__greet">
+        <img src="img/sedona.svg" width="282" alt="icon: text Sedona">
+      </div>
+    </div>
+    <!--* /.intro -->
+
+  </header>
+  <!--* /.main-header -->
+
+  <main class="main-container">
+
+    <!-- <section class="common">
+      <h1 class="common__title">Фото и видео</h1>
+      <p class="common__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+    </section> -->
+    <!--* /.common -->
+
+    <section class="reviews">
+      <h1 class="visually-hidden">Достопримечательности</h1>
+
+      <div class="reviews review-common">
+        <h2 class="review-common__title">Фото и видео</h2>
+        <p class="review-common__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </div>
+
+      <div class="reviews__list">
+        <blockquote class="reviews__item">
+          <img src="img/photo-1-mobile.jpg" alt="photo: Неродные просторы">
+          <div class="reviews__author-info">
+            <h3 class="reviews__title">Неродные просторы</h3>
+            <cite class="reviews__author-name">Автор фото: Борис</cite>
+          </div>
+          <div class="reviews__likes-info">
+            <img src="img/like-icon.svg" alt="icon: Like">
+            <span class="reviews__likes-count">1350</span>
+          </div>
+        </blockquote>
+        <blockquote class="reviews__item">
+          <img src="img/photo-2-mobile.jpg" alt="photo: Местная растительность">
+          <div class="reviews__author-info">
+            <h3 class="reviews__title">Местная растительность</h3>
+            <cite class="reviews__author-name">Автор фото: Сергей</cite>
+          </div>
+          <div class="reviews__likes-info">
+            <img src="img/like-icon.svg" alt="icon: Like">
+            <span class="reviews__likes-count">143</span>
+          </div>
+        </blockquote>
+        <blockquote class="reviews__item">
+          <img src="img/photo-3-mobile.jpg" alt="photo: Дорога на север">
+          <div class="reviews__author-info">
+            <h3 class="reviews__title">Дорога на север</h3>
+            <cite class="reviews__author-name">Автор фото: Петр</cite>
+          </div>
+          <div class="reviews__likes-info">
+            <img src="img/like-icon.svg" alt="icon: Like">
+            <span class="reviews__likes-count">96</span>
+          </div>
+        </blockquote>
+        <blockquote class="reviews__item">
+          <img src="img/photo-4-mobile.jpg" alt="photo: Мост дьявола">
+          <div class="reviews__author-info">
+            <h3 class="reviews__title">Мост дьявола</h3>
+            <cite class="reviews__author-name">Автор фото: Антон</cite>
+          </div>
+          <div class="reviews__likes-info">
+            <img src="img/like-icon.svg" alt="icon: Like">
+            <span class="reviews__likes-count">254</span>
+          </div>
+        </blockquote>
+
+        <div class="reviews review-video">
+          <h2 class="review-video__title">Все еще сомневаетесь?</h2>
+          <p class="review-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <img src="img/video-mobile.jpg" alt="photo: Заглушка для видео">
+        </div>
+      </div>
+      <!--* /.reviews__list -->
+
+    </section>
+    <!--* /.photos -->
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__contacts contacts">
+      <b class="contacts__title">#visitSEDONA</b>
+    </div>
+    <div class="main-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--vk">
+            Vcontakte
+            <img src="#" alt="" class="social__icon">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--telegram">
+            Telegram
+            <img src="#" alt="" class="social__icon">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--youtube">
+            Youtube
+            <img src="#" alt="" class="social__icon">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="copyright__link" href="#">HTML Academy</a>
+    </div>
+  </footer>
+  <!--* /.main-footer -->
 </body>
 </html>

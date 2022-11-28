@@ -6,11 +6,10 @@
   </head>
   <body class="page__body">
     <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p> -->
-
     <header class="main-header" style="background: tomato;">
       <div class="main-header__container">
-        <a href="index.html" class="main-header__logo">
-          <img src="img/logo-sedona.svg" width="185" height="96" alt="Logo: Седона">
+        <a class="main-header__logo-link" href="index.html">
+          <img src="img/logo-sedona.svg" width="185" height="96" alt="logotype: City of Sedona">
         </a>
         <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Open menu</span>
@@ -34,15 +33,11 @@
           </ul>
         </div>
       </nav>
+      <!--* /.main-nav -->
 
       <div class="intro">
-        <div class="intro__greet">
-          <img src="img/welcome.svg" width="115" alt="icon: welcome">
-          <img src="img/gorgeous.svg" width="106" alt="icon: gorgeous">
-        </div>
-        <div class="intro__legend">
-          <img src="img/sedona.svg" width="282" alt="icon: text Sedona">
-          <img src="img/legend.svg" width="173" alt="icon: legend text">
+        <div class="intro__wrapper">
+          <img src="img/text-index.svg" width="282" height="214" alt="text: Sedona welcome text">
         </div>
       </div>
       <!--* /.intro -->
@@ -65,10 +60,10 @@
       <!--* /.description -->
 
       <section class="features">
-          <h2 class="visually-hidden">Наши преимущества</h2>
+          <h2 class="visually-hidden">Преимущества города Седона</h2>
 
           <div class="feature">
-            <div class="feature__inner">
+            <div class="feature__inner-wrapper">
               <div class="feature__desc feature__desc--accent">
                 <h3 class="feature__title">Настоящий городок</h3>
                 <span class="feature__subject">№1</span>
@@ -83,17 +78,20 @@
           <aside class="feature feature-aside">
             <ul class="feature-aside__list">
               <li class="feature-aside__item">
-                <img class="feature-aside__icon" src="img/icon-house.svg" alt="icon: Дом">
+                <!-- Иконку буду добавлять псевдоэлементом -->
+                <!-- <img class="feature-aside__icon" src="img/icon-house.svg" alt="icon: Дом"> -->
                 <h3 class="feature-aside__title">Жилье</h3>
                 <p class="feature-aside__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li class="feature-aside__item">
-                <img class="feature-aside__icon" src="img/icon-burger.svg" alt="icon: Бургер">
+                <!-- Иконку буду добавлять псевдоэлементом -->
+                <!-- <img class="feature-aside__icon" src="img/icon-burger.svg" alt="icon: Бургер"> -->
                 <h3 class="feature-aside__title">Еда</h3>
                 <p class="feature-aside__desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="feature-aside__item">
-                <img class="feature-aside__icon" src="img/icon-gift.svg" alt="icon: Подарок">
+                <!-- Иконку буду добавлять псевдоэлементом -->
+                <!-- <img class="feature-aside__icon" src="img/icon-gift.svg" alt="icon: Подарок"> -->
                 <h3 class="feature-aside__title">Сувениры</h3>
                 <p class="feature-aside__desc">Не только китайского, но и местного производства!</p>
               </li>
@@ -101,7 +99,7 @@
           </aside>
 
           <div class="feature">
-            <div class="feature__inner">
+            <div class="feature__inner-wrapper">
               <div class="feature__desc feature__desc--accent">
                 <h3 class="feature__title">Там есть мост дьявола</h3>
                 <span class="feature__subject">№2</span>
@@ -114,7 +112,7 @@
           </div>
 
           <div class="feature">
-            <div class="feature__inner">
+            <div class="feature__inner-wrapper">
               <div class="feature__desc">
                 <h3 class="feature__title">Небольшая площадь</h3>
                 <span class="feature__subject">№3</span>
@@ -124,7 +122,7 @@
           </div>
 
           <div class="feature">
-            <div class="feature__inner">
+            <div class="feature__inner-wrapper">
               <div class="feature__desc">
                 <h3 class="feature__title">Красивая дорога</h3>
                 <span class="feature__subject">№4</span>
@@ -134,7 +132,7 @@
           </div>
 
           <div class="feature">
-            <div class="feature__inner">
+            <div class="feature__inner-wrapper">
               <div class="feature__desc">
                 <h3 class="feature__title">Мало туристов</h3>
                 <span class="feature__subject">№5</span>
@@ -146,32 +144,34 @@
       </section>
       <!--* /.features -->
 
-      <section class="search">
-        <h2 class="visually-hidden">Поиск Гостиницы</h2>
-        <h3 class="search__title">Заинтересовались?</h3>
-        <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне.</p>
-        <button class="button search__button">Найти гостиницу</button>
+      <section class="service">
+        <h2 class="visually-hidden">Пдобрать гостиницу в городе Седона</h2>
+
+        <h3 class="service__title">Заинтересовались?</h3>
+        <p class="service__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне.</p>
+        <button class="button button--actions">Найти гостиницу</button>
       </section>
-      <!--* /.search -->
+      <!--* /.service -->
 
       <section class="main-map">
-        <h2 class="visually-hidden">Карта поиска города Седона</h2>
-        <img class="main-map__img" width="320" height="350" src="./img/map-mobile.jpg" alt="photo: Карта города Седона">
+        <h2 class="visually-hidden">Карта города Седона</h2>
+
+        <img class="main-map__img-bg" width="320" height="350" src="./img/map-mobile.jpg" alt="photo: Карта города Седона">
       </section>
       <!--* /.main-map -->
 
     </main>
     <!--* /.main-container -->
 
-    <footer class="main-footer">
-      <div class="main-footer__contacts contacts">
-        <b class="contacts__title">#visitSEDONA</b>
+    <footer class="footer">
+      <div class="footer__contacts contacts">
+        <b class="contacts__tag">#visitsedona</b>
       </div>
-      <div class="main-footer__social social">
+      <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a href="#" class="social__link social__link--vk">
-              Vcontakte
+              Vkontakte
               <img src="#" alt="" class="social__icon">
             </a>
           </li>
@@ -189,12 +189,14 @@
           </li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright">
+      <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="#">HTML Academy</a>
+        <a class="copyright__link" href="#">
+          <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="logotype: HTML Academy">
+        </a>
       </div>
     </footer>
-    <!--* /.main-footer -->
+    <!--* /.footer -->
 
   </body>
 </html>

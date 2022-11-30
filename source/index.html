@@ -2,14 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body">
-    <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p> -->
-    <header class="main-header" style="background: tomato;">
+    <header class="main-header">
       <div class="main-header__container">
         <a class="main-header__logo-link" href="index.html">
-          <img src="img/logo-sedona.svg" width="185" height="96" alt="logotype: City of Sedona">
+          <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона">
         </a>
         <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Open menu</span>
@@ -37,7 +38,7 @@
 
       <div class="intro">
         <div class="intro__wrapper">
-          <img src="img/text-index.svg" width="282" height="214" alt="text: Sedona welcome text">
+          <img src="img/text-index.svg" width="282" height="214" alt="Sedona welcome text">
         </div>
       </div>
       <!--* /.intro -->
@@ -45,102 +46,72 @@
     </header>
     <!--* /.main-header -->
 
-    <main class="main-container">
+    <main class="main">
 
-      <section class="description">
-        <div class="description__wrapper">
-          <h1 class="description__title">
+      <section class="main main-header">
+        <div class="main-header__wrapper">
+          <h1 class="main-header__title">
             Cедона — небольшой городок в аризоне, заслуживающий большего!
           </h1>
-          <p class="description__subtitle">
+          <p class="main-header__subtitle">
             Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
           </p>
         </div>
       </section>
-      <!--* /.description -->
+      <!--* /.main-header -->
 
       <section class="features">
           <h2 class="visually-hidden">Преимущества города Седона</h2>
-
-          <div class="feature">
-            <div class="feature__inner-wrapper">
-              <div class="feature__desc feature__desc--accent">
+          <ol class="features__list feature">
+            <li class="feature__item">
+              <div class="feature__item-wrapper">
                 <h3 class="feature__title">Настоящий городок</h3>
                 <span class="feature__subject">№1</span>
                 <p class="feature__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <div class="feature__image">
-                <img src="img/photo-city@1x.png" width="320" height="260" alt="photo: город Седона">
-              </div>
-            </div>
-          </div>
+              <img src="img/photo-city@1x.png" width="320" height="260" alt="Фотография города Седона">
 
-          <aside class="feature feature-aside">
-            <ul class="feature-aside__list">
-              <li class="feature-aside__item">
-                <!-- Иконку буду добавлять псевдоэлементом -->
-                <!-- <img class="feature-aside__icon" src="img/icon-house.svg" alt="icon: Дом"> -->
-                <h3 class="feature-aside__title">Жилье</h3>
-                <p class="feature-aside__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-              </li>
-              <li class="feature-aside__item">
-                <!-- Иконку буду добавлять псевдоэлементом -->
-                <!-- <img class="feature-aside__icon" src="img/icon-burger.svg" alt="icon: Бургер"> -->
-                <h3 class="feature-aside__title">Еда</h3>
-                <p class="feature-aside__desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-              </li>
-              <li class="feature-aside__item">
-                <!-- Иконку буду добавлять псевдоэлементом -->
-                <!-- <img class="feature-aside__icon" src="img/icon-gift.svg" alt="icon: Подарок"> -->
-                <h3 class="feature-aside__title">Сувениры</h3>
-                <p class="feature-aside__desc">Не только китайского, но и местного производства!</p>
-              </li>
-            </ul>
-          </aside>
+              <ul class="feature__list city-feature">
+                <li class="city-feature__item">
+                  <h3 class="city-feature__title">Жилье</h3>
+                  <p class="city-feature__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </li>
+                <li class="city-feature__item">
+                  <h3 class="city-feature__title">Еда</h3>
+                  <p class="city-feature__desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </li>
+                <li class="city-feature__item">
+                  <h3 class="city-feature__title">Сувениры</h3>
+                  <p class="city-feature__desc">Не только китайского, но и местного производства!</p>
+                </li>
+              </ul>
+              <!--* /.city-feature -->
 
-          <div class="feature">
-            <div class="feature__inner-wrapper">
-              <div class="feature__desc feature__desc--accent">
+            </li>
+            <li class="feature__item">
+              <div class="feature__item-wrapper">
                 <h3 class="feature__title">Там есть мост дьявола</h3>
                 <span class="feature__subject">№2</span>
                 <p class="feature__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <div class="feature__image">
-                <img src="img/photo-city@1x.png" width="320" height="260" alt="photo: Мост «Дьявола»">
-              </div>
-            </div>
-          </div>
-
-          <div class="feature">
-            <div class="feature__inner-wrapper">
-              <div class="feature__desc">
-                <h3 class="feature__title">Небольшая площадь</h3>
-                <span class="feature__subject">№3</span>
-                <p class="feature__text">Все интересные места находятся очень близко</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="feature">
-            <div class="feature__inner-wrapper">
-              <div class="feature__desc">
-                <h3 class="feature__title">Красивая дорога</h3>
-                <span class="feature__subject">№4</span>
-                <p class="feature__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="feature">
-            <div class="feature__inner-wrapper">
-              <div class="feature__desc">
-                <h3 class="feature__title">Мало туристов</h3>
-                <span class="feature__subject">№5</span>
-                <p class="feature__text">Большинство едет в Гранд Каньон и толпится там</p>
-              </div>
-            </div>
-          </div>
-
+              <img src="img/photo-bridge@1x.png" width="320" height="260" alt="Фотография города Седона">
+            </li>
+            <li class="feature__item">
+              <h3 class="feature__title">Небольшая площадь</h3>
+              <span class="feature__subject">№3</span>
+              <p class="feature__text">Все интересные места находятся очень близко</p>
+            </li>
+            <li class="feature__item">
+              <h3 class="feature__title">Красивая дорога</h3>
+              <span class="feature__subject">№4</span>
+              <p class="feature__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="feature__item">
+              <h3 class="feature__title">Мало туристов</h3>
+              <span class="feature__subject">№5</span>
+              <p class="feature__text">Большинство едет в Гранд Каньон и толпится там</p>
+            </li>
+          </ol>
       </section>
       <!--* /.features -->
 
@@ -156,7 +127,7 @@
       <section class="main-map">
         <h2 class="visually-hidden">Карта города Седона</h2>
 
-        <img class="main-map__img-bg" width="320" height="350" src="./img/map-mobile.jpg" alt="photo: Карта города Седона">
+        <img class="main-map__img-bg" width="320" height="350" src="./img/map-mobile.jpg" alt="Карта города Седона">
       </section>
       <!--* /.main-map -->
 
@@ -164,35 +135,24 @@
     <!--* /.main-container -->
 
     <footer class="footer">
-      <div class="footer__contacts contacts">
-        <b class="contacts__tag">#visitsedona</b>
-      </div>
-      <div class="footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="#" class="social__link social__link--vk">
-              Vkontakte
-              <img src="#" alt="" class="social__icon">
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--telegram">
-              Telegram
-              <img src="#" alt="" class="social__icon">
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--youtube">
-              Youtube
-              <img src="#" alt="" class="social__icon">
-            </a>
-          </li>
-        </ul>
-      </div>
+      <p class="footer__tags tags">
+        <a href="#" class="tags__link">#visitsedona</a>
+      </p>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--vk">Vkontakte</a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--telegram">Telegram</a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--youtube">Youtube</a>
+        </li>
+      </ul>
       <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="#">
-          <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="logotype: HTML Academy">
+          <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>

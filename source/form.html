@@ -2,15 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body">
-    <header class="main-header" style="background: tomato;">
+    <header class="main-header">
       <div class="main-header__container">
         <a href="index.html" class="main-header__logo">
-          <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип: Седона">
+          <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона">
         </a>
         <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Open menu</span>
@@ -38,7 +38,7 @@
 
       <div class="secondary-intro">
         <div class="secondary-intro__wrapper">
-          <img src="img/sedona.svg" width="229" height="39" alt="text: Sedona">
+          <img src="img/sedona.svg" width="229" height="39" alt="Sedona Welcome text">
         </div>
       </div>
       <!--* /.intro -->
@@ -46,19 +46,16 @@
     </header>
     <!--* /.secondary-header -->
 
-    <main class="form-container">
-
-        <div class="reviews-common">
-          <h1 class="visually-hidden">Отзывы о городе Седона</h1>
-
-          <div class="reviews-common__wrapper">
-            <h2 class="reviews-common__title">Оставьте свой отзыв</h2>
-            <p class="reviews-common__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <main class="form">
+        <div class="form form-header">
+          <div class="form-header__wrapper">
+            <h1 class="form-header__title">Оставьте свой отзыв</h1>
+            <p class="form-header__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
         </div>
-        <!--* /.reviews-common -->
+        <!--* /.form-header -->
 
-        <form action="#" class="reviews-form form">
+        <form action="https://echo.htmlacademy.ru/courses" method="post" class="reviews-form form">
           <fieldset class="form__user-info">
             <legend class="form__title">Представьтесь:</legend>
             <div class="form__inner-wrapper">
@@ -103,7 +100,7 @@
             </div>
             <div class="form__inner-wrapper">
               <label class="form__sub form__sub--bold">
-                <input class="form__input-radio" type="radio" name="impress" value="don't know">
+                <input class="form__input-radio" type="radio" name="impress" value="noAnswer">
                 Затрудняюсь ответить
               </label>
             </div>
@@ -154,35 +151,24 @@
     <!--* /.form-container -->
 
     <footer class="footer">
-      <div class="footer__contacts contacts">
-        <b class="contacts__tag">#visitsedona</b>
-      </div>
-      <div class="footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="#" class="social__link social__link--vk">
-              Vkontakte
-              <img src="#" alt="" class="social__icon">
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--telegram">
-              Telegram
-              <img src="#" alt="" class="social__icon">
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--youtube">
-              Youtube
-              <img src="#" alt="" class="social__icon">
-            </a>
-          </li>
-        </ul>
-      </div>
+      <p class="footer__tags tags">
+        <a href="#" class="tags__link">#visitsedona</a>
+      </p>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--vk">Vkontakte</a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--telegram">Telegram</a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--youtube">Youtube</a>
+        </li>
+      </ul>
       <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="#">
-          <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="logotype: HTML Academy">
+          <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>

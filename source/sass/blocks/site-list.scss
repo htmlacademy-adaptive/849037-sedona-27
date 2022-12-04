@@ -1,0 +1,25 @@
+$white: rgba(255, 255, 255, 1);
+$grey-04: rgba(213, 213, 213, 1);
+$blue-01: rgba(129, 179, 210, 1);
+$blue-03: rgba(84, 150, 189, 1);
+
+
+.site-list__item {
+  width: 100%;
+  padding: 17px 0 12px;
+  background: $blue-01;
+  border-top: 1px solid $grey-04;
+  border-bottom: 1px solid $blue-03;
+  text-align: center;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+
+.site-list__link {
+  color: $white;
+  font-weight: 700;
+  text-decoration: none;
+}

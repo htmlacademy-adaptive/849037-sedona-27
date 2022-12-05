@@ -1,6 +1,9 @@
-// База Переменных и Примесей
+// Глобальные Переменных и Примесей
 @use "global/fonts.scss";
 @use "components/visually-hidden.scss";
+
+// Кнопки
+@use "components/button.scss";
 
 // Компоненты
 @use "components/page.scss";
@@ -12,3 +15,12 @@
 @use "components/features.scss";
 @use "components/feature.scss";
 @use "components/city-feature.scss";
+@use "components/service.scss";
+@use "components/main-map.scss";
+
+// Подвал
+@use "components/footer.scss";
+@use "components/tags.scss";
+@use "components/social.scss";
+@use "components/copyright.scss";
+

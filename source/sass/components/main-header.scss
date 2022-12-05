@@ -1,0 +1,23 @@
+@use "../global/variables.scss";
+
+.main-header__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 22px;
+  padding: 17px 20px;
+  background: variables.$white;
+}
+
+.main-header__logo-link {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.main-header__toggle {
+  width: 23px;
+  height: 23px;
+  margin-left: auto;
+}

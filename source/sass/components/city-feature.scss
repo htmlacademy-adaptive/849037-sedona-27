@@ -1,0 +1,32 @@
+@use "../global/variables.scss";
+
+.city-feature {
+  padding: 25px 0 46px;
+  background: variables.$white;
+}
+
+.city-feature__item {
+  &:first-child {
+    padding-top: 0;
+  }
+  text-align: left;
+  padding: 27px 18px 0 65px;
+}
+
+.city-feature__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.city-feature__desc {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 16px;
+}

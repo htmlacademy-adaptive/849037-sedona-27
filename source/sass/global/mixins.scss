@@ -16,3 +16,7 @@
   padding: 0;
   list-style-type: none;
 }
+
+@mixin font {
+  font-family: "PT Sans", "Arial", sans-serif;
+}

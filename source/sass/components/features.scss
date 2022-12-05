@@ -1,0 +1,8 @@
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
+
+.features__list {
+  @include mixins.list-reset;
+  @include mixins.font;
+  text-align: center;
+}

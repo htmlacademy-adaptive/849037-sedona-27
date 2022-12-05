@@ -1,12 +1,10 @@
 // База Переменных и Примесей
-@use "base/variables.scss";
-@use "base/fonts.scss";
-@use "base/visually-hidden.scss";
+@use "global/fonts.scss";
+@use "components/visually-hidden.scss";
 
-//Главный блок
-@use "blocks/page.scss";
-
-// Блоки
-@use "blocks/main-nav.scss";
-@use "blocks/main-header.scss";
-@use "blocks/site-list";
+// Компоненты
+@use "components/page.scss";
+@use "components/main-nav.scss";
+@use "components/main-header.scss";
+@use "components/site-list";
+@use "components/intro.scss";

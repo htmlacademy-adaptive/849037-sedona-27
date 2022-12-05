@@ -1,16 +1,18 @@
-// Глобальные Переменных и Примесей
+// Глобальные Переменные и Примеси
 @use "global/fonts.scss";
 @use "components/visually-hidden.scss";
 
 // Кнопки
 @use "components/button.scss";
 
-// Компоненты
+// Блоки «Header»
 @use "components/page.scss";
 @use "components/main-nav.scss";
 @use "components/main-header.scss";
 @use "components/site-list";
 @use "components/intro.scss";
+
+// Блоки «Main»
 @use "components/promo.scss";
 @use "components/features.scss";
 @use "components/feature.scss";
@@ -18,7 +20,7 @@
 @use "components/service.scss";
 @use "components/main-map.scss";
 
-// Подвал
+// Блоки «Footer»
 @use "components/footer.scss";
 @use "components/tags.scss";
 @use "components/social.scss";

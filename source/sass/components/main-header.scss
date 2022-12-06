@@ -1,7 +1,10 @@
 @use "../global/variables.scss";
 
-.main-header__container {
+.main-header {
   position: relative;
+}
+
+.main-header__container {
   display: flex;
   align-items: center;
   height: 22px;
@@ -17,7 +20,9 @@
 }
 
 .main-header__toggle {
+  position: absolute;
+  right: 20px;
+  z-index: 99;
   width: 23px;
   height: 23px;
-  margin-left: auto;
 }

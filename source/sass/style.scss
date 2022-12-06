@@ -12,13 +12,22 @@
 @use "components/site-list";
 @use "components/intro.scss";
 
-// Блоки «Main»
+// Блоки «Main» Index
 @use "components/promo.scss";
 @use "components/features.scss";
 @use "components/feature.scss";
 @use "components/city-feature.scss";
 @use "components/service.scss";
 @use "components/main-map.scss";
+
+// Блоки «Header» Catalog
+@use "components/secondary-intro.scss";
+
+// Блоки «Main» Catalog
+@use "components/catalogue.scss";
+@use "components/catalogut-header.scss";
+@use "components/lions.scss";
+@use "components/benefits.scss";
 
 // Блоки «Footer»
 @use "components/footer.scss";

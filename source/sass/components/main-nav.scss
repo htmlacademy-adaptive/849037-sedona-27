@@ -1,6 +1,14 @@
 @use "../global/mixins.scss";
 
+.main-nav__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 .main-nav__list {
   @include mixins.list-reset;
-  font-family: "PT Sans", "Arial", sans-serif;
+  @include mixins.font;
 }
+

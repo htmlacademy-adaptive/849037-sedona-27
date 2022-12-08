@@ -3,14 +3,22 @@
 
 .button {
   @include mixins.font;
+  &--actions {
+    margin-top: 32px;
+  }
+  &--error {
+    margin-top: 28px;
+    width: 180px;
+  }
   color: variables.$white;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
   display: block;
-  padding: 16px 49px;
+  width: 100%;
+  padding: 16px 0;
   background: variables.$blue-01;
   border: none;
-  margin-top: 32px;
+  // margin-top: 32px;
 }

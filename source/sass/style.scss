@@ -1,37 +1,44 @@
-// Глобальные Переменные и Примеси
+// Глобальные, Переменные и Примеси
 @use "global/fonts.scss";
-@use "components/visually-hidden.scss";
 
-// Кнопки
+// Внешние библиотеки и фреймы
+@use "vendors/visually-hidden.scss";
+
+// Компоненты
 @use "components/button.scss";
 
 // Блоки «Header»
-@use "components/page.scss";
-@use "components/main-nav.scss";
-@use "components/main-header.scss";
-@use "components/site-list";
-@use "components/intro.scss";
+@use "layout/page.scss";
+@use "layout/main-nav.scss";
+@use "layout/main-header.scss";
+@use "layout/site-list";
+@use "layout/intro.scss";
 
-// Блоки «Main» Index
-@use "components/promo.scss";
-@use "components/features.scss";
-@use "components/feature.scss";
-@use "components/city-feature.scss";
-@use "components/service.scss";
-@use "components/main-map.scss";
+// Блоки Index
+@use "layout/promo.scss";
+@use "layout/features.scss";
+@use "layout/feature.scss";
+@use "layout/city-feature.scss";
+@use "layout/service.scss";
+@use "layout/main-map.scss";
 
-// Блоки «Header» Catalog
-@use "components/secondary-intro.scss";
+// Блоки Catalog
+@use "layout/secondary-intro.scss";
+@use "layout/catalogue.scss";
+@use "layout/catalogut-header.scss";
+@use "layout/lions.scss";
+@use "layout/benefits.scss";
 
-// Блоки «Main» Catalog
-@use "components/catalogue.scss";
-@use "components/catalogut-header.scss";
-@use "components/lions.scss";
-@use "components/benefits.scss";
+// Блоки Form
+@use "layout/form-page.scss";
+@use "layout/form.scss";
 
 // Блоки «Footer»
-@use "components/footer.scss";
-@use "components/tags.scss";
-@use "components/social.scss";
-@use "components/copyright.scss";
+@use "layout/footer.scss";
+@use "layout/tags.scss";
+@use "layout/social.scss";
+@use "layout/copyright.scss";
+
+// Модальные окна
+@use "layout/modal.scss";
 

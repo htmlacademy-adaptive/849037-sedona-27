@@ -1,0 +1,87 @@
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
+
+.form__wrapper {
+  @include mixins.font;
+  margin: 0;
+  padding: 24px 20px 39px;
+  border: none;
+  border-top: 1px solid variables.$grey-02;
+}
+
+.form__text-right {
+  text-align: right;
+}
+
+.form__user-info {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.form__title {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form__inner-wrapper {
+  margin-top: 16px;
+}
+
+.form__sub {
+  &--bold {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: none;
+  }
+  padding-left: 16px;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.form__input {
+  &::placeholder {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: variables.$black-03;
+  }
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  border: none;
+  background: variables.$grey-01;
+}
+
+.form__input-area {
+  &::placeholder {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: variables.$black-03;
+  }
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  background: variables.$grey-01;
+  border: none;
+}
+
+.form__legend {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  color: variables.$black-04;
+  text-transform: uppercase;
+}
+

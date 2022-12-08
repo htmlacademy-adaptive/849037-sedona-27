@@ -1,0 +1,24 @@
+@use "../global/mixins.scss";
+
+.form-page__header {
+  @include mixins.font;
+  padding: 36px 18px 28px;
+  text-align: center;
+}
+
+.form-page__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.form-page__text {
+  margin: 0;
+  margin-top: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}

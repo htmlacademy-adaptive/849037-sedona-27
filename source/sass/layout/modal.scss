@@ -8,14 +8,15 @@
 }
 
 .modal__wrapper {
-  &--success {
-    padding: 39px 37px;
-  }
   @include mixins.font;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &--success {
+    padding: 39px 37px;
+  }
 }
 
 .modal__title {

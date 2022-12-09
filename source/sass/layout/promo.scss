@@ -1,18 +1,20 @@
 @use "../global/mixins.scss";
 
 .promo {
-  display: flex;
-  justify-content: center;
   padding: 32px 18px 32px;
 }
 
 .promo__wrapper {
+  @include mixins.font;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  max-width: 270px;
+  min-width: 220px;
+  width: 100%;
 }
 
 .promo__title {
-  @include mixins.font;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -21,7 +23,6 @@
 }
 
 .promo__subtitle {
-  @include mixins.font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

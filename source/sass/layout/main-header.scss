@@ -1,26 +1,33 @@
 @use "../global/variables.scss";
 
-.main-header {
+.main-header__container {
   position: relative;
 }
 
-.main-header__container {
+.main-header__wrapper {
+  height: 56px;
+  background: variables.$white;
+}
+
+.main-header__inner-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 56px;
   display: flex;
   align-items: center;
-  height: 22px;
-  padding: 17px 20px;
   background: variables.$white;
 }
 
 .main-header__logo-link {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 50%;
   transform: translateX(50%);
 }
 
 .main-header__toggle {
-  position: absolute;
+  position: fixed;
+  top: 17px;
   right: 20px;
   z-index: 99;
   width: 23px;

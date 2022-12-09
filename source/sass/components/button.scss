@@ -8,7 +8,7 @@
   }
   &--error {
     margin-top: 28px;
-    width: 180px;
+    max-width: 180px;
   }
   color: variables.$white;
   font-weight: 700;
@@ -20,5 +20,4 @@
   padding: 16px 0;
   background: variables.$blue-01;
   border: none;
-  // margin-top: 32px;
 }

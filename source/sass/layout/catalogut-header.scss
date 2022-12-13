@@ -1,0 +1,20 @@
+@use "../global/mixins.scss";
+
+.catalogue-header {
+  @include mixins.font;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 37px 18px 35px;
+}
+
+.catalogue-header__title {
+  margin: 0;
+}
+
+.catalogue-header__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  margin-top: 30px;
+}

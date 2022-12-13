@@ -1,0 +1,29 @@
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
+
+.service {
+  @include mixins.font;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px 18px 49px;
+}
+
+.service__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.service__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  min-width: 265px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 17px;
+}

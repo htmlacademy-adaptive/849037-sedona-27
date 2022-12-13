@@ -1,0 +1,25 @@
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
+
+.button {
+  @include mixins.font;
+  color: variables.$white;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  padding: 16px 0;
+  background: variables.$blue-01;
+  border: none;
+
+  &--actions {
+    margin-top: 32px;
+  }
+
+  &--error {
+    margin-top: 28px;
+    max-width: 180px;
+  }
+}

@@ -5,38 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js" defer></script>
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__container">
-        <a class="main-header__logo" href="index.html">
-          <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона">
-        </a>
-        <button class="main-header__toggle" type="button">
-          <span class="visually-hidden">Open menu</span>
-        </button>
+      <div class="main-header__wrapper">
+        <div class="main-header__inner-wrapper">
+          <a class="main-header__logo-link" href="index.html">
+            <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона">
+          </a>
+        </div>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--active">Фото и видео</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Форма Отзыва</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">HTML ACADEMY</a>
-          </li>
-        </ul>
+      <nav class="main-nav visually-hidden">
+        <div class="main-nav__container">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Форма Отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">HTML ACADEMY</a>
+            </li>
+          </ul>
+        </div>
       </nav>
+
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Open menu</span>
+      </button>
       <!--* /.main-nav -->
 
       <div class="secondary-intro">
         <div class="secondary-intro__wrapper">
-          <img src="img/sedona.svg" width="229" height="39" alt="Sedona welcome text">
+          <img src="img/sedona.svg" width="229" height="39" alt="Sedona название города">
         </div>
       </div>
       <!--* /.intro -->
@@ -46,7 +53,7 @@
 
     <main class="catalogue">
 
-      <div class="catalogue catalogue-header">
+      <div class="catalogue__wrapper catalogue-header">
         <div class="catalogue-header__wrapper">
           <h1 class="catalogue-header__title">Фото и видео</h1>
           <p class="catalogue-header__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
@@ -55,101 +62,119 @@
       <!--* /.catalogue-header -->
 
       <section class="lions">
+        <h2 class="visually-hidden">Красивае места города «Седона»</h2>
         <div class="lions__list">
           <blockquote class="lions__item">
-            <img src="img/photo-1-mobile.jpg" alt="Фотография «Неродные просторы»">
-            <div class="lions__photo-info">
-              <h3 class="lions__title">Неродные просторы</h3>
-              <cite class="lions__author-name">Автор фото: Борис</cite>
+            <div class="lions__image-wrapper">
+              <img src="img/photo-1-mobile.jpg" alt="Дорога с машиной на фоне пейзажа холмов">
             </div>
-            <div class="lions__likes-info">
-              <button class="lions__likes-btn">
-                <span class="visually-hidden">Like</span>
-              </button>
-              <span class="lions__likes-count">1350</span>
-            </div>
-          </blockquote>
-          <blockquote class="lions__item">
-            <img src="img/photo-2-mobile.jpg" alt="Фотография «Местная растительность»">
-            <div class="lions__photo-info">
-              <h3 class="lions__title">Местная растительность</h3>
-              <cite class="lions__author-name">Автор фото: Сергей</cite>
-            </div>
-            <div class="lions__likes-info">
-              <button class="lions__likes-btn">
-                <span class="visually-hidden">Like</span>
-              </button>
-              <span class="lions__likes-count">143</span>
+            <div class="lions__info-wrapper">
+              <div class="lions__photo-info">
+                <b class="lions__title">Неродные просторы</b>
+                <cite class="lions__author-name">Автор фото: Борис</cite>
+              </div>
+              <div class="lions__likes-info">
+                <button class="lions__likes-btn">
+                  <span class="visually-hidden">Like</span>
+                </button>
+                <span class="lions__likes-count">1350</span>
+              </div>
             </div>
           </blockquote>
           <blockquote class="lions__item">
-            <img src="img/photo-3-mobile.jpg" alt="Фотография «Дорога на север»">
-            <div class="lions__photo-info">
-              <h3 class="lions__title">Дорога на север</h3>
-              <cite class="lions__author-name">Автор фото: Петр</cite>
+            <div class="lions__image-wrapper">
+              <img src="img/photo-2-mobile.jpg" alt="Кактус на фоне скал">
             </div>
-            <div class="lions__likes-info">
-              <button class="lions__likes-btn">
-                <span class="visually-hidden">Like</span>
-              </button>
-              <span class="lions__likes-count">96</span>
+            <div class="lions__info-wrapper">
+              <div class="lions__photo-info">
+                <b class="lions__title">Местная растительность</b>
+                <cite class="lions__author-name">Автор фото: Сергей</cite>
+              </div>
+              <div class="lions__likes-info">
+                <button class="lions__likes-btn">
+                  <span class="visually-hidden">Like</span>
+                </button>
+                <span class="lions__likes-count">143</span>
+              </div>
             </div>
           </blockquote>
           <blockquote class="lions__item">
-            <img src="img/photo-4-mobile.jpg" alt="Фотография «Мост дьявола»">
-            <div class="lions__photo-info">
-              <h3 class="lions__title">Мост дьявола</h3>
-              <cite class="lions__author-name">Автор фото: Антон</cite>
+            <div class="lions__image-wrapper">
+              <img src="img/photo-3-mobile.jpg" alt="Дорога из серпантин среди леса">
             </div>
-            <div class="lions__likes-info">
-              <button class="lions__likes-btn">
-                <span class="visually-hidden">Like</span>
-              </button>
-              <span class="lions__likes-count">254</span>
+            <div class="lions__info-wrapper">
+              <div class="lions__photo-info">
+                <b class="lions__title">Дорога на север</b>
+                <cite class="lions__author-name">Автор фото: Петр</cite>
+              </div>
+              <div class="lions__likes-info">
+                <button class="lions__likes-btn">
+                  <span class="visually-hidden">Like</span>
+                </button>
+                <span class="lions__likes-count">96</span>
+              </div>
             </div>
           </blockquote>
-
-          <div class="benefits benefits--video">
-            <div class="benefits__wrapper">
-              <h2 class="benefits__title">Все еще сомневаетесь?</h2>
-              <p class="benefits__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-              <video src="#" width="228" height="177" poster="img/video-mobile.jpg"></video>
+          <blockquote class="lions__item">
+            <div class="lions__image-wrapper">
+              <img src="img/photo-4-mobile.jpg" alt="Каньон с деревьями на фоне монументов скал">
             </div>
-          </div>
+            <div class="lions__info-wrapper">
+              <div class="lions__photo-info">
+                <b class="lions__title">Мост дьявола</b>
+                <cite class="lions__author-name">Автор фото: Антон</cite>
+              </div>
+              <div class="lions__likes-info">
+                <button class="lions__likes-btn">
+                  <span class="visually-hidden">Like</span>
+                </button>
+                <span class="lions__likes-count">254</span>
+              </div>
+            </div>
+          </blockquote>
         </div>
-        <!--* /.benefits__list -->
-
       </section>
       <!--* /.photos -->
+
+      <div class="benefits benefits--video">
+        <div class="benefits__wrapper">
+          <h2 class="benefits__title">Все еще сомневаетесь?</h2>
+          <p class="benefits__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
+          <video src="#" width="280" height="177" poster="img/video-mobile.jpg"></video>
+      </div>
+      <!--* /.benefits -->
 
     </main>
 
     <footer class="footer">
-      <p class="footer__tags tags">
-        <a href="#" class="tags__link">#visitsedona</a>
-      </p>
-      <ul class="footer__social social">
-        <li class="social__item">
-          <a href="#" class="social__link social__link--vk">
-            <span class="visually-hidden">Vkontakte</span>
+      <div class="footer__wrapper">
+        <p class="footer__tags tags">
+          <a href="#" class="tags__link">#visitsedona</a>
+        </p>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--telegram">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--youtube">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="#">
+            <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
           </a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link social__link--telegram">
-            <span class="visually-hidden">Telegram</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link social__link--youtube">
-            <span class="visually-hidden">Youtube</span>
-          </a>
-        </li>
-      </ul>
-      <div class="footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="#">
-          <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
-        </a>
+        </div>
       </div>
     </footer>
     <!--* /.footer -->

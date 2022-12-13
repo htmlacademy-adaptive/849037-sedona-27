@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
-* Студент: [Maxim Pak](https://up.htmlacademy.ru/adaptive/27/user/849037).
-* Наставник: [Александр Зиновьев](https://htmlacademy.ru/profile/id198751).
+* Студент: [Максим](https://up.htmlacademy.ru/adaptive/27/user/849037).
+* Наставник: [Оксана Вайнруб](https://htmlacademy.ru/profile/id166797).
 
 ---
 

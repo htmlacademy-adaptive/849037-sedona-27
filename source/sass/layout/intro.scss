@@ -1,0 +1,12 @@
+@use "../global/variables.scss";
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: variables.$blue-01 url("../img/mainback-mobile-1.jpg") no-repeat center bottom / cover;
+}
+
+.intro__wrapper {
+  padding: 90px 18px;
+}

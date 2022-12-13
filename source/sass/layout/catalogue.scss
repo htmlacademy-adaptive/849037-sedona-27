@@ -1,0 +1,5 @@
+@use "../global/variables.scss";
+
+.catalogue__wrapper {
+  border-bottom: 1px solid variables.$grey-02;
+}

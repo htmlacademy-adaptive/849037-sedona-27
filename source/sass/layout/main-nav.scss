@@ -1,0 +1,13 @@
+@use "../global/mixins.scss";
+
+.main-nav__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.main-nav__list {
+  @include mixins.list-reset;
+  @include mixins.font;
+}

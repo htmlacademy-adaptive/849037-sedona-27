@@ -1,0 +1,23 @@
+@use "../global/variables.scss";
+
+.site-list__item {
+  width: 100%;
+  padding: 17px 0 12px;
+  background: variables.$blue-01;
+  border-top: 1px solid variables.$grey-05;
+  border-bottom: 1px solid variables.$blue-03;
+  text-align: center;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.site-list__link {
+  &--active {
+    user-select: none;
+  }
+  color: variables.$white;
+  font-weight: 700;
+  text-decoration: none;
+}

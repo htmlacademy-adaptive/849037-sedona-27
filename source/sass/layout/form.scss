@@ -35,46 +35,49 @@
 }
 
 .form__sub {
-  &--bold {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    text-transform: none;
-  }
   padding-left: 16px;
   display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+
+  &--bold {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: none;
+  }
 }
 
 .form__input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  border: none;
+  background: variables.$grey-01;
+
   &::placeholder {
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
     color: variables.$black-03;
   }
-  box-sizing: border-box;
-  width: 100%;
-  padding: 16px;
-  border: none;
-  background: variables.$grey-01;
 }
 
 .form__input-area {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  background: variables.$grey-01;
+  border: none;
+
   &::placeholder {
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
     color: variables.$black-03;
   }
-  box-sizing: border-box;
-  width: 100%;
-  padding: 16px;
-  background: variables.$grey-01;
-  border: none;
 }
 
 .form__legend {

@@ -1,5 +1,11 @@
 @use "../global/variables.scss";
 
+.site-list {
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+  }
+}
+
 .site-list__item {
   width: 100%;
   padding: 17px 0 12px;
@@ -11,13 +17,32 @@
   &:last-child {
     border-bottom: none;
   }
+
+  @media (min-width: variables.$tablet-width) {
+    background: none;
+    border: none;
+
+    &:nth-child(2) {
+      margin-right: 153px;
+    }
+  }
 }
 
 .site-list__link {
-  &--active {
-    user-select: none;
-  }
   color: variables.$white;
   font-weight: 700;
   text-decoration: none;
+
+  &--active {
+    user-select: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    color: variables.$black-02;
+
+    &--active {
+      color: variables.$color-active;
+      font-weight: 700;
+    }
+  }
 }

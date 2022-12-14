@@ -1,6 +1,13 @@
 @use "../global/variables.scss";
 @use "../global/mixins.scss";
 
+// .feature {
+//   @media (min-width: variables.$tablet-width) {
+//     display: grid;
+//     grid-template-columns: 256px 256px 256px;
+//   }
+// }
+
 .feature__list {
   @include mixins.list-reset;
   width: 100%;
@@ -39,6 +46,7 @@
   &--accent {
     padding: 0;
     border: none;
+    background: variables.$white;
   }
 
   &:last-child {

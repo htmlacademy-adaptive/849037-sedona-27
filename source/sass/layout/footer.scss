@@ -1,4 +1,5 @@
 @use "../global/mixins.scss";
+@use "../global/variables.scss";
 
 .footer {
   @include mixins.font;
@@ -9,12 +10,37 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
 .footer__tags {
+  margin: 0;
   margin-bottom: 34px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin: 0;
+  }
 }
+
+// .footer__social {
+//   margin-top: 34px;
+//   margin-bottom: 40px;
+
+//   @media (min-width: variables.$tablet-width) {
+//     margin: 0;
+//   }
+// }
 
 .footer__copyright {
   margin-top: 40px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin: 0;
+  }
 }

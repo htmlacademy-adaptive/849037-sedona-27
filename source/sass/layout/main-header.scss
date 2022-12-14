@@ -32,4 +32,8 @@
   z-index: 99;
   width: 23px;
   height: 23px;
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
 }

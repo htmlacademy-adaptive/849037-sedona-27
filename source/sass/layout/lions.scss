@@ -6,9 +6,15 @@
 }
 
 .lions__item {
-  width: 100%;
   margin: 0;
   border-bottom: 1px solid variables.$grey-02;
+}
+
+.lions__inner-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .lions__image-wrapper {
@@ -32,6 +38,7 @@
 
 .lions__info-wrapper {
   padding: 15px 20px 25px;
+  min-width: 280px;
 }
 
 .lions__likes-info {

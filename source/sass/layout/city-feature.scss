@@ -1,16 +1,18 @@
 @use "../global/variables.scss";
 
 .city-feature {
+  width: 320px;
   padding: 25px 0 46px;
   background: variables.$white;
 }
 
 .city-feature__item {
+  text-align: left;
+  padding: 27px 18px 0 65px;
+
   &:first-child {
     padding-top: 0;
   }
-  text-align: left;
-  padding: 27px 18px 0 65px;
 }
 
 .city-feature__title {

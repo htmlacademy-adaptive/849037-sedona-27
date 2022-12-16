@@ -1,9 +1,15 @@
 @use "../global/variables.scss";
 
 .city-feature {
-  width: 320px;
+  width: 100%;
   padding: 25px 0 46px;
   background: variables.$white;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
 }
 
 .city-feature__item {
@@ -12,6 +18,12 @@
 
   &:first-child {
     padding-top: 0;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0;
+    text-align: center;
+    width: 256px;
   }
 }
 

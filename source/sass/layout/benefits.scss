@@ -1,9 +1,18 @@
 @use "../global/mixins.scss";
+@use "../global/variables.scss";
 
 .benefits {
   @include mixins.font;
   text-align: center;
   padding: 0 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0 200px;
+  }
 }
 
 .benefits__wrapper {
@@ -29,4 +38,10 @@
   font-size: 14px;
   line-height: 20px;
   min-width: 250px;
+}
+
+.benefits__video {
+  width: 100%;
+  overflow: hidden;
+  background: variables.$grey-01;
 }

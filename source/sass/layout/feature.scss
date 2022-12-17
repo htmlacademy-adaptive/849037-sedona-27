@@ -19,7 +19,7 @@
   border-bottom: 1px solid variables.$grey-04;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 24px 0;
+    border-bottom: none;
   }
 
   &--accent {
@@ -43,12 +43,7 @@
   color: variables.$white;
 
   &--accent-first {
-    // width: 100%;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
     padding: 54px 18px 40px;
-    // background: variables.$blue-01;
 
     @media (min-width: variables.$tablet-width) {
       padding: 27px 0;
@@ -56,12 +51,7 @@
   }
 
   &--accent-second {
-    // width: 100%;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
     padding: 37px 18px;
-    // background: variables.$blue-01;
 
     @media (min-width: variables.$tablet-width) {
       order: 2;
@@ -93,10 +83,6 @@
   text-transform: uppercase;
   margin: 0;
   margin-top: 17px;
-
-  // &--accent-width {
-  //   min-width: 270px;
-  // }
 }
 
 .feature__img-wrapper {

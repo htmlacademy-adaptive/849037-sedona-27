@@ -1,22 +1,50 @@
 @use "../global/mixins.scss";
 @use "../global/variables.scss";
 
-.form__wrapper {
+.form {
   @include mixins.font;
-  margin: 0;
-  padding: 24px 20px 39px;
-  border: none;
-  border-top: 1px solid variables.$grey-02;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0 60px;
+  }
 }
 
-.form__text-right {
-  text-align: right;
+.form__wrapper {
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    margin-bottom: 40px;
+  }
 }
 
 .form__user-info {
   margin: 0;
-  padding: 0;
-  border: 0;
+  padding: 24px 20px 39px;
+  border: none;
+  // border-top: 1px solid variables.$grey-02;
+  flex-grow: 1;
+
+  @media (min-width: variables.$tablet-width) {
+    border: none;
+    padding: 0;
+
+    &:first-child {
+      margin-right: 30px;
+    }
+  }
+}
+
+.form__user-comments {
+  margin: 0;
+  padding: 24px 20px 39px;
+  border: none;
+}
+
+.form__comments-wrapper {
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .form__title {
@@ -35,46 +63,49 @@
 }
 
 .form__sub {
-  &--bold {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    text-transform: none;
-  }
   padding-left: 16px;
   display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+
+  &--bold {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: none;
+  }
 }
 
 .form__input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  border: none;
+  background: variables.$grey-01;
+
   &::placeholder {
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
     color: variables.$black-03;
   }
-  box-sizing: border-box;
-  width: 100%;
-  padding: 16px;
-  border: none;
-  background: variables.$grey-01;
 }
 
 .form__input-area {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  background: variables.$grey-01;
+  border: none;
+
   &::placeholder {
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
     color: variables.$black-03;
   }
-  box-sizing: border-box;
-  width: 100%;
-  padding: 16px;
-  background: variables.$grey-01;
-  border: none;
 }
 
 .form__legend {
@@ -83,4 +114,17 @@
   line-height: 21px;
   color: variables.$black-04;
   text-transform: uppercase;
+}
+
+.form__btn-wrapper {
+  flex-grow: 1;
+  text-align: right;
+  padding: 24px 20px 39px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 40px 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }

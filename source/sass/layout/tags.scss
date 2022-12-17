@@ -1,10 +1,6 @@
 @use "../global/mixins.scss";
 @use "../global/variables.scss";
 
-.tags {
-  margin-top: 0;
-}
-
 .tags__link {
   @include mixins.font;
   font-weight: 700;

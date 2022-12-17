@@ -59,103 +59,93 @@
         <!--* /.form-page -->
 
         <form class="form-page__form form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <div class="form__wrapper">
-            <fieldset class="form__user-info">
-              <legend class="form__title">Представьтесь:</legend>
-              <div class="form__inner-wrapper">
-                <label class="form__sub" for="name">Имя*:</label>
-                <input class="form__input" id="name" name="name" type="text" placeholder="Пётр">
-              </div>
-              <div class="form__inner-wrapper">
-                <label class="form__sub" for="first-name">Фамилия*:</label>
-                <input class="form__input" id="first-name" name="first-name" type="text" placeholder="Пустота">
-              </div>
-              <div class="form__inner-wrapper">
-                <label class="form__sub" for="patronym">Отчество:</label>
-                <input class="form__input" id="patronym" name="patronym" type="text" placeholder="Викторович">
-              </div>
-            </fieldset>
-          </div>
 
-          <div class="form__wrapper">
-            <fieldset class="form__user-info">
-              <legend class="form__title">Контактная информация:</legend>
-              <div class="form__inner-wrapper">
-                <label class="form__sub" for="tel">Контактный телефон*:</label>
-                <input class="form__input" id="tel" name="tel" type="text" placeholder="Введите телефон">
-              </div>
-              <div class="form__inner-wrapper">
-                <label class="form__sub" for="mail">Электронная почта*:</label>
-                <input class="form__input" id="mail" name="mail" type="text" placeholder="Введите e-mail">
-              </div>
-            </fieldset>
-          </div>
+            <div class="form__wrapper">
+              <fieldset class="form__user-info">
+                <legend class="form__title">Представьтесь:</legend>
+                <div class="form__inner-wrapper">
+                  <label class="form__sub" for="name">Имя*:</label>
+                  <input class="form__input" id="name" name="name" type="text" placeholder="Пётр">
+                </div>
+                <div class="form__inner-wrapper">
+                  <label class="form__sub" for="first-name">Фамилия*:</label>
+                  <input class="form__input" id="first-name" name="first-name" type="text" placeholder="Пустота">
+                </div>
+                <div class="form__inner-wrapper">
+                  <label class="form__sub" for="patronym">Отчество:</label>
+                  <input class="form__input" id="patronym" name="patronym" type="text" placeholder="Викторович">
+                </div>
+              </fieldset>
 
-          <div class="form__wrapper">
-            <fieldset class="form__user-info">
+              <fieldset class="form__user-info">
+                <legend class="form__title">Контактная информация:</legend>
+                <div class="form__inner-wrapper">
+                  <label class="form__sub" for="tel">Контактный телефон*:</label>
+                  <input class="form__input" id="tel" name="tel" type="text" placeholder="Введите телефон">
+                </div>
+                <div class="form__inner-wrapper">
+                  <label class="form__sub" for="mail">Электронная почта*:</label>
+                  <input class="form__input" id="mail" name="mail" type="text" placeholder="Введите e-mail">
+                </div>
+              </fieldset>
+            </div>
+
+            <fieldset class="form__user-comments">
               <legend class="form__title">Ваше общее впечатление:</legend>
-              <div class="form__inner-wrapper">
+              <div class="form__comments-wrapper">
                 <label class="form__sub form__sub--bold">
                   <input class="form__input-radio" type="radio" name="impress" value="good" checked>
                   Скорее положительное
                 </label>
-              </div>
-              <div class="form__inner-wrapper">
                 <label class="form__sub form__sub--bold">
                   <input class="form__input-radio" type="radio" name="impress" value="bad">
                   Скорее отрицательное
                 </label>
-              </div>
-              <div class="form__inner-wrapper">
                 <label class="form__sub form__sub--bold">
                   <input class="form__input-radio" type="radio" name="impress" value="noAnswer">
                   Затрудняюсь ответить
                 </label>
               </div>
             </fieldset>
-          </div>
 
-          <div class="form__wrapper">
-            <fieldset class="form__user-info">
+
+
+            <fieldset class="form__user-comments">
               <legend class="form__title">Посещенные достопримечательности:</legend>
-              <div class="form__inner-wrapper">
+              <div class="form__comments-wrapper">
                 <label class="form__sub form__sub--bold">
                   <input class="form__input-checkbox" type="checkbox" name="attraction" value="Мост Дьявола" checked>
                   Мост Дьявола
                 </label>
-              </div>
-              <div class="form__inner-wrapper">
                 <label class="form__sub form__sub--bold">
                   <input class="form__input-checkbox" type="checkbox" name="attraction" value="Гора-Колокол" checked>
                   Гора-Колокол
                 </label>
-              </div>
-              <div class="form__inner-wrapper">
                 <label class="form__sub form__sub--bold">
                   <input class="form__input-checkbox" type="checkbox" name="attraction" value="Слайд-парк" checked>
                   Слайд-парк
                 </label>
-              </div>
-              <div class="form__inner-wrapper">
                 <label class="form__sub form__sub--bold">
                   <input class="form__input-checkbox" type="checkbox" name="attraction" value="Красные скалы">
                   Красные скалы
                 </label>
               </div>
             </fieldset>
-          </div>
 
-          <div class="form__wrapper form__text-right">
-            <fieldset class="form__user-info">
+
+
+            <fieldset class="form__user-comments">
               <legend class="form__title">Опишите свои эмоции:</legend>
-              <div class="form__inner-wrapper">
+              <div class="form__comments-wrapper">
                 <textarea class="form__input-area" name="user-review" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
               </div>
             </fieldset>
-            <button class="button button--actions">Отправить отзыв</button>
-            <small class="form__legend form__legend--bottom">* — обязательные поля</small>
-          </div>
 
+
+          <div class="form__btn-wrapper">
+            <button class="button button--actions">Отправить отзыв</button>
+            <small class="form__legend form__legend--bottom-right">* — обязательные поля</small>
+          </div>
 
         </form>
         <!--* /.form -->

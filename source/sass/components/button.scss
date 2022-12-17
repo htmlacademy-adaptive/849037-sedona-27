@@ -15,7 +15,10 @@
   border: none;
 
   &--actions {
-    margin-top: 32px;
+    // margin-top: 32px;
+    @media (min-width: variables.$tablet-width) {
+      width: 324px;
+    }
   }
 
   &--error {

@@ -1,8 +1,22 @@
 @use "../global/mixins.scss";
+@use "../global/variables.scss";
+
+.form-page {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    min-width: 648px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    max-width: 960px;
+  }
+}
 
 .form-page__header {
   @include mixins.font;
-  padding: 36px 18px 28px;
+  padding: 36px 0 28px;
   text-align: center;
 }
 

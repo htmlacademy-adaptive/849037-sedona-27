@@ -32,11 +32,11 @@
 
 .main-header__toggle {
   position: fixed;
-  top: 17px;
-  right: 20px;
+  top: 0;
+  right: 0;
   z-index: 99;
-  width: 23px;
-  height: 23px;
+  width: 56px;
+  height: 56px;
 
   @media (min-width: variables.$tablet-width) {
     display: none;

@@ -1,10 +1,16 @@
 @use "global/variables.scss";
 
 .page__body {
-  margin: 0;
+  min-width: 320px;
+  margin: 0 auto;
 
   @media (min-width: variables.$tablet-width) {
     max-width: 1200px;
-    margin: 0 auto;
+    // margin: 0 auto;
+    padding: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0 40px;
   }
 }

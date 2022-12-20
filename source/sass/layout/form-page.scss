@@ -4,13 +4,14 @@
 .form-page {
   margin: 0 auto;
   padding: 0 20px;
+  background: variables.$white;
 
   @media (min-width: variables.$tablet-width) {
     min-width: 648px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    max-width: 960px;
+    padding: 0 120px;
   }
 }
 

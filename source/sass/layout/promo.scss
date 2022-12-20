@@ -1,15 +1,17 @@
 @use "../global/mixins.scss";
+@use "../global/variables.scss";
 
 .promo {
-  padding: 32px 18px 32px;
-}
-
-.promo__wrapper {
   @include mixins.font;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 32px 18px 32px;
+  background: variables.$white;
   text-align: center;
+}
+
+.promo__wrapper {
   min-width: 220px;
   width: 100%;
 }

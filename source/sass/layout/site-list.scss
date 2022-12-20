@@ -1,6 +1,8 @@
 @use "../global/variables.scss";
 
 .site-list {
+  background: variables.$white;
+
   @media (min-width: variables.$tablet-width) {
     display: flex;
     max-width: 1200px;

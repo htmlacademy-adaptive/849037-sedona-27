@@ -1,6 +1,6 @@
 @use "../global/variables.scss";
 
-.intro {
+.second-intro {
   position: relative;
   background: variables.$white;
 
@@ -8,7 +8,7 @@
     &::before {
       content: "";
       position: absolute;
-      bottom: 28px;
+      bottom: 20px;
       left: 50%;
       transform: translate(-100%, 50%);
       width: 0;
@@ -16,14 +16,14 @@
       border: 0 solid transparent;
       border-left-width: 0;
       border-right-width: 345px;
-      border-bottom: 57px solid variables.$white;
-      z-index: 99;
+      border-bottom: 40px solid variables.$white;
+      z-index: 3;
     }
 
     &::after {
       content: "";
       position: absolute;
-      bottom: 28px;
+      bottom: 20px;
       right: 50%;
       transform: translate(100%, 50%);
       width: 0;
@@ -31,16 +31,16 @@
       border: 0 solid transparent;
       border-right-width: 0;
       border-left-width: 345px;
-      border-bottom: 57px solid variables.$white;
+      border-bottom: 40px solid variables.$white;
     }
   }
 }
 
-.intro__wrapper {
+.second-intro__wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: variables.$blue-01 url("../img/mainback-mobile-1.jpg") no-repeat center bottom / cover;
+  background: variables.$blue-01 url("../img/mainback-mobile-2.jpg") no-repeat center bottom / cover;
   clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
 
   @media (min-width: variables.$tablet-width) {
@@ -48,10 +48,10 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
   }
 }
 
-.intro__wrapper-image {
-    padding: 90px 18px;
+.second-intro__wrapper-image {
+  padding: 52px 18px 67px;
 }

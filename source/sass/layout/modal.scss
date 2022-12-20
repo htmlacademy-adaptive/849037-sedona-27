@@ -2,6 +2,8 @@
 @use "../global/variables.scss";
 
 .modal {
+  background: variables.$white;
+
   &--error {
     padding: 45px 42px 35px;
   }

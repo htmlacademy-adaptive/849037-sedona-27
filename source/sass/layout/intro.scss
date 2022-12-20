@@ -17,7 +17,7 @@
       border-left-width: 0;
       border-right-width: 345px;
       border-bottom: 57px solid variables.$white;
-      z-index: 99;
+      z-index: 2;
     }
 
     &::after {
@@ -53,5 +53,5 @@
 }
 
 .intro__wrapper-image {
-    padding: 90px 18px;
+  padding: 90px 18px;
 }

@@ -10,19 +10,20 @@
 }
 
 .main-header__logo-link {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 50%;
   transform: translateX(50%);
   z-index: 4;
 
   @media (min-width: variables.$tablet-width) {
+    position: fixed;
     z-index: 6;
   }
 }
 
 .main-header__toggle {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   z-index: 99;
@@ -30,6 +31,7 @@
   height: 56px;
 
   @media (min-width: variables.$tablet-width) {
+    position: fixed;
     display: none;
   }
 }

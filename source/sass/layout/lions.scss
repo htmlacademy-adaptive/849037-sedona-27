@@ -41,6 +41,10 @@
   @media (min-width: variables.$tablet-width) {
     padding: 0;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    position: relative;
+  }
 }
 
 .lions__image-wrapper {
@@ -77,12 +81,26 @@
     background: variables.$grey-01;
     padding: 22px 20px 15px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    box-sizing: border-box;
+    color: variables.$white;
+    background: variables.$black-03;
+  }
 }
 
 .lions__likes-info {
   margin-top: 11px;
   display: flex;
   align-items: flex-end;
+
+  @media (min-width: variables.$desktop-width) {
+    align-items: center;
+  }
 }
 
 .lions__likes-btn {

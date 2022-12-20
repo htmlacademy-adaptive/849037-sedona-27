@@ -2,12 +2,16 @@
 @use "../global/variables.scss";
 
 .main-nav__container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   min-height: 56px;
   z-index: 5;
+
+  @media (min-width: variables.$tablet-width) {
+    position: fixed;
+  }
 }
 
 .main-nav__list {

@@ -2,22 +2,51 @@
 @use "../global/variables.scss";
 
 .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: variables.$black-03;
+  z-index: 1000;
+
+  @include mixins.font;
+  text-align: center;
+}
+
+.modal__wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
   background: variables.$white;
 
   &--error {
     padding: 45px 42px 35px;
   }
+
+  @media (min-width: variables.$tablet-width) {
+    box-sizing: border-box;
+
+    &--error {
+      max-width: 400px;
+      padding: 50px 64px;
+    }
+
+    &--success {
+      max-width: 640px;
+      padding: 0;
+      // padding: 50px 99px;
+    }
+  }
 }
 
-.modal__wrapper {
-  @include mixins.font;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.modal__text-wrapper {
+  padding: 20px;
 
-  &--success {
-    padding: 39px 37px;
+  @media (min-width: variables.$tablet-width) {
+    padding: 50px 110px;
   }
 }
 
@@ -39,6 +68,12 @@
 }
 
 .modal__button-wrapper {
+  max-width: 100%;
   padding: 20px;
   background: variables.$grey-01;
+
+  @media (min-width: variables.$tablet-width) {
+    max-width: 640px;
+    box-sizing: border-box;
+  }
 }

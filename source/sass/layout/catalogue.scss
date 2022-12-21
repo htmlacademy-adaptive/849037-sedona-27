@@ -6,4 +6,8 @@
 
 .catalogue__wrapper {
   border-bottom: 1px solid variables.$grey-02;
+
+  @media (min-width: variables.$tablet-width) {
+    border: none;
+  }
 }

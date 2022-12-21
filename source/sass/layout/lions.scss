@@ -23,6 +23,11 @@
   @media (min-width: variables.$tablet-width) {
     width: 50%;
     border: none;
+    background: variables.$grey-01;
+
+    &:nth-child(n+3):nth-child(odd) {
+      background: variables.$grey-04;
+    }
 
     &:first-child {
       width: 100%;
@@ -78,7 +83,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: variables.$grey-01;
+    // background: variables.$grey-01;
     padding: 22px 20px 15px;
   }
 

@@ -2,12 +2,14 @@
 @use "../global/variables.scss";
 
 .form-page {
+  @include mixins.font;
+
   margin: 0 auto;
   background: variables.$white;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 0;
-    min-width: 648px;
+    // padding: 0;
+    // min-width: 648px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -16,7 +18,6 @@
 }
 
 .form-page__header {
-  @include mixins.font;
   padding: 36px 20px 28px;
   text-align: center;
   border-bottom: 2px solid variables.$grey-03;

@@ -16,8 +16,8 @@
 }
 
 .city-feature__item {
-  text-align: left;
   padding: 27px 18px 0 65px;
+  text-align: left;
 
   @media (min-width: variables.$tablet-width) {
     margin: 0;
@@ -28,11 +28,31 @@
 }
 
 .city-feature__title {
+  position: relative;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   margin: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: variables.$grey-04;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    &::before {
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
 
 .city-feature__desc {

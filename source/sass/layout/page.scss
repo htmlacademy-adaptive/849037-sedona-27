@@ -1,10 +1,12 @@
-@use "global/variables.scss";
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .page__body {
   min-width: 320px;
   margin: 0 auto;
-
   background: variables.$grey-01;
+
+  @include mixins.font;
 
   @media (min-width: variables.$tablet-width) {
     max-width: 1200px;

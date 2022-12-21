@@ -1,4 +1,9 @@
+@use "../global/mixins.scss";
+
 .main-map {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+}
+
+.main-map__img-bg {
+  @include mixins.img;
 }

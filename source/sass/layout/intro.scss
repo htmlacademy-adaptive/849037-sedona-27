@@ -37,9 +37,7 @@
 }
 
 .intro__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   background: variables.$blue-01 url("../img/mainback-mobile-1.jpg") no-repeat center bottom / cover;
   clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
 

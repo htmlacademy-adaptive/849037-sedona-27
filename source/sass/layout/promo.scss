@@ -3,33 +3,30 @@
 
 .promo {
   @include mixins.font;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   padding: 32px 18px 32px;
   background: variables.$white;
-  text-align: center;
 }
 
-.promo__wrapper {
-  min-width: 220px;
-  width: 100%;
-}
+// .promo__wrapper {
+//   min-width: 220px;
+//   width: 100%;
+// }
 
 .promo__title {
+  margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  margin: 0;
 }
 
 .promo__subtitle {
+  margin: 0;
+  margin-top: 35px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  margin: 0;
-  margin-top: 35px;
 }

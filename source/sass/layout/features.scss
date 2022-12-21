@@ -1,8 +1,160 @@
 @use "../global/mixins.scss";
 @use "../global/variables.scss";
 
-.features__list {
+.features {
   @include mixins.list-reset;
   @include mixins.font;
   text-align: center;
+}
+
+.features__list {
+  @include mixins.list-reset;
+
+  @media (min-width: variables.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(256px, auto);
+  }
+}
+
+.features__item-list {
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 1 / 4;
+  }
+}
+
+.features__item {
+  padding: 24px 18px;
+  background: variables.$grey-03;
+  border-bottom: 1px solid variables.$grey-04;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: none;
+  }
+
+  &--accent {
+    padding: 0;
+    border: none;
+    background: variables.$blue-01;
+
+    @media (min-width: variables.$tablet-width) {
+      grid-column: 1 / 4;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &:last-child {
+    padding-bottom: 28px;
+  }
+}
+
+.features__item-wrapper {
+  padding: 54px 18px 40px;
+  color: variables.$white;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0 30px;
+  }
+
+  &--accent-first {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: 0;
+      background: variables.$white;
+      width: 100%;
+      height: 25px;
+      clip-path: polygon(50% 100%, -10px 8%, 105% 8%);
+    }
+
+    @media (min-width: variables.$tablet-width) {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &--accent-second {
+    @media (min-width: variables.$tablet-width) {
+      order: 2;
+    }
+  }
+}
+
+.features__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.features__subject {
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 11px;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 8px;
+    height: 1px;
+    background: variables.$black-02;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-55%);
+  }
+
+  &::before {
+    left: -15px;
+  }
+
+  &::after {
+    right: -15px;
+  }
+
+  &--white {
+    &::before,
+    &::after {
+      background: variables.$white;
+    }
+  }
+}
+
+.features__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 17px;
+}
+
+.features__img-wrapper {
+  width: 100%;
+  background: variables.$grey-04;
+
+  @media (min-width: variables.$tablet-width) {
+    &--right-img {
+      grid-column: 2 / 4;
+    }
+
+    &--left-img {
+      grid-column: 3 / 1;
+    }
+  }
+}
+
+.features__img {
+  @include mixins.img;
 }

@@ -1,9 +1,59 @@
 @use "../global/variables.scss";
 @use "../global/mixins.scss";
 
-.main-header__wrapper {
+.main-header {
+  &--nojs .main-header__logo-wrapper {
+    height: 0;
+  }
+
+  &--nojs .main-header__nav {
+    position: relative;
+
+    &--closed {
+      display: block;
+    }
+  }
+
+  &--nojs .main-header__toggle {
+    display: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    &--nojs .main-header__nav {
+      position: fixed;
+    }
+  }
+}
+
+.main-header__logo-wrapper {
   height: 56px;
   background: variables.$white;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 0;
+  }
+}
+
+.main-header__nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 56px;
+  z-index: 5;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    position: fixed;
+    display: block;
+  }
 }
 
 .main-header__logo-link {
@@ -30,6 +80,8 @@
   z-index: 99;
   width: 56px;
   height: 56px;
+  // border: none;
+  background: variables.$blue-01;
 
   @media (min-width: variables.$tablet-width) {
     position: fixed;

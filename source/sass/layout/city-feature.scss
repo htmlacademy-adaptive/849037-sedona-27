@@ -1,8 +1,11 @@
 @use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .city-feature {
+  @include mixins.list-reset;
+
   width: 100%;
-  padding: 25px 0 46px;
+  padding: 0 0 27px;
   background: variables.$white;
 
   @media (min-width: variables.$tablet-width) {
@@ -13,34 +16,52 @@
 }
 
 .city-feature__item {
-  text-align: left;
   padding: 27px 18px 0 65px;
-
-  &:first-child {
-    padding-top: 0;
-  }
+  text-align: left;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 0;
+    margin: 0;
+    padding: 80px 10px 10px;
     text-align: center;
     width: 256px;
   }
 }
 
 .city-feature__title {
+  position: relative;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   margin: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: variables.$grey-04;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    &::before {
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
 
 .city-feature__desc {
   display: block;
+  margin: 0;
+  margin-top: 16px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  margin: 0;
-  margin-top: 16px;
+  color: variables.$black-02;
 }

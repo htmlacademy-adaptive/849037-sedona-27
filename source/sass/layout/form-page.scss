@@ -1,9 +1,30 @@
 @use "../global/mixins.scss";
+@use "../global/variables.scss";
+
+.form-page {
+  @include mixins.font;
+
+  margin: 0 auto;
+  background: variables.$white;
+
+  @media (min-width: variables.$tablet-width) {
+    // padding: 0;
+    // min-width: 648px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0 120px;
+  }
+}
 
 .form-page__header {
-  @include mixins.font;
-  padding: 36px 18px 28px;
+  padding: 36px 20px 28px;
   text-align: center;
+  border-bottom: 2px solid variables.$grey-03;
+
+  @media (min-width: variables.$tablet-width) {
+    border: none;
+  }
 }
 
 .form-page__title {
@@ -21,4 +42,5 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  color: variables.$black-02;
 }

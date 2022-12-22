@@ -1,39 +1,90 @@
 @use "../global/variables.scss";
+@use "../global/mixins.scss";
 
-.main-header__container {
-  position: relative;
+.main-header {
+  &--nojs .main-header__logo-wrapper {
+    height: 0;
+  }
+
+  &--nojs .main-header__nav {
+    position: relative;
+
+    &--closed {
+      display: block;
+    }
+  }
+
+  &--nojs .main-header__toggle {
+    display: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    &--nojs .main-header__nav {
+      position: fixed;
+    }
+  }
 }
 
-.main-header__wrapper {
+.main-header__logo-wrapper {
   height: 56px;
   background: variables.$white;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 0;
+  }
 }
 
-.main-header__inner-wrapper {
-  position: fixed;
+.main-header__nav {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  background: variables.$white;
+  min-height: 56px;
+  z-index: 5;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    position: fixed;
+    display: block;
+  }
 }
 
 .main-header__logo-link {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 50%;
   transform: translateX(50%);
+  z-index: 4;
+
+  @media (min-width: variables.$tablet-width) {
+    position: fixed;
+    z-index: 6;
+  }
+}
+
+.main-header__logo-image {
+  @include mixins.img;
 }
 
 .main-header__toggle {
-  position: fixed;
-  top: 17px;
-  right: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
   z-index: 99;
-  width: 23px;
-  height: 23px;
+  width: 56px;
+  height: 56px;
+  // border: none;
+  background: variables.$blue-01;
 
   @media (min-width: variables.$tablet-width) {
+    position: fixed;
     display: none;
   }
 }

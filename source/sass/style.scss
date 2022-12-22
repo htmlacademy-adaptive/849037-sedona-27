@@ -9,7 +9,6 @@
 
 // Блоки «Header»
 @use "layout/page.scss";
-@use "layout/main-nav.scss";
 @use "layout/main-header.scss";
 @use "layout/site-list";
 @use "layout/intro.scss";
@@ -17,13 +16,12 @@
 // Блоки Index
 @use "layout/promo.scss";
 @use "layout/features.scss";
-@use "layout/feature.scss";
 @use "layout/city-feature.scss";
 @use "layout/service.scss";
 @use "layout/main-map.scss";
 
 // Блоки Catalog
-@use "layout/secondary-intro.scss";
+@use "layout/second-intro.scss";
 @use "layout/catalogue.scss";
 @use "layout/catalogut-header.scss";
 @use "layout/lions.scss";

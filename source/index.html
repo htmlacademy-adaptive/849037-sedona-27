@@ -6,34 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- <script src="./js/app.js" defer></script> -->
+    <script src="./js/app.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="main-header">
-      <div class="main-header__wrapper">
-        <div class="main-header__inner-wrapper">
-          <a class="main-header__logo-link" href="index.html">
-            <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона">
-          </a>
-        </div>
+    <header class="main-header main-header--nojs">
+      <div class="main-header__logo-wrapper">
+        <a class="main-header__logo-link" href="index.html">
+          <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона">
+        </a>
       </div>
-      <nav class="main-nav">
-        <div class="main-nav__container">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--active">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Фото и видео</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Форма Отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">HTML ACADEMY</a>
-            </li>
-          </ul>
-        </div>
+      <nav class="main-header__nav main-header__nav--closed">
+        <ul class="main-header__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Форма Отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">HTML ACADEMY</a>
+          </li>
+        </ul>
       </nav>
 
       <button class="main-header__toggle" type="button">
@@ -43,7 +39,9 @@
 
       <div class="intro">
         <div class="intro__wrapper">
-          <img src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в город Седона, помтому что Гранд Каньон отстой">
+          <div class="intro__wrapper-image">
+            <img class="intro__image" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в город Седона, помтому что Гранд Каньон отстой">
+          </div>
         </div>
       </div>
       <!--* /.intro -->
@@ -67,18 +65,18 @@
 
       <section class="features">
           <h2 class="visually-hidden">Преимущества города Седона</h2>
-          <ol class="features__list feature">
-            <li class="feature__item feature__item--accent">
-              <div class="feature__item-wrapper feature__item-wrapper--accent-first">
-                <h3 class="feature__title">Настоящий городок</h3>
-                <span class="feature__subject">№1</span>
-                <p class="feature__text feature__text--accent-width">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <ol class="features__list">
+            <li class="features__item features__item--accent">
+              <div class="features__item-wrapper features__item-wrapper--accent-first">
+                <h3 class="features__title">Настоящий городок</h3>
+                <span class="features__subject features__subject--white">№1</span>
+                <p class="features__text features__text--white">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <div class="feature__img-wrapper feature__img-wrapper--right-img">
-                <img class="feature__img" src="img/photo-city@1x.png" width="320" height="260" alt="Американский флаг на фоне здания в городе Седона">
+              <div class="features__img-wrapper features__img-wrapper--right-img">
+                <img class="features__img" src="img/photo-city@1x.png" width="320" height="260" alt="Американский флаг на фоне здания в городе Седона">
               </div>
 
-              <ul class="feature__list city-feature">
+              <ul class="features__item-list city-feature">
                 <li class="city-feature__item">
                   <h4 class="city-feature__title">Жилье</h4>
                   <p class="city-feature__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -94,30 +92,30 @@
               </ul>
             </li>
 
-            <li class="feature__item feature__item--accent">
-              <div class="feature__item-wrapper feature__item-wrapper--accent-second">
-                <h3 class="feature__title">Там есть мост дьявола</h3>
-                <span class="feature__subject">№2</span>
-                <p class="feature__text feature__text--accent-width">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <li class="features__item features__item--accent">
+              <div class="features__item-wrapper features__item-wrapper--accent-second">
+                <h3 class="features__title">Там есть мост дьявола</h3>
+                <span class="features__subject features__subject--white">№2</span>
+                <p class="features__text features__text--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <div class="feature__img-wrapper feature__img-wrapper--left-img">
-                <img class="feature__img" src="img/photo-bridge@1x.png" width="320" height="260" alt="Глубокое ущелье на фоне гор">
+              <div class="features__img-wrapper features__img-wrapper--left-img">
+                <img class="features__img" src="img/photo-bridge@1x.png" width="320" height="260" alt="Глубокое ущелье на фоне гор">
               </div>
             </li>
-            <li class="feature__item">
-              <h3 class="feature__title">Небольшая площадь</h3>
-              <span class="feature__subject">№3</span>
-              <p class="feature__text">Все интересные места находятся очень близко</p>
+            <li class="features__item">
+              <h3 class="features__title">Небольшая площадь</h3>
+              <span class="features__subject">№3</span>
+              <p class="features__text">Все интересные места находятся очень близко</p>
             </li>
-            <li class="feature__item">
-              <h3 class="feature__title">Красивая дорога</h3>
-              <span class="feature__subject">№4</span>
-              <p class="feature__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <li class="features__item">
+              <h3 class="features__title">Красивая дорога</h3>
+              <span class="features__subject">№4</span>
+              <p class="features__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-            <li class="feature__item">
-              <h3 class="feature__title">Мало туристов</h3>
-              <span class="feature__subject">№5</span>
-              <p class="feature__text">Большинство едет в Гранд Каньон и толпится там</p>
+            <li class="features__item">
+              <h3 class="features__title">Мало туристов</h3>
+              <span class="features__subject">№5</span>
+              <p class="features__text">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
           </ol>
       </section>
@@ -128,7 +126,7 @@
 
         <h3 class="service__title">Заинтересовались?</h3>
         <p class="service__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="button button--actions">Найти гостиницу</button>
+        <a class="button button--link" href="#">Найти гостиницу</a>
       </section>
       <!--* /.service -->
 
@@ -140,7 +138,6 @@
       <!--* /.main-map -->
 
     </main>
-    <!--* /.main-container -->
 
     <footer class="footer">
       <div class="footer__wrapper">

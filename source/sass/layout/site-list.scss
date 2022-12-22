@@ -1,18 +1,25 @@
 @use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .site-list {
+  @include mixins.font;
+  @include mixins.list-reset;
+  min-height: 56px;
+  background: variables.$white;
+
   @media (min-width: variables.$tablet-width) {
     display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
 .site-list__item {
   width: 100%;
-  padding: 17px 0 12px;
+  text-align: center;
   background: variables.$blue-01;
   border-top: 1px solid variables.$grey-05;
   border-bottom: 1px solid variables.$blue-03;
-  text-align: center;
 
   &:last-child {
     border-bottom: none;
@@ -29,9 +36,11 @@
 }
 
 .site-list__link {
-  color: variables.$white;
+  display: block;
+  padding: 18px 0;
   font-weight: 700;
   text-decoration: none;
+  color: variables.$white;
 
   &--active {
     user-select: none;

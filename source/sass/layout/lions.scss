@@ -22,7 +22,12 @@
 
   @media (min-width: variables.$tablet-width) {
     width: 50%;
+    background: variables.$grey-01;
     border: none;
+
+    &:nth-child(n+3):nth-child(odd) {
+      background: variables.$grey-03;
+    }
 
     &:first-child {
       width: 100%;
@@ -31,7 +36,6 @@
 
   @media (min-width: variables.$desktop-width) {
     width: 400px;
-    flex-grow: 1;
   }
 }
 
@@ -41,16 +45,42 @@
   @media (min-width: variables.$tablet-width) {
     padding: 0;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    position: relative;
+  }
 }
 
 .lions__image-wrapper {
   width: 100%;
-  // background: variables.$grey-01;
-  background-color: #ff0a0a;
+  display: flex;
+  justify-content: center;
+  background: variables.$grey-05;
 }
 
 .lions__image {
   @include mixins.img;
+}
+
+.lions__info-wrapper {
+  padding: 15px 0 25px;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 20px 15px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+    box-sizing: border-box;
+    color: variables.$white;
+    background: variables.$black-03;
+  }
 }
 
 .lions__title {
@@ -66,18 +96,7 @@
   font-size: 14px;
   line-height: 21px;
   font-style: normal;
-}
-
-.lions__info-wrapper {
-  padding: 15px 0 25px;
-
-  @media (min-width: variables.$tablet-width) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: variables.$grey-01;
-    padding: 22px 20px 15px;
-  }
+  color: variables.$black-02;
 }
 
 .lions__likes-info {

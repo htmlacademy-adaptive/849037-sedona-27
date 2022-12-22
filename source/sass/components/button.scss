@@ -2,20 +2,30 @@
 @use "../global/variables.scss";
 
 .button {
+  width: 100%;
+  padding: 16px 0;
+
   @include mixins.font;
   color: variables.$white;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-  display: block;
-  width: 100%;
-  padding: 16px 0;
   background: variables.$blue-01;
   border: none;
+  cursor: pointer;
+
+  @media (min-width: variables.$tablet-width) {
+    max-width: 458px;
+  }
+
+  &--link {
+    margin-top: 20px;
+    display: block;
+    text-decoration: none;
+  }
 
   &--actions {
-    // margin-top: 32px;
     @media (min-width: variables.$tablet-width) {
       width: 324px;
     }

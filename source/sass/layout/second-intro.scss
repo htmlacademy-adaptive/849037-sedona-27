@@ -1,4 +1,5 @@
 @use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .second-intro {
   position: relative;
@@ -46,5 +47,11 @@
 }
 
 .second-intro__wrapper-image {
+  display: flex;
+  justify-content: center;
   padding: 52px 18px 67px;
+}
+
+.second-intro__image {
+  @include mixins.img;
 }

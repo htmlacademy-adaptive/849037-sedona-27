@@ -53,6 +53,8 @@
 
 .lions__image-wrapper {
   width: 100%;
+  display: flex;
+  justify-content: center;
   background: variables.$grey-05;
 }
 
@@ -94,6 +96,7 @@
   font-size: 14px;
   line-height: 21px;
   font-style: normal;
+  color: variables.$black-02;
 }
 
 .lions__likes-info {

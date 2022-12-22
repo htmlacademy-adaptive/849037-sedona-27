@@ -149,6 +149,7 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  color: variables.$black-02;
 
   &--bold {
     min-width: 170px;
@@ -157,6 +158,7 @@
     font-size: 18px;
     line-height: 26px;
     text-transform: none;
+    color: variables.$black-01;
   }
 
   @media (min-width: variables.$tablet-width) {
@@ -198,8 +200,8 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 21px;
-  color: variables.$black-04;
   text-transform: uppercase;
+  color: variables.$black-02;
 }
 
 .form__btn-wrapper {

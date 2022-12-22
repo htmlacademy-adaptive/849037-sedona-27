@@ -90,11 +90,11 @@
 }
 
 .features__title {
+  margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  margin: 0;
 }
 
 .features__subject {
@@ -103,6 +103,7 @@
   font-size: 14px;
   line-height: 21px;
   margin-top: 11px;
+  color: variables.$black-02;
 
   &::before,
   &::after {
@@ -124,6 +125,8 @@
   }
 
   &--white {
+    color: variables.$white;
+
     &::before,
     &::after {
       background: variables.$white;
@@ -132,16 +135,23 @@
 }
 
 .features__text {
+  margin: 0;
+  margin-top: 17px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  margin: 0;
-  margin-top: 17px;
+  color: variables.$black-02;
+
+  &--white {
+    color: variables.$white;
+  }
 }
 
 .features__img-wrapper {
   width: 100%;
+  display: flex;
+  justify-content: center;
   background: variables.$grey-04;
 
   @media (min-width: variables.$tablet-width) {

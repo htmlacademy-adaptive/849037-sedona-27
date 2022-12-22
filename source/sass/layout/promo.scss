@@ -1,5 +1,5 @@
-@use "../global/mixins.scss";
 @use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .promo {
   @include mixins.font;
@@ -29,4 +29,5 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  color: variables.$black-02;
 }

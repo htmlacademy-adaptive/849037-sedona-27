@@ -1,3 +1,4 @@
+@use "../global/variables.scss";
 @use "../global/mixins.scss";
 
 .catalogue-header {
@@ -18,4 +19,5 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  color: variables.$black-02;
 }

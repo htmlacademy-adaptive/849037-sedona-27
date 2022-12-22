@@ -57,10 +57,11 @@
 
 .city-feature__desc {
   display: block;
+  margin: 0;
+  margin-top: 16px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  margin: 0;
-  margin-top: 16px;
+  color: variables.$black-02;
 }

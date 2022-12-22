@@ -26,7 +26,7 @@
     border: none;
 
     &:nth-child(n+3):nth-child(odd) {
-      background: variables.$grey-04;
+      background: variables.$grey-03;
     }
 
     &:first-child {
@@ -53,7 +53,7 @@
 
 .lions__image-wrapper {
   width: 100%;
-  background: variables.$grey-01;
+  background: variables.$grey-05;
 }
 
 .lions__image {

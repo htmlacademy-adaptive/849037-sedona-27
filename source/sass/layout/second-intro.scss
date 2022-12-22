@@ -38,6 +38,7 @@
   clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
 
   @media (min-width: variables.$tablet-width) {
+    margin-top: 56px;
     clip-path: polygon(0 0, 100% 0, 100% 89%, 50% 100%, 0 89%);
   }
 

@@ -40,7 +40,11 @@
       <div class="intro">
         <div class="intro__wrapper">
           <div class="intro__wrapper-image">
-            <img class="intro__image" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в город Седона, потому что Гранд Каньон отстой.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/intro_text-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/intro_text-tablet.svg">
+              <img class="intro__image" src="img/intro_text-mobile.svg" width="282" height="214" alt="Логотип города Седона.">
+            </picture>
           </div>
         </div>
       </div>
@@ -73,7 +77,11 @@
                 <p class="features__text features__text--white">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <div class="features__img-wrapper features__img-wrapper--right-img">
-                <img class="features__img" src="img/photo-city@1x.png" width="320" height="260" alt="Американский флаг на фоне здания в городе Седона.">
+                <!-- <picture>
+                  <source media="min-width: 1200px" srcset="img/city_img-desktop.jpg 1x, img/city_img-desktop@2x.jpg 2x">
+                  <source media="min-width: 768px" srcset="img/city_img-tablet.jpg 1x, img/city_img-tablet@2x.jpg 2x">
+                  <img class="features__img" src="img/city_img-mobile.jpg" srcset="img/city_img-mobile@2x.jpg 2x" width="320" height="260" alt="Американский флаг на фоне здания в городе Седона.">
+                </picture> -->
               </div>
 
               <ul class="features__item-list city-feature">
@@ -99,7 +107,11 @@
                 <p class="features__text features__text--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="features__img-wrapper features__img-wrapper--left-img">
-                <img class="features__img" src="img/photo-bridge@1x.png" width="320" height="260" alt="Глубокое ущелье на фоне халмов.">
+                <!-- <picture>
+                  <source media="min-width: 1200px" srcset="img/bridge_img-desktop.jpg 1x, img/bridge_img-desktop@2x.jpg 2x">
+                  <source media="min-width: 768px" srcset="img/bridge_img-tablet.jpg 1x, img/bridge_img-tablet@2x.jpg 2x">
+                  <img class="features__img" src="img/bridge_img-mobile.jpg" srcset="img/bridge_img-mobile@2x.jpg 2x" width="320" height="260" alt="Американский флаг на фоне здания в городе Седона.">
+                </picture> -->
               </div>
             </li>
             <li class="features__item">

@@ -2,8 +2,6 @@
 @use "../global/variables.scss";
 
 .lions__list {
-  @include mixins.font;
-
   @media (min-width: variables.$tablet-width) {
     display: flex;
     flex-wrap: wrap;

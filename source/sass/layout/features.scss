@@ -3,7 +3,6 @@
 
 .features {
   @include mixins.list-reset;
-  @include mixins.font;
   text-align: center;
 }
 

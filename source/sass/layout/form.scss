@@ -2,8 +2,6 @@
 @use "../global/variables.scss";
 
 .form {
-  @include mixins.font;
-
   @media (min-width: variables.$tablet-width) {
     padding: 0 60px;
   }

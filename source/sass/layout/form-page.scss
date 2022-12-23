@@ -2,8 +2,6 @@
 @use "../global/variables.scss";
 
 .form-page {
-  @include mixins.font;
-
   margin: 0 auto;
   background: variables.$white;
 

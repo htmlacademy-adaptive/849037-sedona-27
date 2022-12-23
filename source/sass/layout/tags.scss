@@ -2,7 +2,6 @@
 @use "../global/variables.scss";
 
 .tags__link {
-  @include mixins.font;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;

@@ -271,7 +271,7 @@
 .intro__wrapper {
   margin-top: 56px;
   background-color: #81b3d2;
-  background-image: url("../../img/intro_bg-mobile.jpg");
+  background-image: url("../img/intro_bg-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -280,32 +280,32 @@
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .intro__wrapper {
-    background-image: url("../../img/intro_bg-mobile@2x.jpg");
+    background-image: url("../img/intro_bg-mobile@2x.jpg");
   }
 }
 @media (min-width: 768px) {
   .intro__wrapper {
     margin-top: 56px;
-    background-image: url("../../img/intro_bg-tablet.jpg");
+    background-image: url("../img/intro_bg-tablet.jpg");
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 89%, 50% 100%, 0 89%);
             clip-path: polygon(0 0, 100% 0, 100% 89%, 50% 100%, 0 89%);
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .intro__wrapper {
-    background-image: url("../../img/intro_bg-tablet@2x.jpg");
+    background-image: url("../img/intro_bg-tablet@2x.jpg");
   }
 }
 @media (min-width: 1280px) {
   .intro__wrapper {
-    background-image: url("../../img/intro_bg-desktop.jpg");
+    background-image: url("../img/intro_bg-desktop.jpg");
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
             clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
   }
 }
 @media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1280px) and (min-resolution: 2dppx) {
   .intro__wrapper {
-    background-image: url("../../img/intro_bg-desktop@2x.jpg");
+    background-image: url("../img/intro_bg-desktop@2x.jpg");
   }
 }
 

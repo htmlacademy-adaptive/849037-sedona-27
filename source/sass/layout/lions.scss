@@ -51,12 +51,22 @@
 
 .lions__image-wrapper {
   width: 100%;
-  display: flex;
-  justify-content: center;
+  height: auto;
   background: variables.$grey-05;
+  overflow: hidden;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 267px;
+
+    &--accent {
+      height: 400px;
+    }
+  }
 }
 
 .lions__image {
+  width: 100%;
+
   @include mixins.img;
 }
 
@@ -95,6 +105,10 @@
   line-height: 21px;
   font-style: normal;
   color: variables.$black-02;
+
+  @media (min-width: variables.$desktop-width) {
+    color: variables.$white;
+  }
 }
 
 .lions__likes-info {

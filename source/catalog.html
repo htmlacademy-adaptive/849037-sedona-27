@@ -64,8 +64,12 @@
         <div class="lions__list">
           <blockquote class="lions__item">
             <div class="lions__inner-wrapper">
-              <div class="lions__image-wrapper">
-                <img class="lions__image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Дорога с машиной на фоне пейзажа холмов.">
+              <div class="lions__image-wrapper lions__image-wrapper--accent">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/photo-1-desktop.jpg 1x">
+                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x">
+                  <img class="lions__image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Дорога с машиной на фоне пейзажа холмов.">
+                </picture>
               </div>
               <div class="lions__info-wrapper">
                 <div class="lions__photo-info">

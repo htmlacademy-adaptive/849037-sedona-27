@@ -515,25 +515,25 @@
   background: #d5d5d5;
 }
 .features__img-wrapper--right-img {
-  background-image: url("../../img/city_img-mobile.jpg");
+  background-image: url("../img/city_img-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .features__img-wrapper--right-img {
-    background-image: url("../../img/city_img-mobile@2x.jpg");
+    background-image: url("../img/city_img-mobile@2x.jpg");
   }
 }
 .features__img-wrapper--left-img {
-  background-image: url("../../img/bridge_img-mobile.jpg");
+  background-image: url("../img/bridge_img-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .features__img-wrapper--left-img {
-    background-image: url("../../img/bridge_img-mobile@2x.jpg");
+    background-image: url("../img/bridge_img-mobile@2x.jpg");
   }
 }
 @media (min-width: 768px) {
@@ -542,43 +542,43 @@
   }
   .features__img-wrapper--right-img {
     grid-column: 2/4;
-    background-image: url("../../img/city_img-tablet.jpg");
+    background-image: url("../img/city_img-tablet.jpg");
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .features__img-wrapper--right-img {
-    background-image: url("../../img/city_img-tablet@2x.jpg");
+    background-image: url("../img/city_img-tablet@2x.jpg");
   }
 }
 @media (min-width: 768px) {
   .features__img-wrapper--left-img {
     grid-column: 3/1;
-    background-image: url("../../img/bridge_img-tablet.jpg");
+    background-image: url("../img/bridge_img-tablet.jpg");
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .features__img-wrapper--left-img {
-    background-image: url("../../img/bridge_img-tablet@2x.jpg");
+    background-image: url("../img/bridge_img-tablet@2x.jpg");
   }
 }
 @media (min-width: 1280px) {
   .features__img-wrapper--right-img {
-    background-image: url("../../img/city_img-desktop.jpg");
+    background-image: url("../img/city_img-desktop.jpg");
   }
 }
 @media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1280px) and (min-resolution: 2dppx) {
   .features__img-wrapper--right-img {
-    background-image: url("../../img/city_img-desktop@2x.jpg");
+    background-image: url("../img/city_img-desktop@2x.jpg");
   }
 }
 @media (min-width: 1280px) {
   .features__img-wrapper--left-img {
-    background-image: url("../../img/bridge_img-desktop.jpg");
+    background-image: url("../img/bridge_img-desktop.jpg");
   }
 }
 @media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1280px) and (min-resolution: 2dppx) {
   .features__img-wrapper--left-img {
-    background-image: url("../../img/bridge_img-desktop@2x.jpg");
+    background-image: url("../img/bridge_img-desktop@2x.jpg");
   }
 }
 
@@ -678,7 +678,7 @@
 .main-map {
   margin: 0 auto;
   background-color: #d5d5d5;
-  background-image: url("../../img/map_bg-mobile.jpg");
+  background-image: url("../img/map_bg-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -686,27 +686,27 @@
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .main-map {
-    background-image: url("../../img/map_bg-mobile@2x.jpg");
+    background-image: url("../img/map_bg-mobile@2x.jpg");
   }
 }
 @media (min-width: 768px) {
   .main-map {
-    background-image: url("../../img/map_bg-tablet.jpg");
+    background-image: url("../img/map_bg-tablet.jpg");
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .main-map {
-    background-image: url("../../img/map_bg-tablet@2x.jpg");
+    background-image: url("../img/map_bg-tablet@2x.jpg");
   }
 }
 @media (min-width: 1280px) {
   .main-map {
-    background-image: url("../../img/map_bg-desktop.jpg");
+    background-image: url("../img/map_bg-desktop.jpg");
   }
 }
 @media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1280px) and (min-resolution: 2dppx) {
   .main-map {
-    background-image: url("../../img/map_bg-desktop@2x.jpg");
+    background-image: url("../img/map_bg-desktop@2x.jpg");
   }
 }
 
@@ -740,7 +740,7 @@
 .second-intro__wrapper {
   text-align: center;
   background-color: #81b3d2;
-  background-image: url("../../img/second_intro_bg-mobile.jpg");
+  background-image: url("../img/second_intro_bg-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -749,31 +749,31 @@
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .second-intro__wrapper {
-    background-image: url("../../img/second_intro_bg-mobile@2x.jpg");
+    background-image: url("../img/second_intro_bg-mobile@2x.jpg");
   }
 }
 @media (min-width: 768px) {
   .second-intro__wrapper {
-    background-image: url("../../img/second_intro_bg-tablet.jpg");
+    background-image: url("../img/second_intro_bg-tablet.jpg");
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 89%, 50% 100%, 0 89%);
             clip-path: polygon(0 0, 100% 0, 100% 89%, 50% 100%, 0 89%);
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .second-intro__wrapper {
-    background-image: url("../../img/second_intro_bg-tablet@2x.jpg");
+    background-image: url("../img/second_intro_bg-tablet@2x.jpg");
   }
 }
 @media (min-width: 1280px) {
   .second-intro__wrapper {
-    background-image: url("../../img/second_intro_bg-desktop.jpg");
+    background-image: url("../img/second_intro_bg-desktop.jpg");
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
             clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
   }
 }
 @media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1280px) and (min-resolution: 2dppx) {
   .second-intro__wrapper {
-    background-image: url("../../img/second_intro_bg-desktop@2x.jpg");
+    background-image: url("../img/second_intro_bg-desktop@2x.jpg");
   }
 }
 

@@ -1,10 +1,6 @@
 @use "../global/mixins.scss";
 @use "../global/variables.scss";
 
-.footer {
-  @include mixins.font;
-}
-
 .footer__wrapper {
   padding: 39px 18px 23px;
   display: flex;

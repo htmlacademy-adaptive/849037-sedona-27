@@ -1,10 +1,32 @@
+@use "../global/variables.scss";
 @use "../global/mixins.scss";
 
 .main-map {
-  display: flex;
-  justify-content: center;
-}
+  margin: 0 auto;
+  background-color: variables.$grey-04;
+  background-image: url("../img/map_bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 350px;
 
-.main-map__img-bg {
-  @include mixins.img;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map_bg-mobile@2x.jpg");
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    background-image: url("../img/map_bg-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map_bg-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    background-image: url("../img/map_bg-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map_bg-desktop@2x.jpg");
+    }
+  }
 }

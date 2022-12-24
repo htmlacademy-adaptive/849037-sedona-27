@@ -9,8 +9,6 @@
   bottom: 0;
   background: variables.$black-03;
   z-index: 1000;
-
-  @include mixins.font;
   text-align: center;
 }
 

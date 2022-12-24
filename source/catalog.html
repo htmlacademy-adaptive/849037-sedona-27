@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" type="image/png">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/app.js" defer></script>
   </head>
@@ -12,7 +16,7 @@
     <header class="main-header main-header--nojs">
       <div class="main-header__logo-wrapper">
         <a class="main-header__logo-link" href="index.html">
-          <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона">
+          <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона.">
         </a>
       </div>
       <nav class="main-header__nav main-header__nav--closed">
@@ -40,7 +44,7 @@
       <div class="second-intro">
         <div class="second-intro__wrapper">
           <div class="second-intro__wrapper-image">
-            <img class="second-intro__image" src="img/sedona.svg" width="229" height="39" alt="Sedona название города">
+            <img class="second-intro__image" src="img/sedona.svg" width="229" height="39" alt="Sedona название города.">
           </div>
         </div>
       </div>
@@ -49,7 +53,7 @@
     </header>
     <!--* /.secondary-header -->
 
-    <main class="catalogue">
+    <main class="page__main catalogue">
 
       <div class="catalogue__wrapper catalogue-header">
         <div class="catalogue-header__wrapper">
@@ -64,8 +68,12 @@
         <div class="lions__list">
           <blockquote class="lions__item">
             <div class="lions__inner-wrapper">
-              <div class="lions__image-wrapper">
-                <img class="lions__image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Дорога с машиной на фоне пейзажа холмов">
+              <div class="lions__image-wrapper lions__image-wrapper--accent">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/photo-1-desktop.jpg 1x">
+                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x">
+                  <img class="lions__image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Дорога с машиной на фоне пейзажа холмов.">
+                </picture>
               </div>
               <div class="lions__info-wrapper">
                 <div class="lions__photo-info">
@@ -84,7 +92,7 @@
           <blockquote class="lions__item">
             <div class="lions__inner-wrapper">
               <div class="lions__image-wrapper">
-                <img class="lions__image" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Кактус на фоне скал">
+                <img class="lions__image" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Кактус на фоне скал.">
               </div>
               <div class="lions__info-wrapper">
                 <div class="lions__photo-info">
@@ -103,7 +111,7 @@
           <blockquote class="lions__item">
             <div class="lions__inner-wrapper">
               <div class="lions__image-wrapper">
-                <img class="lions__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога из серпантин среди леса">
+                <img class="lions__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога из серпантин среди леса.">
               </div>
               <div class="lions__info-wrapper">
                 <div class="lions__photo-info">
@@ -122,7 +130,7 @@
           <blockquote class="lions__item">
             <div class="lions__inner-wrapper">
               <div class="lions__image-wrapper">
-                <img class="lions__image" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Каньон с деревьями на фоне монументов скал">
+                <img class="lions__image" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Каньон с деревьями на фоне монументов скал.">
               </div>
               <div class="lions__info-wrapper">
                 <div class="lions__photo-info">
@@ -153,7 +161,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="page__footer footer">
       <div class="footer__wrapper">
         <p class="footer__tags tags">
           <a href="#" class="tags__link">#visitsedona</a>
@@ -178,7 +186,7 @@
         <div class="footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="#">
-            <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+            <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy.">
           </a>
         </div>
       </div>

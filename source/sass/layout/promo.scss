@@ -2,7 +2,6 @@
 @use "../global/mixins.scss";
 
 .promo {
-  @include mixins.font;
   text-align: center;
   padding: 32px 18px 32px;
   background: variables.$white;

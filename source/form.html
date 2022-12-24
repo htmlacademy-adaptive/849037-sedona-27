@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" type="image/png">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/app.js" defer></script>
   </head>
@@ -12,7 +16,7 @@
     <header class="main-header main-header--nojs">
       <div class="main-header__logo-wrapper">
         <a class="main-header__logo-link" href="index.html">
-          <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона">
+          <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона.">
         </a>
       </div>
       <nav class="main-header__nav main-header__nav--closed">
@@ -40,7 +44,7 @@
       <div class="second-intro">
         <div class="second-intro__wrapper">
           <div class="second-intro__wrapper-image">
-            <img class="second-intro__image" src="img/sedona.svg" width="229" height="39" alt="Sedona название города">
+            <img class="second-intro__image" src="img/sedona.svg" width="229" height="39" alt="Sedona название города.">
           </div>
         </div>
       </div>
@@ -49,7 +53,7 @@
     </header>
     <!--* /.secondary-header -->
 
-    <main class="form-page">
+    <main class="page__main form-page">
       <div class="form-page__header">
         <h1 class="form-page__title">Оставьте свой отзыв</h1>
         <p class="form-page__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -62,11 +66,11 @@
               <legend class="form__title">Представьтесь:</legend>
               <div class="form__inner-wrapper">
                 <label class="form__sub" for="name">Имя*:</label>
-                <input class="form__input" id="name" name="name" type="text" placeholder="Пётр">
+                <input class="form__input" id="name" name="name" type="text" placeholder="Пётр" required>
               </div>
               <div class="form__inner-wrapper">
                 <label class="form__sub" for="first-name">Фамилия*:</label>
-                <input class="form__input" id="first-name" name="first-name" type="text" placeholder="Пустота">
+                <input class="form__input" id="first-name" name="first-name" type="text" placeholder="Пустота" required>
               </div>
               <div class="form__inner-wrapper">
                 <label class="form__sub" for="patronym">Отчество:</label>
@@ -78,11 +82,11 @@
               <legend class="form__title form__title--left">Контактная информация:</legend>
               <div class="form__inner-wrapper">
                 <label class="form__sub" for="tel">Контактный телефон*:</label>
-                <input class="form__input" id="tel" name="tel" type="text" placeholder="Введите телефон">
+                <input class="form__input" id="tel" name="tel" type="tel" placeholder="Введите телефон" required>
               </div>
               <div class="form__inner-wrapper">
                 <label class="form__sub" for="mail">Электронная почта*:</label>
-                <input class="form__input" id="mail" name="mail" type="text" placeholder="Введите e-mail">
+                <input class="form__input" id="mail" name="mail" type="email" placeholder="Введите e-mail" required>
               </div>
             </fieldset>
           </div>
@@ -136,12 +140,13 @@
               <span class="form__title-text">Опишите свои эмоции:</span>
             </legend>
             <div class="form__comments-wrapper form__comments-wrapper--width-emotion">
-              <textarea class="form__input-area" name="user-review" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="form__input-area" name="user-review" cols="30" rows="10"
+              minlength="10" maxlength="40" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
           </fieldset>
 
         <div class="form__btn-wrapper">
-          <button class="button button--actions" type="submit" >Отправить отзыв</button>
+          <button class="button button--actions" type="submit" name="submit">Отправить отзыв</button>
           <small class="form__legend form__legend--bottom-right">* — обязательные поля</small>
         </div>
 
@@ -150,7 +155,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="page__footer footer">
       <div class="footer__wrapper">
         <p class="footer__tags tags">
           <a href="#" class="tags__link">#visitsedona</a>
@@ -175,7 +180,7 @@
         <div class="footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="#">
-            <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+            <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy.">
           </a>
         </div>
       </div>
@@ -186,7 +191,7 @@
     <div class="modal modal--error visually-hidden">
       <div class="modal__wrapper modal__wrapper--error">
         <h2 class="modal__title">Что-то пошло не так!</h2>
-        <p class="modal__text">Проверьте поля, выделенные красным, скорее вскго вы забыли их заполнить</p>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button class="button button--error">Ok</button>
       </div>
     </div>

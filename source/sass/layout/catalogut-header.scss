@@ -3,8 +3,6 @@
 
 .catalogue-header {
   padding: 37px 18px 35px;
-
-  @include mixins.font;
   text-align: center;
   text-transform: uppercase;
 }

@@ -152,24 +152,24 @@
   background: variables.$grey-04;
 
   &--right-img {
-    background-image: url("../../img/city_img-mobile.jpg");
+    background-image: url("../img/city_img-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/city_img-mobile@2x.jpg");
+      background-image: url("../img/city_img-mobile@2x.jpg");
     }
   }
 
   &--left-img {
-    background-image: url("../../img/bridge_img-mobile.jpg");
+    background-image: url("../img/bridge_img-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/bridge_img-mobile@2x.jpg");
+      background-image: url("../img/bridge_img-mobile@2x.jpg");
     }
   }
 
@@ -178,37 +178,37 @@
 
     &--right-img {
       grid-column: 2 / 4;
-      background-image: url("../../img/city_img-tablet.jpg");
+      background-image: url("../img/city_img-tablet.jpg");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/city_img-tablet@2x.jpg");
+        background-image: url("../img/city_img-tablet@2x.jpg");
       }
     }
 
     &--left-img {
       grid-column: 3 / 1;
-      background-image: url("../../img/bridge_img-tablet.jpg");
+      background-image: url("../img/bridge_img-tablet.jpg");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/bridge_img-tablet@2x.jpg");
+        background-image: url("../img/bridge_img-tablet@2x.jpg");
       }
     }
   }
 
   @media (min-width: variables.$desktop-width) {
     &--right-img {
-      background-image: url("../../img/city_img-desktop.jpg");
+      background-image: url("../img/city_img-desktop.jpg");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/city_img-desktop@2x.jpg");
+        background-image: url("../img/city_img-desktop@2x.jpg");
       }
     }
 
     &--left-img {
-      background-image: url("../../img/bridge_img-desktop.jpg");
+      background-image: url("../img/bridge_img-desktop.jpg");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/bridge_img-desktop@2x.jpg");
+        background-image: url("../img/bridge_img-desktop@2x.jpg");
       }
     }
   }

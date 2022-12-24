@@ -35,31 +35,31 @@
 .second-intro__wrapper {
   text-align: center;
   background-color: variables.$blue-01;
-  background-image: url("../../img/second_intro_bg-mobile.jpg");
+  background-image: url("../img/second_intro_bg-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/second_intro_bg-mobile@2x.jpg");
+    background-image: url("../img/second_intro_bg-mobile@2x.jpg");
   }
 
   @media (min-width: variables.$tablet-width) {
-    background-image: url("../../img/second_intro_bg-tablet.jpg");
+    background-image: url("../img/second_intro_bg-tablet.jpg");
     clip-path: polygon(0 0, 100% 0, 100% 89%, 50% 100%, 0 89%);
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/second_intro_bg-tablet@2x.jpg");
+      background-image: url("../img/second_intro_bg-tablet@2x.jpg");
     }
   }
 
   @media (min-width: variables.$desktop-width) {
-    background-image: url("../../img/second_intro_bg-desktop.jpg");
+    background-image: url("../img/second_intro_bg-desktop.jpg");
     clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/second_intro_bg-desktop@2x.jpg");
+      background-image: url("../img/second_intro_bg-desktop@2x.jpg");
     }
   }
 }

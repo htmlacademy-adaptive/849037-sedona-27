@@ -11,6 +11,8 @@
     <link rel="shortcut icon" href="img/favicon/favicon-32x32.png" type="image/png">
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" type="image/png">
     <link rel="manifest" href="site.webmanifest">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/app.js" defer></script>
   </head>
@@ -67,86 +69,78 @@
       <section class="lions">
         <h2 class="visually-hidden">Красивае места города «Седона».</h2>
         <div class="lions__list">
-          <blockquote class="lions__item">
-            <div class="lions__inner-wrapper">
-              <div class="lions__image-wrapper lions__image-wrapper--accent">
-                <picture>
-                  <source media="(min-width: 1280px)" srcset="img/photo-1-desktop.jpg 1x">
-                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x">
-                  <img class="lions__image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Дорога с машиной на фоне пейзажа холмов.">
-                </picture>
-              </div>
-              <div class="lions__info-wrapper">
-                <div class="lions__photo-info">
-                  <b class="lions__title">Неродные просторы</b>
-                  <cite class="lions__author-name">Автор фото: Борис</cite>
-                </div>
-                <div class="lions__likes-info">
-                  <button class="lions__likes-btn">
-                    <span class="visually-hidden">Like</span>
-                  </button>
-                  <span class="lions__likes-count">1350</span>
-                </div>
-              </div>
+          <figure class="lions__item">
+            <div class="lions__image-wrapper lions__image-wrapper--accent">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/photo-1-desktop.jpg 1x">
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x">
+                <img class="lions__image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Дорога с машиной на фоне пейзажа холмов.">
+              </picture>
             </div>
-          </blockquote>
-          <blockquote class="lions__item">
-            <div class="lions__inner-wrapper">
-              <div class="lions__image-wrapper">
-                <img class="lions__image" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Кактус на фоне скал.">
+            <figcaption class="lions__info-wrapper">
+              <div class="lions__photo-info">
+                <b class="lions__title">Неродные просторы</b>
+                <cite class="lions__author-name">Автор фото: Борис</cite>
               </div>
-              <div class="lions__info-wrapper">
-                <div class="lions__photo-info">
-                  <b class="lions__title">Местная растительность</b>
-                  <cite class="lions__author-name">Автор фото: Сергей</cite>
-                </div>
-                <div class="lions__likes-info">
-                  <button class="lions__likes-btn">
-                    <span class="visually-hidden">Like</span>
-                  </button>
-                  <span class="lions__likes-count">143</span>
-                </div>
+              <div class="lions__likes-info">
+                <button class="lions__likes-btn">
+                  <span class="visually-hidden">Like</span>
+                </button>
+                <span class="lions__likes-count">1350</span>
               </div>
+            </figcaption>
+          </figure>
+          <figure class="lions__item">
+            <div class="lions__image-wrapper">
+              <img class="lions__image" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Кактус на фоне скал.">
             </div>
-          </blockquote>
-          <blockquote class="lions__item">
-            <div class="lions__inner-wrapper">
-              <div class="lions__image-wrapper">
-                <img class="lions__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога из серпантин среди леса.">
+            <figcaption class="lions__info-wrapper">
+              <div class="lions__photo-info">
+                <b class="lions__title">Местная растительность</b>
+                <cite class="lions__author-name">Автор фото: Сергей</cite>
               </div>
-              <div class="lions__info-wrapper">
-                <div class="lions__photo-info">
-                  <b class="lions__title">Дорога на север</b>
-                  <cite class="lions__author-name">Автор фото: Петр</cite>
-                </div>
-                <div class="lions__likes-info">
-                  <button class="lions__likes-btn">
-                    <span class="visually-hidden">Like</span>
-                  </button>
-                  <span class="lions__likes-count">96</span>
-                </div>
+              <div class="lions__likes-info">
+                <button class="lions__likes-btn">
+                  <span class="visually-hidden">Like</span>
+                </button>
+                <span class="lions__likes-count">143</span>
               </div>
+            </figcaption>
+          </figure>
+          <figure class="lions__item">
+            <div class="lions__image-wrapper">
+              <img class="lions__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога из серпантин среди леса.">
             </div>
-          </blockquote>
-          <blockquote class="lions__item">
-            <div class="lions__inner-wrapper">
-              <div class="lions__image-wrapper">
-                <img class="lions__image" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Каньон с деревьями на фоне монументов скал.">
+            <figcaption class="lions__info-wrapper">
+              <div class="lions__photo-info">
+                <b class="lions__title">Дорога на север</b>
+                <cite class="lions__author-name">Автор фото: Петр</cite>
               </div>
-              <div class="lions__info-wrapper">
-                <div class="lions__photo-info">
-                  <b class="lions__title">Мост дьявола</b>
-                  <cite class="lions__author-name">Автор фото: Антон</cite>
-                </div>
-                <div class="lions__likes-info">
-                  <button class="lions__likes-btn">
-                    <span class="visually-hidden">Like</span>
-                  </button>
-                  <span class="lions__likes-count">254</span>
-                </div>
+              <div class="lions__likes-info">
+                <button class="lions__likes-btn">
+                  <span class="visually-hidden">Like</span>
+                </button>
+                <span class="lions__likes-count">96</span>
               </div>
+            </figcaption>
+          </figure>
+          <figure class="lions__item">
+            <div class="lions__image-wrapper">
+              <img class="lions__image" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Каньон с деревьями на фоне монументов скал.">
             </div>
-          </blockquote>
+            <figcaption class="lions__info-wrapper">
+              <div class="lions__photo-info">
+                <b class="lions__title">Мост дьявола</b>
+                <cite class="lions__author-name">Автор фото: Антон</cite>
+              </div>
+              <div class="lions__likes-info">
+                <button class="lions__likes-btn">
+                  <span class="visually-hidden">Like</span>
+                </button>
+                <span class="lions__likes-count">254</span>
+              </div>
+            </figcaption>
+          </figure>
         </div>
       </section>
       <!--* /.photos -->

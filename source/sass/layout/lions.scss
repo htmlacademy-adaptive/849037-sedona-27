@@ -42,7 +42,7 @@
 
 .lions__image-wrapper {
   width: 100%;
-  height: auto;
+  min-height: 280px;
   background: variables.$grey-05;
   overflow: hidden;
 

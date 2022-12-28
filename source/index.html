@@ -7,6 +7,8 @@
     <title>HTML Academy: Седона</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="shortcut icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="img/favicon/favicon-16x16.png" type="image/png">
+    <link rel="shortcut icon" href="img/favicon/favicon-32x32.png" type="image/png">
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" type="image/png">
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="css/style.css">
@@ -44,7 +46,10 @@
       <div class="intro">
         <div class="intro__wrapper">
           <div class="intro__wrapper-image">
-            <img class="intro__image" src="img/intro_text-mobile.svg" width="282" height="214" alt="Логотип города Седона.">
+            <svg class="intro__icon-text" width="282" height="214">
+              <use xlink:href="img/sprite.svg#intro"></use>
+            </svg>
+            <!-- <img class="intro__image" src="img/intro_text-mobile.svg" width="282" height="214" alt="Логотип города Седона."> -->
           </div>
         </div>
       </div>
@@ -68,7 +73,7 @@
       <!--* /.promo -->
 
       <section class="features">
-          <h2 class="visually-hidden">Преимущества города Седона</h2>
+          <h2 class="visually-hidden">Преимущества города Седона.</h2>
           <ol class="features__list">
             <li class="features__item features__item--accent">
               <div class="features__item-wrapper features__item-wrapper--accent-first">
@@ -76,19 +81,25 @@
                 <span class="features__subject features__subject--white">№1</span>
                 <p class="features__text features__text--white">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <div class="features__img-wrapper features__img-wrapper--right-img"></div>
+              <div class="features__img-wrapper features__img-wrapper--right-img">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/city_img-desktop.jpg 1x, img/city_img-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/city_img-tablet.jpg 1x, img/city_img-tablet@2x.jpg 2x">
+                  <img class="features__img" src="img/city_img-mobile.jpg" srcset="img/city_img-mobile@2x.jpg 2x" width="320" height="260" alt="Американский флаг на фоне здания в городе Седона">
+                </picture>
+              </div>
 
               <ul class="features__item-list city-feature">
                 <li class="city-feature__item">
-                  <h4 class="city-feature__title">Жилье</h4>
+                  <h4 class="city-feature__title city-feature__title--house">Жилье</h4>
                   <p class="city-feature__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="city-feature__item">
-                  <h4 class="city-feature__title">Еда</h4>
+                  <h4 class="city-feature__title city-feature__title--food">Еда</h4>
                   <p class="city-feature__desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li class="city-feature__item">
-                  <h4 class="city-feature__title">Сувениры</h4>
+                  <h4 class="city-feature__title city-feature__title--gift">Сувениры</h4>
                   <p class="city-feature__desc">Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
@@ -100,7 +111,13 @@
                 <span class="features__subject features__subject--white">№2</span>
                 <p class="features__text features__text--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <div class="features__img-wrapper features__img-wrapper--left-img"></div>
+              <div class="features__img-wrapper features__img-wrapper--left-img">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/bridge_img-desktop.jpg 1x, img/bridge_img-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/bridge_img-tablet.jpg 1x, img/bridge_img-tablet@2x.jpg 2x">
+                  <img class="features__img" src="img/bridge_img-mobile.jpg" srcset="img/bridge_img-mobile@2x.jpg 2x" width="320" height="260" alt="Глубокое ущелье на фоне гор">
+                </picture>
+              </div>
             </li>
             <li class="features__item">
               <h3 class="features__title">Небольшая площадь</h3>
@@ -122,7 +139,7 @@
       <!--* /.features -->
 
       <section class="service">
-        <h2 class="visually-hidden">Пдобрать гостиницу в городе Седона</h2>
+        <h2 class="visually-hidden">Пдобрать гостиницу в городе Седона.</h2>
 
         <h3 class="service__title">Заинтересовались?</h3>
         <p class="service__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -131,7 +148,7 @@
       <!--* /.service -->
 
       <section class="main-map">
-        <h2 class="visually-hidden">Карта города Седона</h2>
+        <h2 class="visually-hidden">Карта города Седона.</h2>
       </section>
       <!--* /.main-map -->
 
@@ -145,24 +162,35 @@
         <ul class="footer__social social">
           <li class="social__item">
             <a href="#" class="social__link social__link--vk">
+              <svg width="24" height="24">
+                <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
+              </svg>
               <span class="visually-hidden">Vkontakte</span>
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link social__link--telegram">
+              <svg width="24" height="24">
+                <use xlink:href="img/sprite.svg#icon-telegram"></use>
+              </svg>
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link social__link--youtube">
+              <svg width="24" height="24">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
         </ul>
         <div class="footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="#">
-            <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy.">
+            <span class="copyright__text">Разработано</span>
+            <svg width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon-HTMLAcademy"></use>
+            </svg>
           </a>
         </div>
       </div>

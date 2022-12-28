@@ -16,10 +16,12 @@
 
 .lions__item {
   margin: 0;
+  padding: 24px 20px 0;
   border-bottom: 1px solid variables.$grey-02;
 
   @media (min-width: variables.$tablet-width) {
     width: 50%;
+    padding: 0;
     background: variables.$grey-01;
     border: none;
 
@@ -34,24 +36,13 @@
 
   @media (min-width: variables.$desktop-width) {
     width: 400px;
-  }
-}
-
-.lions__inner-wrapper {
-  padding: 24px 20px 0;
-
-  @media (min-width: variables.$tablet-width) {
-    padding: 0;
-  }
-
-  @media (min-width: variables.$desktop-width) {
     position: relative;
   }
 }
 
 .lions__image-wrapper {
   width: 100%;
-  height: auto;
+  min-height: 280px;
   background: variables.$grey-05;
   overflow: hidden;
 

@@ -43,7 +43,19 @@
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
-    background: variables.$grey-04;
+    // background: variables.$grey-04;
+  }
+
+  &--house::before {
+    background: url("../img/icon-house.svg") center center / cover no-repeat;
+  }
+
+  &--food::before {
+    background: url("../img/icon-food.svg") center center / cover no-repeat;
+  }
+
+  &--gift::before {
+    background: url("../img/icon-gift.svg") center center / cover no-repeat;
   }
 
   @media (min-width: variables.$tablet-width) {

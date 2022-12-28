@@ -46,7 +46,10 @@
       <div class="intro">
         <div class="intro__wrapper">
           <div class="intro__wrapper-image">
-            <img class="intro__image" src="img/intro_text-mobile.svg" width="282" height="214" alt="Логотип города Седона.">
+            <svg class="intro__icon-text" width="282" height="214">
+              <use xlink:href="img/sprite.svg#intro"></use>
+            </svg>
+            <!-- <img class="intro__image" src="img/intro_text-mobile.svg" width="282" height="214" alt="Логотип города Седона."> -->
           </div>
         </div>
       </div>
@@ -88,15 +91,15 @@
 
               <ul class="features__item-list city-feature">
                 <li class="city-feature__item">
-                  <h4 class="city-feature__title">Жилье</h4>
+                  <h4 class="city-feature__title city-feature__title--house">Жилье</h4>
                   <p class="city-feature__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="city-feature__item">
-                  <h4 class="city-feature__title">Еда</h4>
+                  <h4 class="city-feature__title city-feature__title--food">Еда</h4>
                   <p class="city-feature__desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li class="city-feature__item">
-                  <h4 class="city-feature__title">Сувениры</h4>
+                  <h4 class="city-feature__title city-feature__title--gift">Сувениры</h4>
                   <p class="city-feature__desc">Не только китайского, но и местного производства!</p>
                 </li>
               </ul>

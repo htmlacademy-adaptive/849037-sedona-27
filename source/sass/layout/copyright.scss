@@ -1,12 +1,20 @@
 @use "../global/variables.scss";
 
-.copyright {
-  display: flex;
-  align-items: center;
-}
-
 .copyright__link {
-  display: block;
+  text-decoration: none;
+  color: variables.$black-01;
+
+  svg {
+    vertical-align: middle;
+  }
+
+  &:hover {
+    color: variables.$blue-01;
+  }
+
+  &:active {
+    color: variables.$grey-05;
+  }
 }
 
 .copyright__text {
@@ -14,6 +22,5 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  color: variables.$black-02;
   margin-right: 12px;
 }

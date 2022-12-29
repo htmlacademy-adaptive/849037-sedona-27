@@ -18,9 +18,17 @@
     display: none;
   }
 
+  &--nojs .intro__wrapper {
+    margin-top: 0;
+  }
+
   @media (min-width: variables.$tablet-width) {
     &--nojs .main-header__nav {
       position: fixed;
+    }
+
+    &--nojs .intro__wrapper {
+      margin-top: 56px;
     }
   }
 }
@@ -85,11 +93,18 @@
   z-index: 99;
   width: 56px;
   height: 56px;
-  // border: none;
-  background: variables.$blue-01;
+  border: none;
+  background: transparent;
+  cursor: pointer;
 
   @media (min-width: variables.$tablet-width) {
     position: fixed;
     display: none;
+  }
+}
+
+.main-header__icon-btn {
+  &--close {
+    fill: variables.$white;
   }
 }

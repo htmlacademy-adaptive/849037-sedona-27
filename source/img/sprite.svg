@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg">
 
   // Header icons
-  <symbol id="open-menu" viewBox="0 0 24 20" fill="none">
-    <path d="M24 0H0V4H24V0Z" fill="#81B3D2"/>
-    <path d="M24 8H0V12H24V8Z" fill="#81B3D2"/>
-    <path d="M24 16H0V20H24V16Z" fill="#81B3D2"/>
+  <symbol id="open-menu" viewBox="0 0 24 20">
+    <path d="M24 0H0V4H24V0Z" fill="current-color"/>
+    <path d="M24 8H0V12H24V8Z" fill="current-color"/>
+    <path d="M24 16H0V20H24V16Z" fill="current-color"/>
   </symbol>
 
   <symbol id="close-menu" viewBox="0 0 26 25">

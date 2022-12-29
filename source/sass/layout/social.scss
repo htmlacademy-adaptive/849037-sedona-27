@@ -35,6 +35,10 @@
   line-height: 0;
   padding: 12px;
 
+  &:focus {
+    background: variables.$blue-02;
+  }
+
   &--vk {
     width: 24px;
     height: 24px;

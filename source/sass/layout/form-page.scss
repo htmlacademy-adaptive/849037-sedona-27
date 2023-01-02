@@ -2,13 +2,7 @@
 @use "../global/variables.scss";
 
 .form-page {
-  margin: 0 auto;
   background: variables.$white;
-
-  @media (min-width: variables.$tablet-width) {
-    // padding: 0;
-    // min-width: 648px;
-  }
 
   @media (min-width: variables.$desktop-width) {
     padding: 0 120px;

@@ -66,6 +66,39 @@
   }
 }
 
+.form__comments-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0 20px;
+
+  &--width-emotion {
+    padding: 0 20px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    justify-content: space-between;
+    padding: 0 100px;
+
+    &--width-attraction {
+      padding: 0 100px;
+    }
+
+    &--width-emotion {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0;
+
+    &--width-attraction {
+      padding: 0;
+    }
+  }
+}
+
 .form__title {
   position: relative;
   width: 100%;
@@ -112,36 +145,6 @@
   }
 }
 
-.form__comments-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-
-  &--width-emotion {
-    padding: 0 20px;
-  }
-
-  @media (min-width: variables.$tablet-width) {
-    justify-content: space-between;
-    padding: 0;
-
-    &--width-attraction {
-      padding: 0 100px;
-    }
-
-    &--width-emotion {
-      max-width: 768px;
-      margin: 0 auto;
-    }
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    &--width-attraction {
-      padding: 0 40px;
-    }
-  }
-}
-
 .form__inner-wrapper {
   margin-top: 16px;
   position: relative;
@@ -176,18 +179,142 @@
   color: variables.$black-02;
 
   &--bold {
-    min-width: 170px;
-    padding: 15px 16px;
+    min-width: 120px;
+    position: relative;
+    padding: 20px 20px 20px 62px;
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
     text-transform: none;
     color: variables.$black-01;
   }
+}
 
-  @media (min-width: variables.$tablet-width) {
-    padding: 10px;
+.form__custom-input {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: variables.$grey-01;
+
+  &--radio {
+    border-radius: 50%;
   }
+
+  &--checkbox {
+    border-radius: 4px;
+  }
+}
+
+.form__sub--bold > input {
+  position: absolute;
+  appearance: none;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+// .form__input-radio {
+//   position: absolute;
+//   appearance: none;
+//   width: 1px;
+//   height: 1px;
+//   overflow: hidden;
+//   clip: rect(0 0 0 0);
+// }
+
+// Radio checked
+.form__input-radio:checked + .form__custom-input--radio {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    background: variables.$black-04;
+    border-radius: 50%;
+  }
+}
+
+.form__sub--bold:hover .form__custom-input--radio {
+  background: variables.$grey-02;
+}
+
+.form__input-radio:focus + .form__custom-input--radio {
+  background: variables.$grey-02;
+}
+
+.form__sub--bold:active .form__custom-input--radio {
+  opacity: 0.7;
+}
+
+// .form__input-checkbox {
+//   position: absolute;
+//   appearance: none;
+//   width: 1px;
+//   height: 1px;
+//   overflow: hidden;
+//   clip: rect(0 0 0 0);
+// }
+
+// Radio disabled
+.form__input-radio:disabled + .form__custom-input--radio {
+  background: variables.$grey-01;
+}
+
+.form__input-radio:disabled:active + .form__custom-input--radio {
+  opacity: 1;
+}
+
+.form__input-radio:disabled ~ span {
+  color: variables.$grey-04;
+}
+
+// Checkbox checked
+.form__input-checkbox:checked + .form__custom-input--checkbox {
+  background-image: url("../img/checkbox-tick.svg");
+  background-color: variables.$grey-01;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.form__input-checkbox:hover + .form__custom-input--checkbox {
+  background-color: variables.$grey-02;
+}
+
+.form__input-checkbox:focus + .form__custom-input--checkbox {
+  background-color: variables.$grey-02;
+}
+
+.form__input-checkbox:active + .form__custom-input--checkbox {
+  background-color: variables.$grey-04;
+}
+
+.form__input-checkbox:checked:active + .form__custom-input--checkbox {
+  opacity: 0.7;
+  background-color: variables.$grey-04;
+}
+
+.form__input-checkbox:checked:focus + .form__custom-input--checkbox {
+  background-color: variables.$grey-02;
+}
+
+// Checkbox disabled
+.form__input-checkbox:disabled + .form__custom-input--checkbox {
+  background-color: variables.$grey-01;
+}
+
+.form__input-checkbox:hover:disabled + .form__custom-input--checkbox {
+  background-color: variables.$grey-01;
+}
+
+.form__input-checkbox:disabled ~ span {
+  color: variables.$grey-04;
 }
 
 .form__input {

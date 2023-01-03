@@ -15,6 +15,19 @@
   border: none;
   cursor: pointer;
 
+  &:hover {
+    background: variables.$blue-02;
+  }
+
+  &:focus {
+    background: variables.$blue-02;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background: variables.$blue-03;
+  }
+
   @media (min-width: variables.$tablet-width) {
     max-width: 458px;
   }

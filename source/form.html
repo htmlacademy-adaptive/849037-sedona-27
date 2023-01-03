@@ -78,7 +78,7 @@
               <legend class="form__title">Представьтесь:</legend>
               <div class="form__inner-wrapper">
                 <label class="form__sub" for="name">Имя*:</label>
-                <input class="form__input" id="name" name="name" type="text" placeholder="Пётр" maxlength="15" minlength="2" maxlength="15" required>
+                <input class="form__input" id="name" name="name" type="text" placeholder="Пётр" minlength="2" maxlength="15" required>
               </div>
               <div class="form__inner-wrapper">
                 <label class="form__sub" for="first-name">Фамилия*:</label>
@@ -165,8 +165,8 @@
               <span class="form__title-text">Опишите свои эмоции:</span>
             </legend>
             <div class="form__comments-wrapper form__comments-wrapper--width-emotion">
-              <textarea class="form__input-area" name="user-review" cols="30" rows="10"
-              minlength="10" maxlength="40" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="form__input form__input--area" name="user-review" cols="30" rows="10"
+              minlength="0" maxlength="40" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
           </fieldset>
 

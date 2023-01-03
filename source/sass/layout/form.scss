@@ -288,6 +288,21 @@
   border: none;
   background: variables.$grey-01;
 
+  @include mixins.font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  &:hover {
+    background: variables.$grey-02;
+  }
+
+  &:focus {
+    background: transparent;
+    border: 4px solid variables.$grey-02;
+    padding: 12px;
+  }
+
   &--icon {
     padding-right: 80px;
   }
@@ -298,6 +313,21 @@
     line-height: 26px;
     color: variables.$black-03;
   }
+
+  &--area {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    background: variables.$grey-01;
+    border: none;
+
+    &::placeholder {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+      color: variables.$black-03;
+    }
+  }
 }
 
 .form__input:invalid:not(:placeholder-shown) {
@@ -306,21 +336,6 @@
 
 .form__input:required:valid {
   outline: 2px solid variables.$correct;
-}
-
-.form__input-area {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 16px;
-  background: variables.$grey-01;
-  border: none;
-
-  &::placeholder {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    color: variables.$black-03;
-  }
 }
 
 .form__legend {

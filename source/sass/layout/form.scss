@@ -150,7 +150,7 @@
   position: relative;
 
   &--icon {
-    &::after {
+    &::before {
       content: "";
       position: absolute;
       right: 0;
@@ -208,7 +208,8 @@
   }
 }
 
-.form__sub--bold > input {
+.form__input[type="radio"],
+.form__input[type="checkbox"] {
   position: absolute;
   appearance: none;
   width: 1px;
@@ -217,17 +218,8 @@
   clip: rect(0 0 0 0);
 }
 
-// .form__input-radio {
-//   position: absolute;
-//   appearance: none;
-//   width: 1px;
-//   height: 1px;
-//   overflow: hidden;
-//   clip: rect(0 0 0 0);
-// }
-
-// Radio checked
-.form__input-radio:checked + .form__custom-input--radio {
+//* Checked
+.form__input[type="radio"]:checked + .form__custom-input--radio {
   &::before {
     content: "";
     position: absolute;
@@ -241,81 +233,51 @@
   }
 }
 
-.form__sub--bold:hover .form__custom-input--radio {
-  background: variables.$grey-02;
-}
-
-.form__input-radio:focus + .form__custom-input--radio {
-  background: variables.$grey-02;
-}
-
-.form__sub--bold:active .form__custom-input--radio {
-  opacity: 0.7;
-}
-
-// .form__input-checkbox {
-//   position: absolute;
-//   appearance: none;
-//   width: 1px;
-//   height: 1px;
-//   overflow: hidden;
-//   clip: rect(0 0 0 0);
-// }
-
-// Radio disabled
-.form__input-radio:disabled + .form__custom-input--radio {
-  background: variables.$grey-01;
-}
-
-.form__input-radio:disabled:active + .form__custom-input--radio {
-  opacity: 1;
-}
-
-.form__input-radio:disabled ~ span {
-  color: variables.$grey-04;
-}
-
-// Checkbox checked
-.form__input-checkbox:checked + .form__custom-input--checkbox {
+.form__input[type="checkbox"]:checked + .form__custom-input--checkbox {
   background-image: url("../img/checkbox-tick.svg");
   background-color: variables.$grey-01;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.form__input-checkbox:hover + .form__custom-input--checkbox {
+.form__input[type="radio"]:hover + .form__custom-input--radio,
+.form__input[type="checkbox"]:hover + .form__custom-input--checkbox {
   background-color: variables.$grey-02;
 }
 
-.form__input-checkbox:focus + .form__custom-input--checkbox {
+.form__input[type="radio"]:focus + .form__custom-input--radio,
+.form__input[type="checkbox"]:focus + .form__custom-input--checkbox {
   background-color: variables.$grey-02;
 }
 
-.form__input-checkbox:active + .form__custom-input--checkbox {
+.form__input[type="radio"]:active + .form__custom-input--radio,
+.form__input[type="checkbox"]:active + .form__custom-input--checkbox {
   background-color: variables.$grey-04;
 }
 
-.form__input-checkbox:checked:active + .form__custom-input--checkbox {
+.form__input[type="radio"]:checked:active + .form__custom-input--radio,
+.form__input[type="checkbox"]:checked:active + .form__custom-input--checkbox {
   opacity: 0.7;
   background-color: variables.$grey-04;
 }
 
-.form__input-checkbox:checked:focus + .form__custom-input--checkbox {
+.form__input[type="radio"]:checked:focus + .form__custom-input--radio,
+.form__input[type="checkbox"]:checked:focus + .form__custom-input--checkbox {
   background-color: variables.$grey-02;
 }
+//***
 
-// Checkbox disabled
-.form__input-checkbox:disabled + .form__custom-input--checkbox {
+//* Disabled
+.form__input[type="radio"]:disabled + .form__custom-input--radio,
+.form__input[type="checkbox"]:disabled + .form__custom-input--checkbox {
   background-color: variables.$grey-01;
 }
 
-.form__input-checkbox:hover:disabled + .form__custom-input--checkbox {
-  background-color: variables.$grey-01;
-}
-
-.form__input-checkbox:disabled ~ span {
+.form__input[type="radio"]:disabled ~ span,
+.form__input[type="checkbox"]:disabled ~ span {
   color: variables.$grey-04;
 }
+//***
 
 .form__input {
   width: 100%;
@@ -335,6 +297,10 @@
     line-height: 26px;
     color: variables.$black-03;
   }
+}
+
+.form__input:valid {
+  border: 2px solid green;
 }
 
 .form__input-area {

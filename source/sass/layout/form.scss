@@ -157,7 +157,8 @@
       bottom: 0;
       width: 58px;
       height: 58px;
-      background: variables.$grey-02;
+      background-color: variables.$grey-02;
+      z-index: 1;
     }
   }
 }
@@ -299,8 +300,12 @@
   }
 }
 
-.form__input:valid {
-  border: 2px solid green;
+.form__input:invalid:not(:placeholder-shown) {
+  outline: 2px solid variables.$error;
+}
+
+.form__input:required:valid {
+  outline: 2px solid variables.$correct;
 }
 
 .form__input-area {

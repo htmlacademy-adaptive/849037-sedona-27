@@ -78,11 +78,11 @@
               <legend class="form__title">Представьтесь:</legend>
               <div class="form__inner-wrapper">
                 <label class="form__sub" for="name">Имя*:</label>
-                <input class="form__input" id="name" name="name" type="text" placeholder="Пётр" required>
+                <input class="form__input" id="name" name="name" type="text" placeholder="Пётр" maxlength="15" minlength="2" maxlength="15" required>
               </div>
               <div class="form__inner-wrapper">
                 <label class="form__sub" for="first-name">Фамилия*:</label>
-                <input class="form__input" id="first-name" name="first-name" type="text" placeholder="Пустота" required>
+                <input class="form__input" id="first-name" name="first-name" type="text" placeholder="Пустота" minlength="2" maxlength="25" required>
               </div>
               <div class="form__inner-wrapper">
                 <label class="form__sub" for="patronym">Отчество:</label>
@@ -92,13 +92,12 @@
 
             <fieldset class="form__user-info">
               <legend class="form__title form__title--left">Контактная информация:</legend>
-              <!--todo Сделать иконки в инпутах через стили  -->
               <div class="form__inner-wrapper form__inner-wrapper--icon">
                 <svg class="form__input-icon" width="18" height="18">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
                 </svg>
                 <label class="form__sub" for="tel">Контактный телефон*:</label>
-                <input class="form__input form__input--icon" id="tel" name="tel" type="tel" placeholder="Введите телефон" required>
+                <input class="form__input form__input--icon" id="tel" name="tel" type="tel" placeholder="Введите телефон" minlength="11" maxlength="11" pattern="[0-9]{11}" required>
               </div>
               <div class="form__inner-wrapper form__inner-wrapper--icon">
                 <label class="form__sub" for="mail">Электронная почта*:</label>

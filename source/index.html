@@ -154,8 +154,10 @@
       </section>
       <!--* /.service -->
 
-      <section class="main-map">
+      <section class="main-map" id="map">
         <h2 class="visually-hidden">Карта города Седона.</h2>
+        <div id="map" class="main-map__container"></div>
+        <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6b418c323109c98309e4e0983ede9d61d9e0e1236b5147a4703e4e0782082eac&amp;source=constructor" width="100%" height="350" frameborder="0"></iframe> -->
       </section>
       <!--* /.main-map -->
 
@@ -204,5 +206,7 @@
     </footer>
     <!--* /.footer -->
 
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>

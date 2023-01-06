@@ -13,7 +13,6 @@ ymaps.ready(init);
     });
 
     myMap.behaviors.disable([
-      'drag',
       'scrollZoom'
     ]);
 

@@ -39,7 +39,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/second_intro_bg-mobile@2x.jpg");
@@ -65,10 +65,8 @@
 }
 
 .second-intro__wrapper-image {
-  // display: flex;
-  // justify-content: center;
   text-align: center;
-  padding: 108px 18px 67px;
+  padding: 108px 18px 63px;
 
   @media (min-width: variables.$tablet-width) {
     padding: 151px 0 117px;
@@ -78,18 +76,6 @@
     padding: 157px 0 120px;
   }
 }
-
-// .second-intro__image {
-//   @include mixins.img;
-
-//   @media (min-width: variables.$tablet-width) {
-//     width: 456px;
-//   }
-
-//   @media (min-width: variables.$tablet-width) {
-//     width: 460px;
-//   }
-// }
 
 .second-intro__icon-text {
   width: 229px;

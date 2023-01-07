@@ -2,11 +2,15 @@
 @use "../global/variables.scss";
 
 .footer__wrapper {
-  padding: 38px 18px 23px;
+  padding: 24px 18px 23px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: variables.$white;
+
+  &--main {
+    padding-top: 38px;
+  }
 
   @media (min-width: variables.$tablet-width) {
     display: flex;

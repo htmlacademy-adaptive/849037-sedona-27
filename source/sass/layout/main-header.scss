@@ -2,6 +2,8 @@
 @use "../global/mixins.scss";
 
 .main-header {
+  position: relative;
+
   &--nojs .main-header__logo-wrapper {
     height: 0;
   }
@@ -52,7 +54,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 56px;
   z-index: 10;
 
   &--closed {
@@ -69,12 +70,14 @@
   }
 }
 
-.main-header__logo-link {
+.main-header__logo-image {
   position: absolute;
   top: 0;
   right: 50%;
   transform: translateX(50%);
   z-index: 4;
+
+  @include mixins.img;
 
   @media (min-width: variables.$tablet-width) {
     position: fixed;
@@ -82,17 +85,14 @@
   }
 }
 
-.main-header__logo-image {
-  @include mixins.img;
-}
-
 .main-header__toggle {
+  width: 63px;
+  height: 59px;
+  padding: 0;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 99;
-  width: 56px;
-  height: 56px;
   border: none;
   background: transparent;
   cursor: pointer;

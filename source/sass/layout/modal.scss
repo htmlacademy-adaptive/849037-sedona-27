@@ -10,6 +10,14 @@
   background: variables.$black-03;
   z-index: 1000;
   text-align: center;
+
+  &--error {
+    visibility: hidden;
+  }
+
+  &--success {
+    visibility: hidden;
+  }
 }
 
 .modal__wrapper {

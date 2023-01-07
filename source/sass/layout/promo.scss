@@ -2,15 +2,13 @@
 @use "../global/mixins.scss";
 
 .promo {
-  text-align: center;
-  padding: 32px 18px 32px;
   background: variables.$white;
 }
 
-// .promo__wrapper {
-//   min-width: 220px;
-//   width: 100%;
-// }
+.promo__wrapper {
+  padding: 25px 24px 32px;
+  text-align: center;
+}
 
 .promo__title {
   margin: 0;

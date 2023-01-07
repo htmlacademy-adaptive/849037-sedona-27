@@ -38,13 +38,13 @@
 }
 
 .intro__wrapper {
-  margin-top: 56px;
+  margin-top: 55px;
   background-color: variables.$blue-01;
   background-image: url("../img/intro_bg-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: 100% 100%;
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
+  clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 98%, 0 91%);
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/intro_bg-mobile@2x.jpg");

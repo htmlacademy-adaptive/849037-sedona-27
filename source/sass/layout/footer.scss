@@ -2,7 +2,7 @@
 @use "../global/variables.scss";
 
 .footer__wrapper {
-  padding: 39px 18px 23px;
+  padding: 38px 18px 23px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@
 }
 
 .footer__copyright {
-  margin-top: 40px;
+  margin-top: 42px;
 
   @media (min-width: variables.$tablet-width) {
     margin: 0;

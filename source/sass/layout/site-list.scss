@@ -65,6 +65,9 @@
   }
 
   @media (min-width: variables.$tablet-width) {
+    padding: 18px 0 17px;
+    font-size: 14px;
+    line-height: 21px;
     color: variables.$black-02;
 
     &:hover {

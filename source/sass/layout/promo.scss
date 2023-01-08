@@ -8,6 +8,10 @@
 .promo__wrapper {
   padding: 25px 24px 32px;
   text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 49px 75px 56px;
+  }
 }
 
 .promo__title {
@@ -16,6 +20,11 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .promo__subtitle {
@@ -27,4 +36,8 @@
   line-height: 21px;
   text-transform: uppercase;
   color: variables.$black-02;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 28px;
+  }
 }

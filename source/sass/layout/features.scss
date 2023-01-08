@@ -22,9 +22,20 @@
 }
 
 .features__item {
-  padding: 24px 31px;
+  padding: 35px 15px;
   background: variables.$grey-03;
   border-bottom: 1px solid variables.$grey-04;
+
+  &--accent {
+    padding: 0;
+    border: none;
+    background: variables.$blue-01;
+  }
+
+  // &:last-child {
+  //   padding-top: 26px;
+  //   padding-bottom: 28px;
+  // }
 
   @media (min-width: variables.$tablet-width) {
     display: flex;
@@ -32,37 +43,24 @@
     align-items: center;
     justify-content: center;
     border-bottom: none;
-  }
+    padding: 30px 30px 30px;
 
-  &--accent {
-    padding: 0;
-    border: none;
-    background: variables.$blue-01;
-
-    @media (min-width: variables.$tablet-width) {
+    &--accent {
       grid-column: 1 / 4;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      padding: 0;
     }
-  }
 
-  &:last-child {
-    padding-top: 26px;
-    padding-bottom: 28px;
+    & > h3 {
+      padding: 0 20px;
+    }
   }
 }
 
 .features__item-wrapper {
   padding: 54px 18px 40px;
   color: variables.$white;
-
-  &--accent-second {
-    padding: 37px 18px 37px;
-  }
-
-  @media (min-width: variables.$tablet-width) {
-    padding: 0 30px;
-  }
 
   &--accent-first {
     position: relative;
@@ -77,16 +75,22 @@
       height: 25px;
       clip-path: polygon(50% 100%, -90px 0%, 130% 0%);
     }
+  }
 
-    @media (min-width: variables.$tablet-width) {
+  &--accent-second {
+    padding: 37px 18px 37px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 21px 40px 0;
+
+    &--accent-first {
       &::before {
         display: none;
       }
     }
-  }
 
-  &--accent-second {
-    @media (min-width: variables.$tablet-width) {
+    &--accent-second {
       order: 2;
     }
   }
@@ -98,6 +102,11 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .features__subject {
@@ -149,6 +158,10 @@
 
   &--white {
     color: variables.$white;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 24px;
   }
 }
 

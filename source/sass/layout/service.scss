@@ -8,6 +8,10 @@
   padding: 38px 18px 49px;
   background: variables.$white;
   text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 61px 155px 55px;
+  }
 }
 
 .service__title {
@@ -16,6 +20,11 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .service__text {
@@ -26,4 +35,8 @@
   line-height: 21px;
   text-transform: uppercase;
   color: variables.$black-02;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 32px;
+  }
 }

@@ -5,13 +5,12 @@
   @include mixins.list-reset;
 
   width: 100%;
-  padding-bottom: 46px;
   background: variables.$white;
 
   @media (min-width: variables.$tablet-width) {
     display: flex;
     align-items: baseline;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 }
@@ -21,10 +20,15 @@
   text-align: left;
 
   @media (min-width: variables.$tablet-width) {
-    margin: 0;
-    padding: 80px 10px 10px;
-    text-align: center;
     width: 256px;
+    margin: 0;
+    padding: 155px 40px 62px;
+    text-align: center;
+    box-sizing: border-box;
+
+    &:nth-child(2) {
+      padding: 155px 50px 62px;
+    }
   }
 }
 
@@ -44,7 +48,6 @@
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
-    // background: variables.$grey-04;
   }
 
   &--house::before {
@@ -64,10 +67,37 @@
   }
 
   @media (min-width: variables.$tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+
     &::before {
-      top: -50px;
+      top: -96px;
       left: 50%;
       transform: translateX(-50%);
+    }
+
+    &--house::before {
+      width: 77px;
+      height: 72px;
+      background: url("../img/icon-house.svg") center center / cover no-repeat;
+    }
+
+    &--food::before {
+      width: 80px;
+      height: 70px;
+      background: url("../img/icon-food.svg") center center / cover no-repeat;
+    }
+
+    &--gift {
+      margin-top: 0;
+    }
+
+    &--gift::before {
+      width: 71px;
+      height: 81px;
+      // top: -95px;
+      // left: 131px;
+      background: url("../img/icon-gift.svg") center center / cover no-repeat;
     }
   }
 }
@@ -81,4 +111,8 @@
   line-height: 21px;
   text-transform: uppercase;
   color: variables.$black-02;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 24px;
+  }
 }

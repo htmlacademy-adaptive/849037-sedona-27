@@ -2,7 +2,6 @@
 @use "../global/mixins.scss";
 
 .social {
-  @include mixins.list-reset;
   display: flex;
 }
 

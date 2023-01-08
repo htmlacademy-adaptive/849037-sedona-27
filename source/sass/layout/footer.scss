@@ -16,7 +16,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 39px 74px 23px 60px;
   }
 }
 
@@ -26,6 +27,14 @@
 
   @media (min-width: variables.$tablet-width) {
     margin: 0;
+  }
+}
+
+.footer__social {
+  @include mixins.list-reset;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-left: 14px;
   }
 }
 

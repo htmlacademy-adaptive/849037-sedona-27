@@ -22,7 +22,7 @@ ymaps.ready(init);
     }, {
       iconLayout: 'default#image',
       iconImageHref: 'img/icon-map_pin.svg',
-      iconImageSize: [30, 42],
+      iconImageSize: [27, 27],
       iconImageOffset: [-20, -28]
     });
 

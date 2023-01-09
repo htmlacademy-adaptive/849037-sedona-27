@@ -11,6 +11,8 @@ import removeHtmlComments from 'gulp-remove-html-comments';
 import terser from 'gulp-terser';
 import imagemin from 'gulp-imagemin';
 import webp from 'gulp-webp';
+import svgmin from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore';
 import del from 'del';
 
 
@@ -57,16 +59,45 @@ const prodImages = () => {
 
 // WebP
 const createWebp = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src([
+    'source/img/**/*.{jpg,png}',
+    '!source/img/favicon/*.{jpg,png}'
+  ])
     .pipe(webp())
     .pipe(gulp.dest('build/img'));
 }
 
-//todo SVG
+// SVG
+const svg = () =>
+  gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+    .pipe(svgmin())
+    .pipe(gulp.dest('build/img'));
+
+export const sprite = () => {
+  return gulp.src('source/img/icons/*.svg')
+    .pipe(svgmin())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('build/img'));
+}
 
 // Clean
 const clean = () => {
   return del('build')
+}
+
+// Copy
+const copy = (done) => {
+  gulp.src([
+    'source/fonts/*.{woff2,woff}',
+    'source/*.{ico,svg,webmanifest}'
+  ],{
+    base: 'source'
+  })
+    .pipe(gulp.dest('build'))
+  done();
 }
 
 // Server
@@ -98,6 +129,8 @@ const watcher = () => {
 export const build = gulp.series(
   clean,
   prodImages,
+  svg,
+  copy,
   gulp.parallel(
     styles,
     html,
@@ -110,6 +143,9 @@ export const build = gulp.series(
 export default gulp.series(
   clean,
   copyImages,
+  svg,
+  sprite,
+  copy,
   gulp.parallel(
     styles,
     html,

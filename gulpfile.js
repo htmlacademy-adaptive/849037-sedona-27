@@ -130,6 +130,7 @@ export const build = gulp.series(
   clean,
   prodImages,
   svg,
+  sprite,
   copy,
   gulp.parallel(
     styles,

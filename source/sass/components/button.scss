@@ -33,12 +33,17 @@
   }
 
   &--link {
+    max-width: 458px;
     margin-top: 33px;
     display: block;
     text-decoration: none;
 
     @media (min-width: variables.$tablet-width) {
       margin-top: 42px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      margin-top: 47px;
     }
   }
 

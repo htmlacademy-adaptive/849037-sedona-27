@@ -5,29 +5,51 @@
   @include mixins.list-reset;
 
   width: 100%;
+  padding-bottom: 46px;
   background: variables.$white;
 
   @media (min-width: variables.$tablet-width) {
+    padding: 0;
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0 24px;
   }
 }
 
 .city-feature__item {
+  max-width: 458px;
+  margin: 0 auto;
   padding: 32px 18px 0 65px;
   text-align: left;
 
   @media (min-width: variables.$tablet-width) {
     width: 256px;
     margin: 0;
-    padding: 155px 40px 62px;
+    padding: 155px 20px 62px;
     text-align: center;
     box-sizing: border-box;
 
-    &:nth-child(2) {
-      padding: 155px 50px 62px;
+    &:nth-child(odd) {
+      padding: 168px 20px 62px;
+    }
+
+    &:nth-child(odd) p {
+      padding: 0 20px;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    min-width: 350px;
+    padding: 155px 20px 70px;
+
+    & p {
+      padding: 0;
     }
   }
 }
@@ -95,8 +117,6 @@
     &--gift::before {
       width: 71px;
       height: 81px;
-      // top: -95px;
-      // left: 131px;
       background: url("../img/icon-gift.svg") center center / cover no-repeat;
     }
   }

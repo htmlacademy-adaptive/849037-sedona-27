@@ -26,5 +26,9 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  margin-right: 11px;
+  margin-right: 12px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-right: 9px;
+  }
 }

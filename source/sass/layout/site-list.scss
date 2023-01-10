@@ -48,6 +48,12 @@
       margin-right: 153px;
     }
   }
+
+  @media (min-width: variables.$desktop-width) {
+    &:nth-child(2) {
+      margin-right: 240px;
+    }
+  }
 }
 
 .site-list__link {

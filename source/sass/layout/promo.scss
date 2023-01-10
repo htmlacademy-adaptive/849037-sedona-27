@@ -12,6 +12,10 @@
   @media (min-width: variables.$tablet-width) {
     padding: 49px 75px 56px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 54px 75px 46px;
+  }
 }
 
 .promo__title {
@@ -22,6 +26,8 @@
   text-transform: uppercase;
 
   @media (min-width: variables.$tablet-width) {
+    max-width: 500px;
+    margin: 0 auto;
     font-size: 21px;
     line-height: 26px;
   }

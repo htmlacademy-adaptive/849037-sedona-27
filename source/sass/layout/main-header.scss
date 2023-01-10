@@ -24,6 +24,10 @@
     margin-top: 0;
   }
 
+  &--nojs .second-intro__wrapper-image {
+    padding: 50px 18px 63px;
+  }
+
   @media (min-width: variables.$tablet-width) {
     &--nojs .main-header__nav {
       position: fixed;

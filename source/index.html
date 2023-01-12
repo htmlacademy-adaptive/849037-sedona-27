@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="shortcut icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
     <link rel="shortcut icon" href="img/favicon/favicon-16x16.png" type="image/png">
     <link rel="shortcut icon" href="img/favicon/favicon-32x32.png" type="image/png">
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" type="image/png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="./js/app.js" defer></script>
   </head>
   <body class="page__body">
@@ -39,6 +41,12 @@
       </nav>
 
       <button class="main-header__toggle" type="button">
+        <svg class="main-header__icon-btn main-header__icon-btn--open" width="25" height="25">
+          <use xlink:href="img/sprite.svg#open-menu"></use>
+        </svg>
+        <svg class="main-header__icon-btn main-header__icon-btn--close visually-hidden" width="25" height="25">
+          <use xlink:href="img/sprite.svg#close-menu"></use>
+        </svg>
         <span class="visually-hidden">Open menu</span>
       </button>
       <!--* /.main-nav -->
@@ -49,7 +57,6 @@
             <svg class="intro__icon-text" width="282" height="214">
               <use xlink:href="img/sprite.svg#intro"></use>
             </svg>
-            <!-- <img class="intro__image" src="img/intro_text-mobile.svg" width="282" height="214" alt="Логотип города Седона."> -->
           </div>
         </div>
       </div>
@@ -83,6 +90,10 @@
               </div>
               <div class="features__img-wrapper features__img-wrapper--right-img">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1280px)" srcset="img/city_img-desktop.webp 1x, img/city_img-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/city_img-tablet.webp 1x, img/city_img-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/city_img-mobile.webp 1x, img/city_img-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1280px)" srcset="img/city_img-desktop.jpg 1x, img/city_img-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/city_img-tablet.jpg 1x, img/city_img-tablet@2x.jpg 2x">
                   <img class="features__img" src="img/city_img-mobile.jpg" srcset="img/city_img-mobile@2x.jpg 2x" width="320" height="260" alt="Американский флаг на фоне здания в городе Седона">
@@ -96,23 +107,29 @@
                 </li>
                 <li class="city-feature__item">
                   <h4 class="city-feature__title city-feature__title--food">Еда</h4>
-                  <p class="city-feature__desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  <p class="city-feature__desc">Всегда заказывайте фирменный бургер, вы&nbspне&nbspазочаруетесь!</p>
                 </li>
                 <li class="city-feature__item">
                   <h4 class="city-feature__title city-feature__title--gift">Сувениры</h4>
-                  <p class="city-feature__desc">Не только китайского, но и местного производства!</p>
+                  <p class="city-feature__desc">Не только китайского, но&nbspи&nbspместного производства!</p>
                 </li>
               </ul>
             </li>
 
             <li class="features__item features__item--accent">
               <div class="features__item-wrapper features__item-wrapper--accent-second">
-                <h3 class="features__title">Там есть мост дьявола</h3>
+                <h3 class="features__title">
+                  Там&nbspесть мост&nbspдьявола
+                </h3>
                 <span class="features__subject features__subject--white">№2</span>
-                <p class="features__text features__text--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                <p class="features__text features__text--white features__text--width">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="features__img-wrapper features__img-wrapper--left-img">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1280px)" srcset="img/bridge_img-desktop.webp 1x, img/bridge_img-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/bridge_img-tablet.webp 1x, img/bridge_img-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/bridge_img-mobile.webp 1x, img/bridge_img-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1280px)" srcset="img/bridge_img-desktop.jpg 1x, img/bridge_img-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/bridge_img-tablet.jpg 1x, img/bridge_img-tablet@2x.jpg 2x">
                   <img class="features__img" src="img/bridge_img-mobile.jpg" srcset="img/bridge_img-mobile@2x.jpg 2x" width="320" height="260" alt="Глубокое ущелье на фоне гор">
@@ -127,7 +144,7 @@
             <li class="features__item">
               <h3 class="features__title">Красивая дорога</h3>
               <span class="features__subject">№4</span>
-              <p class="features__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <p class="features__text">Ехать в Седону из Лас-Вегаса совсем не&nbspскучно!</p>
             </li>
             <li class="features__item">
               <h3 class="features__title">Мало туристов</h3>
@@ -142,20 +159,24 @@
         <h2 class="visually-hidden">Пдобрать гостиницу в городе Седона.</h2>
 
         <h3 class="service__title">Заинтересовались?</h3>
-        <p class="service__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="service__text">
+          Укажите предполагаемые даты поездки, и&nbspмы&nbspпокажем&nbspвам&nbspлучшие предложения&nbspгостиниц&nbspв&nbspСедоне
+        </p>
         <a class="button button--link" href="#">Найти гостиницу</a>
       </section>
       <!--* /.service -->
 
-      <section class="main-map">
+      <section class="main-map" id="map">
         <h2 class="visually-hidden">Карта города Седона.</h2>
+        <div id="map" class="main-map__container"></div>
+        <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6b418c323109c98309e4e0983ede9d61d9e0e1236b5147a4703e4e0782082eac&amp;source=constructor" width="100%" height="350" frameborder="0"></iframe> -->
       </section>
       <!--* /.main-map -->
 
     </main>
 
     <footer class="page__footer footer">
-      <div class="footer__wrapper">
+      <div class="footer__wrapper footer__wrapper--main">
         <p class="footer__tags tags">
           <a href="#" class="tags__link">#visitsedona</a>
         </p>
@@ -197,5 +218,7 @@
     </footer>
     <!--* /.footer -->
 
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=75867c52-3f12-411b-9481-32985aadf3a9&lang=ru_RU" type="text/javascript"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>

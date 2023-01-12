@@ -3,7 +3,6 @@
 
 .site-list {
   @include mixins.list-reset;
-  min-height: 56px;
   background: variables.$white;
 
   @media (min-width: variables.$tablet-width) {
@@ -14,6 +13,7 @@
 }
 
 .site-list__item {
+  position: relative;
   width: 100%;
   text-align: center;
   background: variables.$blue-01;
@@ -22,22 +22,46 @@
 
   &:last-child {
     border-bottom: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      height: 7px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    }
   }
 
   @media (min-width: variables.$tablet-width) {
     background: none;
     border: none;
 
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+
     &:nth-child(2) {
       margin-right: 153px;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    &:nth-child(2) {
+      margin-right: 240px;
     }
   }
 }
 
 .site-list__link {
   display: block;
-  padding: 18px 0;
+  padding: 16px 0 12px;
   font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
   text-decoration: none;
   color: variables.$white;
   text-transform: uppercase;
@@ -47,11 +71,30 @@
   }
 
   @media (min-width: variables.$tablet-width) {
+    padding: 18px 0 17px;
+    font-size: 14px;
+    line-height: 21px;
     color: variables.$black-02;
+
+    &:hover {
+      color: variables.$blue-01;
+    }
+
+    &:focus {
+      color: variables.$blue-01;
+    }
+
+    &:active {
+      color: variables.$black-03;
+    }
 
     &--active {
       color: variables.$color-active;
       font-weight: 700;
+
+      &:hover {
+        color: variables.$color-active;
+      }
     }
   }
 }

@@ -12,6 +12,10 @@
     color: variables.$blue-01;
   }
 
+  &:focus {
+    color: variables.$blue-01;
+  }
+
   &:active {
     color: variables.$grey-05;
   }
@@ -22,5 +26,9 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  margin-right: 12px;
+  margin-right: 9px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-right: 9px;
+  }
 }

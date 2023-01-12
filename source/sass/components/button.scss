@@ -15,14 +15,36 @@
   border: none;
   cursor: pointer;
 
+  &:hover {
+    background: variables.$blue-02;
+  }
+
+  &:focus {
+    background: variables.$blue-02;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background: variables.$blue-03;
+  }
+
   @media (min-width: variables.$tablet-width) {
     max-width: 458px;
   }
 
   &--link {
-    margin-top: 20px;
+    max-width: 458px;
+    margin-top: 33px;
     display: block;
     text-decoration: none;
+
+    @media (min-width: variables.$tablet-width) {
+      margin-top: 42px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      margin-top: 46px;
+    }
   }
 
   &--actions {

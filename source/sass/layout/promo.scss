@@ -2,15 +2,21 @@
 @use "../global/mixins.scss";
 
 .promo {
-  text-align: center;
-  padding: 32px 18px 32px;
   background: variables.$white;
 }
 
-// .promo__wrapper {
-//   min-width: 220px;
-//   width: 100%;
-// }
+.promo__wrapper {
+  padding: 25px 24px 31px;
+  text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 49px 75px 56px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 54px 75px 46px;
+  }
+}
 
 .promo__title {
   margin: 0;
@@ -18,6 +24,13 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: variables.$tablet-width) {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .promo__subtitle {
@@ -29,4 +42,8 @@
   line-height: 21px;
   text-transform: uppercase;
   color: variables.$black-02;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 28px;
+  }
 }

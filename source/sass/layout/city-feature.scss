@@ -18,7 +18,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 0 24px;
+    padding: 0;
   }
 }
 
@@ -36,7 +36,7 @@
     box-sizing: border-box;
 
     &:nth-child(odd) {
-      padding: 168px 20px 62px;
+      padding: 155px 20px 62px;
     }
 
     &:nth-child(odd) p {
@@ -46,7 +46,11 @@
 
   @media (min-width: variables.$desktop-width) {
     min-width: 350px;
-    padding: 155px 20px 70px;
+    padding: 168px 20px 70px;
+
+    &:nth-child(odd) {
+      padding: 168px 20px 62px;
+    }
 
     & p {
       padding: 0;
@@ -101,13 +105,11 @@
     &--house::before {
       width: 77px;
       height: 72px;
-      background: url("../img/icon-house.svg") center center / cover no-repeat;
     }
 
     &--food::before {
       width: 80px;
       height: 70px;
-      background: url("../img/icon-food.svg") center center / cover no-repeat;
     }
 
     &--gift {
@@ -117,7 +119,27 @@
     &--gift::before {
       width: 71px;
       height: 81px;
-      background: url("../img/icon-gift.svg") center center / cover no-repeat;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--house::before {
+      top: -99px;
+    }
+
+    &--food::before {
+      top: -96px;
+      left: 49%;
+      width: 75px;
+    }
+
+    &--gift::before {
+      top: -102px;
     }
   }
 }

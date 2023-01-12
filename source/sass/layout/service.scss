@@ -10,7 +10,7 @@
   text-align: center;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 61px 155px 55px;
+    padding: 61px 155px 58px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -42,14 +42,11 @@
   color: variables.$black-02;
 
   @media (min-width: variables.$tablet-width) {
-    margin-top: 32px;
-
-    & span {
-      display: block;
-    }
+    margin-top: 31px;
   }
 
   @media (min-width: variables.$desktop-width) {
     margin-top: 30px;
+    line-height: 22px;
   }
 }

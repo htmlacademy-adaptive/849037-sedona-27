@@ -22,7 +22,7 @@
 }
 
 .features__item {
-  padding: 24px 18px 25px;
+  padding: 24px 18px 24px;
   background: variables.$grey-03;
   border-bottom: 1px solid variables.$grey-04;
 
@@ -43,32 +43,24 @@
       padding: 0;
     }
 
-    & > h3 {
-      padding: 0 30%;
-    }
-
     &:nth-child(3n+4) {
       padding: 42px 0;
     }
 
     &:nth-child(3n+4) > p {
-      padding: 0 60px;
+      padding: 0 40px;
     }
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 64px 0 60px;
+    padding: 64px 0 40px;
 
     &--accent {
       padding: 0;
     }
 
     &:nth-child(3n+4) {
-      padding: 53px 0;
-    }
-
-    & > h3 {
-      padding: 0 120px;
+      padding: 53px 0 40px;
     }
   }
 }
@@ -88,12 +80,12 @@
       background: variables.$white;
       width: 100%;
       height: 25px;
-      clip-path: polygon(50% 97%, -90px 0%, 125% 0%);
+      clip-path: polygon(50% 100%, -100px 0%, 130% 0%);
     }
   }
 
   &--accent-second {
-    padding: 37px 18px 37px;
+    padding: 37px 18px 36px;
   }
 
   @media (min-width: variables.$tablet-width) {
@@ -119,6 +111,8 @@
   text-transform: uppercase;
 
   @media (min-width: variables.$tablet-width) {
+    width: 150px;
+    margin: 0 auto;
     font-size: 21px;
     line-height: 26px;
 
@@ -173,7 +167,7 @@
 .features__text {
   margin: 0;
   margin-top: 17px;
-  padding: 0 10%;
+  padding: 0 15px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -197,7 +191,11 @@
     padding: 0 35px;
 
     &--white {
-      padding: 0 40px;
+      padding: 0 45px;
+    }
+
+    &--width {
+      padding: 0 70px;
     }
   }
 }

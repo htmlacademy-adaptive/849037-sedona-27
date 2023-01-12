@@ -10,6 +10,7 @@ import htmlmin from 'gulp-htmlmin';
 import removeHtmlComments from 'gulp-remove-html-comments';
 import terser from 'gulp-terser';
 import imagemin from 'gulp-imagemin';
+import imageminMozjpeg from 'imagemin-mozjpeg';
 import webp from 'gulp-webp';
 import svgmin from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
@@ -54,7 +55,11 @@ const copyImages = () => {
 
 const prodImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-    .pipe(imagemin())
+    .pipe(imagemin({
+      plugins: [
+        imageminMozjpeg()
+      ]
+    }))
     .pipe(gulp.dest('build/img'));
 }
 

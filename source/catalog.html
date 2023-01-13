@@ -193,19 +193,22 @@
       </section>
       <!--* /.photos -->
 
-      <div class="benefits benefits--video">
+      <div class="benefits">
         <div class="benefits__wrapper">
           <h2 class="benefits__title">Все еще сомневаетесь?</h2>
           <p class="benefits__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
-          <video class="benefits__video" src="#" poster="img/video-mobile.jpg"></video>
+          <video class="benefits__video" preload="none" controls="controls" mute="mute" width="280" height="177" poster="img/video-bg.jpg">
+            <source src="video/Sedona-video-800x500.mp4" type="video/mp4">
+            К сожалению видео не поддерживается вашим браузером
+          </video>
       </div>
       <!--* /.benefits -->
 
     </main>
 
     <footer class="page__footer footer">
-      <div class="footer__wrapper">
+      <div class="footer__wrapper footer__wrapper--width">
         <p class="footer__tags tags">
           <a href="#" class="tags__link">#visitsedona</a>
         </p>

@@ -5,6 +5,14 @@
   padding: 37px 18px 35px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 67px 20px 81px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 98px 20px 89px;
+  }
 }
 
 .catalogue-header__title {
@@ -12,6 +20,10 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .catalogue-header__text {
@@ -21,4 +33,13 @@
   font-size: 14px;
   line-height: 21px;
   color: variables.$black-02;
+
+  @media (min-width: variables.$tablet-width) {
+    margin: 0 auto;
+    max-width: 430px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 32px;
+  }
 }

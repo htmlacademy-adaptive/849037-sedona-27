@@ -10,7 +10,6 @@ import htmlmin from 'gulp-htmlmin';
 import removeHtmlComments from 'gulp-remove-html-comments';
 import terser from 'gulp-terser';
 import imagemin from 'gulp-imagemin';
-import mozjpeg from 'imagemin-mozjpeg';
 import webp from 'gulp-webp';
 import svgmin from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
@@ -55,11 +54,11 @@ const copyImages = () => {
 
 const prodImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-    .pipe(imagemin({
-      plugins: [
-        mozjpeg()
-      ]
-    }))
+    .pipe(imagemin([
+      imagemin.mozjpeg({
+        progressive: true
+      })
+    ]))
     .pipe(gulp.dest('build/img'));
 }
 
@@ -69,7 +68,9 @@ const createWebp = () => {
     'source/img/**/*.{jpg,png}',
     '!source/img/favicon/*.{jpg,png}'
   ])
-    .pipe(webp())
+    .pipe(webp({
+      quality: 90
+    }))
     .pipe(gulp.dest('build/img'));
 }
 
@@ -79,7 +80,7 @@ const svg = () =>
     .pipe(svgmin())
     .pipe(gulp.dest('build/img'));
 
-export const sprite = () => {
+const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
     .pipe(svgmin())
     .pipe(svgstore({
@@ -134,10 +135,10 @@ const watcher = () => {
 // Build
 export const build = gulp.series(
   clean,
+  copy,
   prodImages,
   svg,
   sprite,
-  copy,
   gulp.parallel(
     styles,
     html,
@@ -149,10 +150,10 @@ export const build = gulp.series(
 // Develop
 export default gulp.series(
   clean,
+  copy,
   copyImages,
   svg,
   sprite,
-  copy,
   gulp.parallel(
     styles,
     html,

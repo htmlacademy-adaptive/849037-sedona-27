@@ -17,7 +17,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 36px 76px 23px 60px;
+    padding: 36px 60px 23px 60px;
 
     &--width {
       padding: 40px 60px 23px 60px;
@@ -47,7 +47,7 @@
   @include mixins.list-reset;
 
   @media (min-width: variables.$tablet-width) {
-    margin-left: 14px;
+    margin-left: -7px;
   }
 }
 

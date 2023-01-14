@@ -28,8 +28,14 @@
     background: variables.$blue-03;
   }
 
-  @media (min-width: variables.$tablet-width) {
-    max-width: 458px;
+  &--error {
+    margin-top: 28px;
+    width: 180px;
+  }
+
+  &--success {
+    font-size: 18px;
+    line-height: 26px;
   }
 
   &--link {
@@ -37,24 +43,41 @@
     margin-top: 33px;
     display: block;
     text-decoration: none;
-
-    @media (min-width: variables.$tablet-width) {
-      margin-top: 42px;
-    }
-
-    @media (min-width: variables.$desktop-width) {
-      margin-top: 46px;
-    }
   }
 
-  &--actions {
-    @media (min-width: variables.$tablet-width) {
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 42px;
+
+    &--actions {
+      margin: 0;
       width: 324px;
     }
+
+    &--error {
+      margin-top: 49px;
+      width: 272px;
+    }
+
+    &--success {
+      margin: 0;
+      font-size: 21px;
+      line-height: 26px;
+    }
   }
 
-  &--error {
-    margin-top: 28px;
-    max-width: 180px;
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 46px;
+
+    &--actions {
+      width: 384px;
+    }
+
+    &--error {
+      margin-top: 47px;
+    }
+
+    &--success {
+      margin: 0;
+    }
   }
 }

@@ -5,6 +5,10 @@
   @media (min-width: variables.$tablet-width) {
     padding: 0 60px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0;
+  }
 }
 
 .form__wrapper {
@@ -12,7 +16,7 @@
     display: flex;
     position: relative;
     padding-bottom: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
 
     &::before {
       content: "";
@@ -23,6 +27,14 @@
       top: 0;
       left: 50%;
       transform: translateX(-50%);
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-bottom: 0;
+
+    &::before {
+      left: 51%;
     }
   }
 }
@@ -47,7 +59,17 @@
     border: none;
 
     &:first-child {
+      margin: 0;
       margin-right: 90px;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 430px;
+
+    &:last-child {
+      width: 402px;
+      margin-left: 38px;
     }
   }
 }
@@ -70,6 +92,27 @@
   @media (min-width: variables.$tablet-width) {
     padding: 0;
     border: none;
+    margin-top: 40px;
+
+    &:nth-last-child(2) {
+      margin-top: 33px;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 65px;
+
+    &:nth-child(2) {
+      margin-top: 55px;
+    }
+
+    &:nth-child(2) .form__title {
+      margin-bottom: 40px;
+    }
+
+    &:nth-last-child(2) {
+      margin-top: 77px;
+    }
   }
 }
 
@@ -86,22 +129,30 @@
 
   @media (min-width: variables.$tablet-width) {
     justify-content: space-between;
-    padding: 0 100px;
+    padding: 0 56px;
+    margin-left: -20px;
 
     &--width-attraction {
-      padding: 0 100px;
+      padding: 0 105px;
     }
 
     &--width-emotion {
+      padding: 0;
       max-width: 768px;
       margin: 0 auto;
+      margin-top: 5px;
     }
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 0;
+    padding: 0 34px 0 72px;
 
     &--width-attraction {
+      margin-top: 30px;
+      padding: 0 25px 0 64px;
+    }
+
+    &--width-emotion {
       padding: 0;
     }
   }
@@ -121,6 +172,10 @@
   z-index: 2;
 
   @media (min-width: variables.$tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 23px;
+
     &--decor-line::before {
       content: "";
       position: absolute;
@@ -133,8 +188,25 @@
       z-index: 1;
     }
 
+    &--represent {
+      margin-left: 20px;
+    }
+
     &--left {
       text-align: left;
+      margin-left: -20px;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-left: 0;
+
+    &--represent {
+      margin-left: 32px;
+    }
+
+    &--left {
+      margin-left: 30px;
     }
   }
 }
@@ -149,7 +221,9 @@
   z-index: 3;
 
   @media (min-width: variables.$tablet-width) {
+    width: 340px;
     padding: 0 30px;
+    margin: 0 auto;
   }
 }
 
@@ -197,6 +271,12 @@
     line-height: 26px;
     text-transform: none;
     color: variables.$black-01;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    &--right:nth-child(-n+2) {
+      margin-right: 19px;
+    }
   }
 }
 
@@ -323,7 +403,13 @@
     color: variables.$black-03;
   }
 
+  &[type="text"]::placeholder {
+    opacity: 1;
+    color: variables.$black-01;
+  }
+
   &--area {
+    margin: 0;
     width: 100%;
     height: 150px;
     box-sizing: border-box;
@@ -337,6 +423,13 @@
       font-size: 18px;
       line-height: 26px;
       color: variables.$black-03;
+    }
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    &--area {
+      height: 160px;
+      padding: 17px 16px 16px;
     }
   }
 }
@@ -355,18 +448,27 @@
   line-height: 21px;
   text-transform: uppercase;
   color: variables.$black-02;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
 .form__btn-wrapper {
   text-align: right;
-  padding: 60px 20px 29px;
+  padding: 60px 20px 25px;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 40px 0;
+    padding: 48px 0 64px;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     max-width: 768px;
     margin: 0 auto;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 3px 0 63px 0;
   }
 }

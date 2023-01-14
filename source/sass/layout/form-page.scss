@@ -10,12 +10,17 @@
 }
 
 .form-page__header {
-  padding: 36px 20px 28px;
+  padding: 36px 20px 29px;
   text-align: center;
   border-bottom: 2px solid variables.$grey-03;
 
   @media (min-width: variables.$tablet-width) {
+    padding: 65px 20px 103px;
     border: none;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 113px 20px 67px;
   }
 }
 
@@ -25,6 +30,11 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .form-page__text {
@@ -35,4 +45,15 @@
   line-height: 21px;
   text-transform: uppercase;
   color: variables.$black-02;
+
+  @media (min-width: variables.$tablet-width) {
+    max-width: 445px;
+    margin: 0 auto;
+    margin-top: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 28px;
+  }
 }

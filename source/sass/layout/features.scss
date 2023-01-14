@@ -2,7 +2,6 @@
 @use "../global/variables.scss";
 
 .features {
-  @include mixins.list-reset;
   text-align: center;
 }
 
@@ -23,42 +22,52 @@
 }
 
 .features__item {
-  padding: 24px 18px;
+  padding: 24px 18px 24px;
   background: variables.$grey-03;
   border-bottom: 1px solid variables.$grey-04;
-
-  @media (min-width: variables.$tablet-width) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-bottom: none;
-  }
 
   &--accent {
     padding: 0;
     border: none;
     background: variables.$blue-01;
+  }
 
-    @media (min-width: variables.$tablet-width) {
+  @media (min-width: variables.$tablet-width) {
+    border-bottom: none;
+    padding: 52px 0;
+
+    &--accent {
       grid-column: 1 / 4;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      padding: 0;
+    }
+
+    &:nth-child(3n+4) {
+      padding: 42px 0;
+    }
+
+    &:nth-child(3n+4) > p {
+      padding: 0 40px;
     }
   }
 
-  &:last-child {
-    padding-bottom: 28px;
+  @media (min-width: variables.$desktop-width) {
+    padding: 64px 0 40px;
+
+    &--accent {
+      padding: 0;
+    }
+
+    &:nth-child(3n+4) {
+      padding: 53px 0 40px;
+    }
   }
 }
 
 .features__item-wrapper {
   padding: 54px 18px 40px;
   color: variables.$white;
-
-  @media (min-width: variables.$tablet-width) {
-    padding: 0 30px;
-  }
 
   &--accent-first {
     position: relative;
@@ -71,18 +80,24 @@
       background: variables.$white;
       width: 100%;
       height: 25px;
-      clip-path: polygon(50% 100%, -10px 8%, 105% 8%);
-    }
-
-    @media (min-width: variables.$tablet-width) {
-      &::before {
-        display: none;
-      }
+      clip-path: polygon(50% 100%, -100px 0%, 130% 0%);
     }
   }
 
   &--accent-second {
-    @media (min-width: variables.$tablet-width) {
+    padding: 37px 18px 36px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 53px 20px 20px;
+
+    &--accent-first {
+      &::before {
+        display: none;
+      }
+    }
+
+    &--accent-second {
       order: 2;
     }
   }
@@ -94,14 +109,30 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 150px;
+    margin: 0 auto;
+    font-size: 21px;
+    line-height: 26px;
+
+    & span {
+      display: block;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0 100px;
+  }
 }
 
 .features__subject {
+  display: inline-block;
   position: relative;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  margin-top: 11px;
+  margin-top: 12px;
   color: variables.$black-02;
 
   &::before,
@@ -111,16 +142,16 @@
     height: 1px;
     background: variables.$black-02;
     position: absolute;
-    top: 55%;
+    top: 60%;
     transform: translateY(-55%);
   }
 
   &::before {
-    left: -15px;
+    left: -12px;
   }
 
   &::after {
-    right: -15px;
+    right: -12px;
   }
 
   &--white {
@@ -136,6 +167,7 @@
 .features__text {
   margin: 0;
   margin-top: 17px;
+  padding: 0 15px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -143,7 +175,28 @@
   color: variables.$black-02;
 
   &--white {
+    padding: 0;
     color: variables.$white;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 24px;
+
+    &--white {
+      padding: 0 10px;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0 35px;
+
+    &--white {
+      padding: 0 45px;
+    }
+
+    &--width {
+      padding: 0 70px;
+    }
   }
 }
 

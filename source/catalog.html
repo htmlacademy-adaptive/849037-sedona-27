@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="shortcut icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
     <link rel="shortcut icon" href="img/favicon/favicon-16x16.png" type="image/png">
     <link rel="shortcut icon" href="img/favicon/favicon-32x32.png" type="image/png">
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" type="image/png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="./js/app.js" defer></script>
   </head>
   <body class="page__body">
@@ -41,6 +41,12 @@
       </nav>
 
       <button class="main-header__toggle" type="button">
+        <svg class="main-header__icon-btn main-header__icon-btn--open" width="25" height="25">
+          <use xlink:href="img/sprite.svg#open-menu"></use>
+        </svg>
+        <svg class="main-header__icon-btn main-header__icon-btn--close visually-hidden" width="25" height="25">
+          <use xlink:href="img/sprite.svg#close-menu"></use>
+        </svg>
         <span class="visually-hidden">Open menu</span>
       </button>
       <!--* /.main-nav -->
@@ -51,7 +57,6 @@
             <svg class="second-intro__icon-text" width="229" height="39">
               <use xlink:href="img/sprite.svg#second-intro"></use>
             </svg>
-            <!-- <img class="second-intro__image" src="img/sedona.svg" width="229" height="39" alt="Sedona название города."> -->
           </div>
         </div>
       </div>
@@ -75,9 +80,13 @@
           <figure class="lions__item">
             <div class="lions__image-wrapper lions__image-wrapper--accent">
               <picture>
-                <source media="(min-width: 1280px)" srcset="img/photo-1-desktop.jpg 1x">
-                <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x">
-                <img class="lions__image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Дорога с машиной на фоне пейзажа холмов.">
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1280px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img class="lions__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога с машиной на фоне пейзажа холмов.">
               </picture>
             </div>
             <figcaption class="lions__info-wrapper">
@@ -87,6 +96,9 @@
               </div>
               <div class="lions__likes-info">
                 <button class="lions__likes-btn">
+                  <svg class="lions__likes-icon" width="23" height="21">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
                   <span class="visually-hidden">Like</span>
                 </button>
                 <span class="lions__likes-count">1350</span>
@@ -95,7 +107,15 @@
           </figure>
           <figure class="lions__item">
             <div class="lions__image-wrapper">
-              <img class="lions__image" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Кактус на фоне скал.">
+              <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1280px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <img class="lions__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Кактус на фоне скал.">
+              </picture>
             </div>
             <figcaption class="lions__info-wrapper">
               <div class="lions__photo-info">
@@ -104,6 +124,9 @@
               </div>
               <div class="lions__likes-info">
                 <button class="lions__likes-btn">
+                  <svg class="lions__likes-icon" width="23" height="21">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
                   <span class="visually-hidden">Like</span>
                 </button>
                 <span class="lions__likes-count">143</span>
@@ -112,7 +135,15 @@
           </figure>
           <figure class="lions__item">
             <div class="lions__image-wrapper">
-              <img class="lions__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога из серпантин среди леса.">
+              <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1280px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                <img class="lions__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога из серпантин среди леса.">
+              </picture>
             </div>
             <figcaption class="lions__info-wrapper">
               <div class="lions__photo-info">
@@ -121,6 +152,9 @@
               </div>
               <div class="lions__likes-info">
                 <button class="lions__likes-btn">
+                  <svg class="lions__likes-icon" width="23" height="21">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
                   <span class="visually-hidden">Like</span>
                 </button>
                 <span class="lions__likes-count">96</span>
@@ -129,7 +163,15 @@
           </figure>
           <figure class="lions__item">
             <div class="lions__image-wrapper">
-              <img class="lions__image" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Каньон с деревьями на фоне монументов скал.">
+              <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1280px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                <img class="lions__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Каньон с деревьями на фоне монументов скал.">
+              </picture>
             </div>
             <figcaption class="lions__info-wrapper">
               <div class="lions__photo-info">
@@ -138,6 +180,9 @@
               </div>
               <div class="lions__likes-info">
                 <button class="lions__likes-btn">
+                  <svg class="lions__likes-icon" width="23" height="21">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
                   <span class="visually-hidden">Like</span>
                 </button>
                 <span class="lions__likes-count">254</span>
@@ -148,19 +193,24 @@
       </section>
       <!--* /.photos -->
 
-      <div class="benefits benefits--video">
+      <div class="benefits">
         <div class="benefits__wrapper">
           <h2 class="benefits__title">Все еще сомневаетесь?</h2>
           <p class="benefits__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
-          <video class="benefits__video" src="#" poster="img/video-mobile.jpg"></video>
+          <video class="benefits__video" preload="none" controls="controls" muted="muted" width="280" height="177" poster="img/video-bg.jpg">
+            <source src="video/Sedona-video.ogv" type="video/ogg">
+            <source src="video/Sedona-video.mp4" type="video/mp4">
+            <source src="video/Sedona-video.webm" type="video/webm">
+            К сожалению видео не поддерживается вашим браузером
+          </video>
       </div>
       <!--* /.benefits -->
 
     </main>
 
     <footer class="page__footer footer">
-      <div class="footer__wrapper">
+      <div class="footer__wrapper footer__wrapper--width">
         <p class="footer__tags tags">
           <a href="#" class="tags__link">#visitsedona</a>
         </p>

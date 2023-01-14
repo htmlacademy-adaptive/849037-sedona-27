@@ -2,12 +2,20 @@
 @use "../global/variables.scss";
 
 .service {
+  padding: 40px 18px 49px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 38px 18px 49px;
   background: variables.$white;
   text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 61px 155px 58px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 61px 155px 66px;
+  }
 }
 
 .service__title {
@@ -16,14 +24,29 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .service__text {
+  max-width: 458px;
   margin: 0;
-  margin-top: 17px;
+  margin-top: 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   color: variables.$black-02;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 31px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 30px;
+    line-height: 22px;
+  }
 }

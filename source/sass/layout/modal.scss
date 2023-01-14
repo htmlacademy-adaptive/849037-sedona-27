@@ -10,41 +10,69 @@
   background: variables.$black-03;
   z-index: 1000;
   text-align: center;
+
+  &--error {
+    visibility: hidden;
+  }
+
+  &--success {
+    visibility: hidden;
+  }
 }
 
 .modal__wrapper {
   position: fixed;
-  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   background: variables.$white;
+  box-sizing: border-box;
 
   &--error {
+    top: 256px;
     padding: 45px 42px 35px;
   }
 
-  @media (min-width: variables.$tablet-width) {
-    box-sizing: border-box;
+  &--success {
+    top: 563px;
+  }
 
+  @media (min-width: variables.$tablet-width) {
     &--error {
-      max-width: 400px;
-      padding: 50px 64px;
+      width: 400px;
+      height: 347px;
+      top: 456px;
+      padding: 45px 45px 50px;
     }
 
     &--success {
-      max-width: 640px;
+      width: 640px;
+      height: 347px;
+      top: 335px;
       padding: 0;
-      // padding: 50px 99px;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    &--error {
+      top: 417px;
+    }
+
+    &--success {
+      top: 317px;
     }
   }
 }
 
 .modal__text-wrapper {
-  padding: 20px;
+  padding: 39px 39px 51px;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 50px 110px;
+    padding: 45px 110px 50px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 43px 110px 54px;
   }
 }
 
@@ -54,25 +82,35 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .modal__text {
   margin: 0;
-  margin-top: 35px;
+  margin-top: 22px;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   text-transform: uppercase;
   color: variables.$black-02;
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 22px;
+  }
 }
 
 .modal__button-wrapper {
   max-width: 100%;
   padding: 20px;
   background: variables.$grey-01;
+  box-sizing: border-box;
 
   @media (min-width: variables.$tablet-width) {
     max-width: 640px;
-    box-sizing: border-box;
+    padding: 44px 91px;
   }
 }

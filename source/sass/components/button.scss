@@ -15,24 +15,69 @@
   border: none;
   cursor: pointer;
 
-  @media (min-width: variables.$tablet-width) {
-    max-width: 458px;
+  &:hover {
+    background: variables.$blue-02;
   }
 
-  &--link {
-    margin-top: 20px;
-    display: block;
-    text-decoration: none;
+  &:focus {
+    background: variables.$blue-02;
   }
 
-  &--actions {
-    @media (min-width: variables.$tablet-width) {
-      width: 324px;
-    }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background: variables.$blue-03;
   }
 
   &--error {
     margin-top: 28px;
-    max-width: 180px;
+    width: 180px;
+  }
+
+  &--success {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &--link {
+    max-width: 458px;
+    margin-top: 33px;
+    display: block;
+    text-decoration: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 42px;
+
+    &--actions {
+      margin: 0;
+      width: 324px;
+    }
+
+    &--error {
+      margin-top: 49px;
+      width: 272px;
+    }
+
+    &--success {
+      margin: 0;
+      font-size: 21px;
+      line-height: 26px;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 46px;
+
+    &--actions {
+      width: 384px;
+    }
+
+    &--error {
+      margin-top: 47px;
+    }
+
+    &--success {
+      margin: 0;
+    }
   }
 }

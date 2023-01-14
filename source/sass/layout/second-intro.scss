@@ -10,24 +10,24 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: 25px;
+      bottom: 28px;
       left: 50%;
       width: 0;
       height: 0;
       border: 0 solid transparent;
       border-left-width: 0;
-      border-bottom: 50px solid variables.$white;
+      border-bottom: 56px solid variables.$white;
     }
 
     &::before {
       transform: translate(-100%, 50%);
-      border-right-width: 345px;
+      border-right-width: 350px;
       z-index: 3;
     }
 
     &::after {
       transform: translate(0, 50%);
-      border-left-width: 345px;
+      border-left-width: 350px;
     }
   }
 }
@@ -39,7 +39,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/second_intro_bg-mobile@2x.jpg");
@@ -56,7 +56,7 @@
 
   @media (min-width: variables.$desktop-width) {
     background-image: url("../img/second_intro_bg-desktop.jpg");
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 50% 100%, 0 84%);
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/second_intro_bg-desktop@2x.jpg");
@@ -65,31 +65,17 @@
 }
 
 .second-intro__wrapper-image {
-  // display: flex;
-  // justify-content: center;
   text-align: center;
-  padding: 108px 18px 67px;
+  padding: 108px 18px 62px;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 151px 0 117px;
+    padding: 150px 0 113px;
   }
 
-  @media (min-width: variables.$tablet-width) {
-    padding: 157px 0 120px;
+  @media (min-width: variables.$desktop-width) {
+    padding: 158px 0 114px;
   }
 }
-
-// .second-intro__image {
-//   @include mixins.img;
-
-//   @media (min-width: variables.$tablet-width) {
-//     width: 456px;
-//   }
-
-//   @media (min-width: variables.$tablet-width) {
-//     width: 460px;
-//   }
-// }
 
 .second-intro__icon-text {
   width: 229px;

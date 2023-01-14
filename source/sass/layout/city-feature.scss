@@ -5,25 +5,56 @@
   @include mixins.list-reset;
 
   width: 100%;
-  padding: 0 0 27px;
+  padding-bottom: 46px;
   background: variables.$white;
 
   @media (min-width: variables.$tablet-width) {
+    padding: 0;
     display: flex;
     align-items: baseline;
     justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0;
   }
 }
 
 .city-feature__item {
-  padding: 27px 18px 0 65px;
+  max-width: 458px;
+  margin: 0 auto;
+  padding: 32px 18px 0 65px;
   text-align: left;
 
   @media (min-width: variables.$tablet-width) {
-    margin: 0;
-    padding: 80px 10px 10px;
-    text-align: center;
     width: 256px;
+    margin: 0;
+    padding: 155px 20px 62px;
+    text-align: center;
+    box-sizing: border-box;
+
+    &:nth-child(odd) {
+      padding: 155px 20px 62px;
+    }
+
+    &:nth-child(odd) p {
+      padding: 0 20px;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    min-width: 350px;
+    padding: 168px 20px 70px;
+
+    &:nth-child(odd) {
+      padding: 168px 20px 62px;
+    }
+
+    & p {
+      padding: 0;
+    }
   }
 }
 
@@ -38,12 +69,11 @@
   &::before {
     content: "";
     position: absolute;
-    left: -50px;
-    top: 50%;
+    left: -47px;
+    top: 47%;
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
-    // background: variables.$grey-04;
   }
 
   &--house::before {
@@ -54,15 +84,62 @@
     background: url("../img/icon-food.svg") center center / cover no-repeat;
   }
 
+  &--gift {
+    margin-top: 1px;
+  }
+
   &--gift::before {
     background: url("../img/icon-gift.svg") center center / cover no-repeat;
   }
 
   @media (min-width: variables.$tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+
     &::before {
-      top: -50px;
+      top: -96px;
       left: 50%;
       transform: translateX(-50%);
+    }
+
+    &--house::before {
+      width: 77px;
+      height: 72px;
+    }
+
+    &--food::before {
+      width: 80px;
+      height: 70px;
+    }
+
+    &--gift {
+      margin-top: 0;
+    }
+
+    &--gift::before {
+      width: 71px;
+      height: 81px;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--house::before {
+      top: -99px;
+    }
+
+    &--food::before {
+      top: -96px;
+      left: 49%;
+      width: 75px;
+    }
+
+    &--gift::before {
+      top: -102px;
     }
   }
 }
@@ -76,4 +153,8 @@
   line-height: 21px;
   text-transform: uppercase;
   color: variables.$black-02;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 24px;
+  }
 }

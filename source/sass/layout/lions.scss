@@ -47,7 +47,7 @@
   overflow: hidden;
 
   @media (min-width: variables.$tablet-width) {
-    height: 267px;
+    min-height: 267px;
 
     &--accent {
       height: 400px;
@@ -73,6 +73,7 @@
 
   @media (min-width: variables.$desktop-width) {
     position: absolute;
+    padding: 20px 23px 18px;
     width: 100%;
     bottom: 0;
     z-index: 2;
@@ -103,15 +104,47 @@
 }
 
 .lions__likes-info {
-  margin-top: 11px;
-  display: flex;
-  align-items: flex-end;
+  margin-top: 15px;
+  padding-left: 37px;
+  position: relative;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: -5px;
+    padding-left: 32px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 3px;
+    padding-left: 30px;
+  }
 }
 
 .lions__likes-btn {
-  margin-right: 14px;
-  width: 23px;
-  height: 21px;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: -3px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.lions__likes-icon {
+  fill: variables.$black-01;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    fill: variables.$white;
+    opacity: 1;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }
 
 .lions__likes-count {

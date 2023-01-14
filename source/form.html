@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="shortcut icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
     <link rel="shortcut icon" href="img/favicon/favicon-16x16.png" type="image/png">
     <link rel="shortcut icon" href="img/favicon/favicon-32x32.png" type="image/png">
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" type="image/png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="./js/app.js" defer></script>
   </head>
   <body class="page__body">
@@ -39,6 +41,12 @@
       </nav>
 
       <button class="main-header__toggle" type="button">
+        <svg class="main-header__icon-btn main-header__icon-btn--open" width="25" height="25">
+          <use xlink:href="img/sprite.svg#open-menu"></use>
+        </svg>
+        <svg class="main-header__icon-btn main-header__icon-btn--close visually-hidden" width="25" height="25">
+          <use xlink:href="img/sprite.svg#close-menu"></use>
+        </svg>
         <span class="visually-hidden">Open menu</span>
       </button>
       <!--* /.main-nav -->
@@ -49,7 +57,6 @@
             <svg class="second-intro__icon-text" width="229" height="39">
               <use xlink:href="img/sprite.svg#second-intro"></use>
             </svg>
-            <!-- <img class="second-intro__image" src="img/sedona.svg" width="229" height="39" alt="Sedona название города."> -->
           </div>
         </div>
       </div>
@@ -61,21 +68,21 @@
     <main class="page__main form-page">
       <div class="form-page__header">
         <h1 class="form-page__title">Оставьте свой отзыв</h1>
-        <p class="form-page__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <p class="form-page__text">Помогите нашим отелям стать лучше! оставьте отзыв о&nbspних, а также о посещенных вами достопримечательностях</p>
       </div>
       <!--* /.form-page -->
 
       <form class="form-page__form form" action="https://echo.htmlacademy.ru/courses" method="post">
           <div class="form__wrapper">
             <fieldset class="form__user-info">
-              <legend class="form__title">Представьтесь:</legend>
+              <legend class="form__title form__title--represent">Представьтесь:</legend>
               <div class="form__inner-wrapper">
                 <label class="form__sub" for="name">Имя*:</label>
-                <input class="form__input" id="name" name="name" type="text" placeholder="Пётр" required>
+                <input class="form__input" id="name" name="name" type="text" placeholder="Пётр" minlength="2" maxlength="15" required>
               </div>
               <div class="form__inner-wrapper">
                 <label class="form__sub" for="first-name">Фамилия*:</label>
-                <input class="form__input" id="first-name" name="first-name" type="text" placeholder="Пустота" required>
+                <input class="form__input" id="first-name" name="first-name" type="text" placeholder="Пустота" minlength="2" maxlength="25" required>
               </div>
               <div class="form__inner-wrapper">
                 <label class="form__sub" for="patronym">Отчество:</label>
@@ -85,13 +92,19 @@
 
             <fieldset class="form__user-info">
               <legend class="form__title form__title--left">Контактная информация:</legend>
-              <div class="form__inner-wrapper">
+              <div class="form__inner-wrapper form__inner-wrapper--icon">
+                <svg class="form__input-icon" width="18" height="18">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
                 <label class="form__sub" for="tel">Контактный телефон*:</label>
-                <input class="form__input" id="tel" name="tel" type="tel" placeholder="Введите телефон" required>
+                <input class="form__input form__input--icon" id="tel" name="tel" type="tel" placeholder="Введите телефон" minlength="11" maxlength="11" pattern="[0-9]{11}" required>
               </div>
-              <div class="form__inner-wrapper">
+              <div class="form__inner-wrapper form__inner-wrapper--icon">
                 <label class="form__sub" for="mail">Электронная почта*:</label>
-                <input class="form__input" id="mail" name="mail" type="email" placeholder="Введите e-mail" required>
+                <input class="form__input form__input--icon" id="mail" name="mail" type="email" placeholder="Введите e-mail" required>
+                <svg class="form__input-icon" width="18" height="18">
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
               </div>
             </fieldset>
           </div>
@@ -102,16 +115,19 @@
             </legend>
             <div class="form__comments-wrapper">
               <label class="form__sub form__sub--bold">
-                <input class="form__input-radio" type="radio" name="impress" value="good" checked>
-                Скорее положительное
+                <input class="form__input" type="radio" name="impress" value="good" checked>
+                <span class="form__custom-input form__custom-input--radio"></span>
+                <span>Скорее положительное</span>
               </label>
               <label class="form__sub form__sub--bold">
-                <input class="form__input-radio" type="radio" name="impress" value="bad">
-                Скорее отрицательное
+                <input class="form__input" type="radio" name="impress" value="bad">
+                <span class="form__custom-input form__custom-input--radio"></span>
+                <span>Скорее отрицательное</span>
               </label>
               <label class="form__sub form__sub--bold">
-                <input class="form__input-radio" type="radio" name="impress" value="noAnswer">
-                Затрудняюсь ответить
+                <input class="form__input" type="radio" name="impress" value="noAnswer" disabled>
+                <span class="form__custom-input form__custom-input--radio"></span>
+                <span>Затрудняюсь ответить</span>
               </label>
             </div>
           </fieldset>
@@ -121,21 +137,25 @@
               <span class="form__title-text">Посещенные достопримечательности:</span>
             </legend>
             <div class="form__comments-wrapper form__comments-wrapper--width-attraction">
-              <label class="form__sub form__sub--bold">
-                <input class="form__input-checkbox" type="checkbox" name="attraction" value="Мост Дьявола" checked>
-                Мост Дьявола
+              <label class="form__sub form__sub--bold form__sub--right">
+                <input class="form__input" type="checkbox" name="attraction" value="Мост Дьявола" checked>
+                <span class="form__custom-input form__custom-input--checkbox"></span>
+                <span>Мост Дьявола</span>
               </label>
-              <label class="form__sub form__sub--bold">
-                <input class="form__input-checkbox" type="checkbox" name="attraction" value="Гора-Колокол" checked>
-                Гора-Колокол
+              <label class="form__sub form__sub--bold form__sub--right">
+                <input class="form__input" type="checkbox" name="attraction" value="Гора-Колокол" checked>
+                <span class="form__custom-input form__custom-input--checkbox"></span>
+                <span>Гора-Колокол</span>
               </label>
-              <label class="form__sub form__sub--bold">
-                <input class="form__input-checkbox" type="checkbox" name="attraction" value="Слайд-парк" checked>
-                Слайд-парк
+              <label class="form__sub form__sub--bold form__sub--right">
+                <input class="form__input" type="checkbox" name="attraction" value="Слайд-парк" checked>
+                <span class="form__custom-input form__custom-input--checkbox"></span>
+                <span>Слайд-парк</span>
               </label>
-              <label class="form__sub form__sub--bold">
-                <input class="form__input-checkbox" type="checkbox" name="attraction" value="Красные скалы">
-                Красные скалы
+              <label class="form__sub form__sub--bold form__sub--right">
+                <input class="form__input" type="checkbox" name="attraction" value="Красные скалы">
+                <span class="form__custom-input form__custom-input--checkbox"></span>
+                <span>Красные скалы</span>
               </label>
             </div>
           </fieldset>
@@ -145,8 +165,8 @@
               <span class="form__title-text">Опишите свои эмоции:</span>
             </legend>
             <div class="form__comments-wrapper form__comments-wrapper--width-emotion">
-              <textarea class="form__input-area" name="user-review" cols="30" rows="10"
-              minlength="10" maxlength="40" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="form__input form__input--area" name="user-review" cols="30" rows="10"
+              minlength="0" maxlength="40" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
           </fieldset>
 
@@ -204,20 +224,20 @@
     <!--* /.footer -->
 
     <!-- //* Modal widnow -->
-    <div class="modal modal--error visually-hidden">
+    <div class="modal modal--error">
       <div class="modal__wrapper modal__wrapper--error">
-        <h2 class="modal__title">Что-то пошло не так!</h2>
-        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <h2 class="modal__title">Что-то пошло не&nbspтак!</h2>
+        <p class="modal__text">Проверьте поля, выделенные&nbspкрасным, скорее всего вы забыли их заполнить</p>
         <button class="button button--error">Ok</button>
       </div>
     </div>
     <!--* /.modal-error -->
 
-    <div class="modal modal--success visually-hidden">
+    <div class="modal modal--success">
       <div class="modal__wrapper modal__wrapper--success">
         <div class="modal__text-wrapper">
           <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-          <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте</p>
+          <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbspближайшее время мы опубликуем его на сайте</p>
         </div>
         <div class="modal__button-wrapper">
           <button class="button button--success">Закрыть окно</button>

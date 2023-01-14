@@ -8,4 +8,16 @@
   color: variables.$black-02;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    color: variables.$blue-01;
+  }
+
+  &:focus {
+    color: variables.$blue-01;
+  }
+
+  &:active {
+    color: variables.$black-03;
+  }
 }

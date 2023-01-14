@@ -100,7 +100,7 @@ const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.{ico,svg,webmanifest}',
-    'source/video/*.{mp4,webm,ogg}'
+    'source/video/*.{mp4,webm,ogv,ogg}'
   ],{
     base: 'source'
   })

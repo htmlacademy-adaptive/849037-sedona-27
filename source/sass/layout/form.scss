@@ -376,6 +376,7 @@
   padding: 16px;
   border: none;
   background: variables.$grey-01;
+  outline: none;
 
   @include mixins.font;
   font-weight: 700;

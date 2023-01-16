@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Educational project of adaptive layout from HTMLAcademy">
     <title>HTML Academy: Седона</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
@@ -14,13 +15,13 @@
     <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="./js/app.js" defer></script>
+    <script src="js/app.min.js" defer></script>
   </head>
   <body class="page__body">
     <header class="main-header main-header--nojs">
       <div class="main-header__logo-wrapper">
         <a class="main-header__logo-link" href="index.html">
-          <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона.">
+          <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона." loading="lazy">
         </a>
       </div>
       <nav class="main-header__nav main-header__nav--closed">
@@ -29,13 +30,13 @@
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--active">Фото и видео</a>
+            <a class="site-list__link site-list__link--active" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Форма Отзыва</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">HTML ACADEMY</a>
+            <a class="site-list__link" href="https://htmlacademy.ru" target="_blank">HTML ACADEMY</a>
           </li>
         </ul>
       </nav>
@@ -86,7 +87,7 @@
 
                 <source media="(min-width: 1280px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-                <img class="lions__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога с машиной на фоне пейзажа холмов.">
+                <img class="lions__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога с машиной на фоне пейзажа холмов." loading="lazy">
               </picture>
             </div>
             <figcaption class="lions__info-wrapper">
@@ -114,7 +115,7 @@
 
                 <source media="(min-width: 1280px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-                <img class="lions__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Кактус на фоне скал.">
+                <img class="lions__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Кактус на фоне скал." loading="lazy">
               </picture>
             </div>
             <figcaption class="lions__info-wrapper">
@@ -142,7 +143,7 @@
 
                 <source media="(min-width: 1280px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-                <img class="lions__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога из серпантин среди леса.">
+                <img class="lions__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога из серпантин среди леса." loading="lazy">
               </picture>
             </div>
             <figcaption class="lions__info-wrapper">
@@ -170,7 +171,7 @@
 
                 <source media="(min-width: 1280px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
-                <img class="lions__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Каньон с деревьями на фоне монументов скал.">
+                <img class="lions__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Каньон с деревьями на фоне монументов скал." loading="lazy">
               </picture>
             </div>
             <figcaption class="lions__info-wrapper">
@@ -198,12 +199,20 @@
           <h2 class="benefits__title">Все еще сомневаетесь?</h2>
           <p class="benefits__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
-          <video class="benefits__video" preload="none" controls="controls" muted="muted" width="280" height="177" poster="img/video-bg.jpg">
-            <source src="video/Sedona-video.ogv" type="video/ogg">
-            <source src="video/Sedona-video.mp4" type="video/mp4">
-            <source src="video/Sedona-video.webm" type="video/webm">
-            К сожалению видео не поддерживается вашим браузером
-          </video>
+          <div class="benefits__video-wrapper">
+            <button class="benefits__video-btn" type="button">
+              <svg class="benefits__video-icon" width="48" height="54">
+                <use xlink:href="img/sprite.svg#icon-play"></use>
+              </svg>
+              <span class="visually-hidden">Play</span>
+            </button>
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/desktop-videoBG.jpg">
+              <source media="(min-width: 768px)" srcset="img/tablet-videoBG.jpg">
+
+              <img class="benefits__img-bg" src="img/mobile-videoBG.jpg" width="320" height="177" alt="Машины едут по извилистой дороге среди гор." loading="lazy">
+            </picture>
+          </div>
       </div>
       <!--* /.benefits -->
 
@@ -241,7 +250,7 @@
           </li>
         </ul>
         <div class="footer__copyright copyright">
-          <a class="copyright__link" href="#">
+          <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">
             <span class="copyright__text">Разработано</span>
             <svg width="27" height="34">
               <use xlink:href="img/sprite.svg#icon-HTMLAcademy"></use>

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Educational project of adaptive layout from HTMLAcademy">
     <title>HTML Academy: Седона</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
@@ -14,19 +15,19 @@
     <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="./js/app.js" defer></script>
+    <script src="js/app.min.js" defer></script>
   </head>
   <body class="page__body">
     <header class="main-header main-header--nojs">
       <div class="main-header__logo-wrapper">
         <a class="main-header__logo-link" href="index.html">
-          <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона.">
+          <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона." loading="lazy">
         </a>
       </div>
       <nav class="main-header__nav main-header__nav--closed">
         <ul class="main-header__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--active">Главная</a>
+            <a class="site-list__link site-list__link--active" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Фото и видео</a>
@@ -35,7 +36,7 @@
             <a class="site-list__link" href="form.html">Форма Отзыва</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">HTML ACADEMY</a>
+            <a class="site-list__link" href="https://htmlacademy.ru" target="_blank">HTML ACADEMY</a>
           </li>
         </ul>
       </nav>
@@ -96,7 +97,7 @@
 
                   <source media="(min-width: 1280px)" srcset="img/city_img-desktop.jpg 1x, img/city_img-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/city_img-tablet.jpg 1x, img/city_img-tablet@2x.jpg 2x">
-                  <img class="features__img" src="img/city_img-mobile.jpg" srcset="img/city_img-mobile@2x.jpg 2x" width="320" height="260" alt="Американский флаг на фоне здания в городе Седона">
+                  <img class="features__img" src="img/city_img-mobile.jpg" srcset="img/city_img-mobile@2x.jpg 2x" width="320" height="260" alt="Американский флаг на фоне здания в городе Седона" loading="lazy">
                 </picture>
               </div>
 
@@ -107,11 +108,11 @@
                 </li>
                 <li class="city-feature__item">
                   <h4 class="city-feature__title city-feature__title--food">Еда</h4>
-                  <p class="city-feature__desc">Всегда заказывайте фирменный бургер, вы&nbspне&nbspазочаруетесь!</p>
+                  <p class="city-feature__desc">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
                 </li>
                 <li class="city-feature__item">
                   <h4 class="city-feature__title city-feature__title--gift">Сувениры</h4>
-                  <p class="city-feature__desc">Не только китайского, но&nbspи&nbspместного производства!</p>
+                  <p class="city-feature__desc"><span>Не только китайского,</span> но и местного производства!</p>
                 </li>
               </ul>
             </li>
@@ -119,7 +120,7 @@
             <li class="features__item features__item--accent">
               <div class="features__item-wrapper features__item-wrapper--accent-second">
                 <h3 class="features__title">
-                  Там&nbspесть мост&nbspдьявола
+                  Там&nbsp;есть мост&nbsp;дьявола
                 </h3>
                 <span class="features__subject features__subject--white">№2</span>
                 <p class="features__text features__text--white features__text--width">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -132,7 +133,7 @@
 
                   <source media="(min-width: 1280px)" srcset="img/bridge_img-desktop.jpg 1x, img/bridge_img-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/bridge_img-tablet.jpg 1x, img/bridge_img-tablet@2x.jpg 2x">
-                  <img class="features__img" src="img/bridge_img-mobile.jpg" srcset="img/bridge_img-mobile@2x.jpg 2x" width="320" height="260" alt="Глубокое ущелье на фоне гор">
+                  <img class="features__img" src="img/bridge_img-mobile.jpg" srcset="img/bridge_img-mobile@2x.jpg 2x" width="320" height="260" alt="Глубокое ущелье на фоне гор" loading="lazy">
                 </picture>
               </div>
             </li>
@@ -144,7 +145,7 @@
             <li class="features__item">
               <h3 class="features__title">Красивая дорога</h3>
               <span class="features__subject">№4</span>
-              <p class="features__text">Ехать в Седону из Лас-Вегаса совсем не&nbspскучно!</p>
+              <p class="features__text">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
             </li>
             <li class="features__item">
               <h3 class="features__title">Мало туристов</h3>
@@ -160,16 +161,15 @@
 
         <h3 class="service__title">Заинтересовались?</h3>
         <p class="service__text">
-          Укажите предполагаемые даты поездки, и&nbspмы&nbspпокажем&nbspвам&nbspлучшие предложения&nbspгостиниц&nbspв&nbspСедоне
+          Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения&nbsp;гостиниц&nbsp;в&nbsp;Седоне
         </p>
         <a class="button button--link" href="#">Найти гостиницу</a>
       </section>
       <!--* /.service -->
 
-      <section class="main-map" id="map">
+      <section class="main-map">
         <h2 class="visually-hidden">Карта города Седона.</h2>
         <div id="map" class="main-map__container"></div>
-        <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6b418c323109c98309e4e0983ede9d61d9e0e1236b5147a4703e4e0782082eac&amp;source=constructor" width="100%" height="350" frameborder="0"></iframe> -->
       </section>
       <!--* /.main-map -->
 
@@ -207,7 +207,7 @@
           </li>
         </ul>
         <div class="footer__copyright copyright">
-          <a class="copyright__link" href="#">
+          <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">
             <span class="copyright__text">Разработано</span>
             <svg width="27" height="34">
               <use xlink:href="img/sprite.svg#icon-HTMLAcademy"></use>
@@ -218,7 +218,7 @@
     </footer>
     <!--* /.footer -->
 
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=75867c52-3f12-411b-9481-32985aadf3a9&lang=ru_RU" type="text/javascript"></script>
-    <script src="js/map.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=75867c52-3f12-411b-9481-32985aadf3a9&lang=ru_RU"></script>
+    <script src="js/map.min.js"></script>
   </body>
 </html>

@@ -43,6 +43,9 @@ const html = () => {
 const script = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
+    .pipe(rename({
+      extname: '.min.js'
+    }))
     .pipe(gulp.dest('build/js'));
 }
 
@@ -56,6 +59,7 @@ const prodImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(imagemin([
       imagemin.mozjpeg({
+        quality: 75,
         progressive: true
       })
     ]))
@@ -69,7 +73,7 @@ const createWebp = () => {
     '!source/img/favicon/*.{jpg,png}'
   ])
     .pipe(webp({
-      quality: 90
+      quality: 80
     }))
     .pipe(gulp.dest('build/img'));
 }
@@ -99,8 +103,7 @@ const clean = () => {
 const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
-    'source/*.{ico,svg,webmanifest}',
-    'source/video/*.{mp4,webm,ogv,ogg}'
+    'source/*.{ico,svg,webmanifest}'
   ],{
     base: 'source'
   })

@@ -198,12 +198,20 @@
           <h2 class="benefits__title">Все еще сомневаетесь?</h2>
           <p class="benefits__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
-          <video class="benefits__video" preload="none" controls="controls" muted="muted" width="280" height="177" poster="img/video-bg.jpg">
-            <source src="video/Sedona-video.ogv" type="video/ogg">
-            <source src="video/Sedona-video.mp4" type="video/mp4">
-            <source src="video/Sedona-video.webm" type="video/webm">
-            К сожалению видео не поддерживается вашим браузером
-          </video>
+          <div class="benefits__video-wrapper">
+            <button class="benefits__video-btn" type="button">
+              <svg class="benefits__video-icon" width="48" height="54">
+                <use xlink:href="img/sprite.svg#icon-play"></use>
+              </svg>
+              <span class="visually-hidden">Play</span>
+            </button>
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/desktop-videoBG.jpg">
+              <source media="(min-width: 768px)" srcset="img/tablet-videoBG.jpg">
+
+              <img class="benefits__img-bg" src="img/mobile-videoBG.jpg" width="320" height="177" alt="Машины едут по извилистой дороге среди гор.">
+            </picture>
+          </div>
       </div>
       <!--* /.benefits -->
 

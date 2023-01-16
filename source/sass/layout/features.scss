@@ -34,7 +34,7 @@
 
   @media (min-width: variables.$tablet-width) {
     border-bottom: none;
-    padding: 52px 0;
+    padding: 53px 0 52px;
 
     &--accent {
       grid-column: 1 / 4;
@@ -66,7 +66,7 @@
 }
 
 .features__item-wrapper {
-  padding: 54px 18px 40px;
+  padding: 55px 18px 39px;
   color: variables.$white;
 
   &--accent-first {

@@ -59,6 +59,7 @@ const prodImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(imagemin([
       imagemin.mozjpeg({
+        quality: 75,
         progressive: true
       })
     ]))

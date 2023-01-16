@@ -99,8 +99,7 @@ const clean = () => {
 const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
-    'source/*.{ico,svg,webmanifest}',
-    'source/video/*.{mp4,webm,ogv,ogg}'
+    'source/*.{ico,svg,webmanifest}'
   ],{
     base: 'source'
   })

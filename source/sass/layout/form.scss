@@ -138,6 +138,7 @@
     margin-left: -20px;
 
     &--width-attraction {
+      align-items: center;
       padding: 0 105px;
       margin-bottom: -2px;
     }
@@ -282,6 +283,7 @@
   }
 
   &--right {
+    max-width: 130px;
     padding-bottom: 21px;
   }
 

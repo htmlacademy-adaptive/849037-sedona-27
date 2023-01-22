@@ -24,15 +24,15 @@
     }
 
     &--width .footer__social {
-      margin-right: 22px;
+      margin-right: 19px;
     }
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 37px 136px 43px 119px;
+    padding: 36px 135px 43px 119px;
 
     &--width {
-      padding: 38px 120px 23px;
+      padding: 37px 119px 23px;
     }
   }
 }
@@ -51,7 +51,7 @@
   @include mixins.list-reset;
 
   @media (min-width: variables.$tablet-width) {
-    margin-left: 13px;
+    margin-left: 14px;
   }
 }
 

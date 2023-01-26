@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   background: variables.$grey-01;
+  overflow: overlay;
 
   @include mixins.font;
 
